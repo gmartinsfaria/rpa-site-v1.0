@@ -28,8 +28,6 @@ document.querySelector(".values-contact-btn").addEventListener("click", () => sc
 
 document.querySelector(".values-contact-btn-m").addEventListener("click", () => scrollAnim("Contacto"));
 
-document.querySelector(".specialties-contact-btn").addEventListener("click", () => scrollAnim("Contacto"));
-
 document.querySelector(".team-contact-btn").addEventListener("click", () => scrollAnim("Contacto"));
 
 

@@ -291,8 +291,7 @@ body {
 
 
 .values-contact-btn,
-.values-contact-btn-m,
-.specialties-contact-btn {
+.values-contact-btn-m {
     font-size: clamp(1rem, 2vw, 1.7rem);
     color: #A6151F;
     background-color: transparent;
@@ -304,19 +303,9 @@ body {
 }
 
 .values-contact-btn:hover,
-.values-contact-btn-m:hover,
-.specialties-contact-btn:hover {
+.values-contact-btn-m:hover {
     text-decoration: underline;
 }
-
-
-
-.specialties-title{
-    font-size: clamp(2rem, 4vw, 5rem);
-    font-weight: 200;
-}
-
-
 
 
 
@@ -327,112 +316,9 @@ body {
     position: relative;
 }
 
-/* Ajuste da imagem */
-.card-img-top {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Grid sobreposta à imagem */
-.grid-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.75fr auto;
-    gap: 5px;
-}
 
 
 
-.esp-1 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;    
-}
-
-.esp-2 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-.esp-3 {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-}
-
-.esp-4 {
-    grid-column: 2 / 3;
-    grid-row: 3 /4;
-}
-
-.esp-5 {
-    grid-column: 3 / 4;
-    grid-row: 3 /4;
-}
-
-.esp-6 {
-    grid-column: 4 / 5;
-    grid-row: 3 /4;
-}
-
-.esp-1,
-.esp-2,
-.esp-3,
-.esp-4,
-.esp-5,
-.esp-6 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-
-
-/* Elementos da grid */
-.grid-item {
-    background: rgba(255, 255, 255, 0.1); /* Para visualização, pode ser removido */
-    transition: background 0.3s;
-}
-
-/* Efeito hover */
-.grid-item:hover {
-    background: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-
-.interact-element {
-    height: 20%;
-    width: 20%;
-}
-
-.specialties-btn-group {
-    display: flex;
-    justify-content: flex-start; /* Distribui os botões de forma uniforme */
-    gap: 20px; /* Espaço entre os botões */
-}
-
-#especialidade-1-btn {
-    background-color: #A6151F;
-}
-
-.specialties-btn-itm {
-    background-color: #EFEFEF;
-    border-radius: 0;
-    flex-grow: 1; /* Permite que os botões cresçam igualmente */
-    max-width: 75px; /* Define um tamanho máximo para não crescerem muito em telas grandes */
-    height: 8px;
-    padding: 0;
-    line-height: 8px;
-    transition: background-color 0.3s ease; /* Suaviza a transição da cor */
-}
-
-.specialties-btn-itm:hover {
-    background-color: #A6151F;
-}
 
 
 
