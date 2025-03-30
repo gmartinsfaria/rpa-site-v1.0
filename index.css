@@ -19,11 +19,11 @@ body {
 }
 
 .light-grey{
-    background-color: #E6E6E6;
+    background-color: #E6E6E6 !important;
 }
 
 .dark-grey{
-    background-color: #D9D9D9;
+    background-color: #D9D9D9 !important;
 }
 
 .light-grey:hover,
@@ -309,11 +309,44 @@ body {
 
 
 
-
+/* secção especialidades */
 
 /* Container da imagem */
 .position-relative {
     position: relative;
+}
+
+/* Remove as margens exteriores para ocupar toda a largura */
+#SectionEspecialidades .container-fluid {
+    padding: 0;
+}
+
+/* Remove border-radius e outline azul ao clicar */
+.accordion-button {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Cor vermelha ao clicar/abrir */
+.accordion-button:not(.collapsed) {
+    background-color:#A6151F !important;
+    color: white !important;
+}
+
+/* Remove a borda do accordion */
+.accordion-item {
+    border: none !important;
+}
+
+/* Remove bordas superiores e inferiores entre itens */
+.accordion-button {
+    border-bottom: 1px solid #ddd !important;
+}
+
+/* Remove fundo azul padrão no clique */
+.accordion-button:focus {
+    box-shadow: none !important;
 }
 
 
