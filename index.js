@@ -368,7 +368,3 @@ document.getElementById("graciosa-island").addEventListener("mouseleave", () => 
     document.getElementById("graciosa-container").classList.remove("active-color");
     document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.webp";
 });
-
-
-
-
