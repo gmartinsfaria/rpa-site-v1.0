@@ -309,6 +309,8 @@ body {
 
 
 
+
+
 /* secção especialidades */
 
 /* Container da imagem */
@@ -323,9 +325,17 @@ body {
 
 /* Remove border-radius e outline azul ao clicar */
 .accordion-button {
+    border: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     outline: none !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.accordion-body {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* Cor vermelha ao clicar/abrir */
@@ -333,6 +343,35 @@ body {
     background-color:#A6151F !important;
     color: white !important;
 }
+
+/* Cor branca para o texto dentro do botão quando expandido */
+.accordion-button:not(.collapsed) h2 {
+    color: white !important;
+}
+
+/* Muda a cor do ícone quando o accordion está expandido */
+.accordion-button:not(.collapsed)::after {
+    filter: invert(1);
+}
+
+
+
+/* Remove a seta padrão */
+.accordion-button::after {
+    background-image: url("https://icons.getbootstrap.com/assets/icons/plus-lg.svg");
+    background-size: 1.5rem; /* Ajusta o tamanho */
+    background-repeat: no-repeat;
+    background-position: center;
+    content: ""; /* Remove qualquer outro texto */
+    width: 1.2rem; /* Define largura */
+    height: 1.2rem; /* Define altura */
+    padding: 10px !important;
+  }
+  
+  /* Muda para o ícone de "menos" quando o acordeão está aberto */
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("https://icons.getbootstrap.com/assets/icons/dash-lg.svg");
+  }
 
 /* Remove a borda do accordion */
 .accordion-item {
@@ -350,9 +389,21 @@ body {
 }
 
 
+/* Garante que os textos dentro da grid respeitem os limites */
+.specialties-container > div{
+    width: 100%;
+    height: 100%;
+}
 
 
+/* Adiciona uma transição suave à abertura e fechamento do accordion */
+.accordion-collapse {
+    transition: all 0.4s ease-in-out; /* Tempo e tipo da animação */
+}
 
+.bold-in-description {
+    font-weight: bold;
+}
 
 
 
