@@ -15,6 +15,8 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
 
+    <!-- ==================================== NAVBAR ======================================= -->
+
     <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -35,7 +37,7 @@
                         <a id="ButtonValores" class="nav-link navbar-btn" aria-current="page" href="#">Valores</a>
                     </li>
                     <li class="nav-item">
-                        <a id="ButtonEspecialidades" class="nav-link" aria-current="page" href="#">Especialidades</a>
+                        <a id="ButtonEspecialidades" class="nav-link" aria-current="page" href="#">Atividade</a>
                     </li>
                     <li class="nav-item">
                         <a id="ButtonEquipa" class="nav-link" aria-current="page" href="#">Equipa</a>
@@ -44,13 +46,18 @@
                         <a id="ButtonEscritorios" class="nav-link" aria-current="page" href="#">Escritórios</a>
                     </li>
                     <li class="nav-item">
-                        <a id="ButtonBlog" class="nav-link" aria-current="page" href="#">Blog</a>
+                        <a id="ButtonBlog" class="nav-link" aria-current="page" href="#">Insights</a>
                     </li>
                     <button id="ButtonContacto" type="button" class="btn round-btn"><span class="text-capitalize">Entrar </span><span class="text-lowercase">em contacto</span></button>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- ==================================== NAVBAR FIM ======================================= -->
+
+
+
 
     <!-- ==================================== HOMEPAGE ======================================= -->
     <section class="home-page">
@@ -63,54 +70,8 @@
         <div id="lottie-animation"></div>
     </section>
 
+    <!-- ==================================== HOMEPAGE FIM ======================================= -->
 
-
-    <!-- ========================================== VALORES =========================================== -->
-
-    <section id="SectionValores">
-
-    
-        <div class="container-fluid values-container">
-            <div class="values-intro container">
-                <h1 class="values-title general-title">Os nossos valores</h1>
-                <p class="general-txt">
-                    Na RP & Associados, acreditamos que a justiça é feita por pessoas 
-                    e para as pessoas. Por isso, analisamos cada questão com rigor e 
-                    dedicação, sempre em busca das melhores soluções para garantir um 
-                    serviço jurídico ético, eficiente e humanizado.
-                </p>
-                <button class="values-contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
-            </div>
-            <div class="value-item seriousness">Seriedade</div>
-            <div class="value-item trust">Confiança</div>
-            <div class="value-item professionalism">Profissionalismo</div>
-            <div class="value-item excellence">Excelência</div>
-            <div class="value-item availability">Disponibilidade</div>
-        </div>
-        
-
-        <div class="container-fluid values-container-m">
-            <div class="values-intro container">
-                <h1 class="values-title general-title">Os nossos valores</h1>
-                <p class="general-txt">
-                    Na RP & Associados, acreditamos que a justiça é feita por pessoas 
-                    e para as pessoas. Por isso, analisamos cada questão com rigor e 
-                    dedicação, sempre em busca das melhores soluções para garantir um 
-                    serviço jurídico ético, eficiente e humanizado.
-                </p>
-                <button class="values-contact-btn values-contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
-            </div>
-            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-                    <div class="value-item col-5 card-block seriousness">Seriedade</div>
-                    <div class="value-item col-5 card-block trust">Confiança</div>
-                    <div class="value-item col-5 card-block professionalism">Profissionalismo</div>
-                    <div class="value-item col-5 card-block excellence">Excelência</div>
-                    <div class="value-item col-5 card-block availability">Disponibilidade</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================== VALORES FIM =========================================== -->
 
     
 
@@ -121,7 +82,7 @@
             <h1 class="general-title mx-5 py-4">As nossas especialidades</h1>
         </div>
 
-        <div class="accordion specialties-container pb-5 mb-5" id="accordionExample">
+        <div class="accordion specialties-container " id="accordionExample">
 
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -611,8 +572,8 @@
 
                 
                 <div class="py-1 px-3">
-                    <h2 id="descriptionName" class="text-body-emphasis">Especialistas dedicados a defender os seus direitos com excelência.</h2>
-                    <p id="descriptionFunction" class="col-lg-8 lead general-txt"></p>
+                    <h2 id="descriptionName" class="text-body-emphasis"></h2>
+                    <p id="descriptionFunction" class="col-lg-8 lead general-txt">Especialistas dedicados a defender os seus direitos com excelência.</p>
                     <button class="values-contact-btn team-contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
                 </div>
                 
@@ -625,6 +586,55 @@
 
 
 
+    <!-- ========================================== VALORES =========================================== -->
+
+    <section id="SectionValores">
+
+    
+        <div class="container-fluid values-container">
+            <div class="values-intro container">
+                <h1 class="values-title general-title">Os nossos valores</h1>
+                <p class="general-txt">
+                    Na RP & Associados, acreditamos que a justiça é feita por pessoas 
+                    e para as pessoas. Por isso, analisamos cada questão com rigor e 
+                    dedicação, sempre em busca das melhores soluções para garantir um 
+                    serviço jurídico ético, eficiente e humanizado.
+                </p>
+                <button class="values-contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+            </div>
+            <div class="value-item seriousness">Seriedade</div>
+            <div class="value-item trust">Confiança</div>
+            <div class="value-item professionalism">Profissionalismo</div>
+            <div class="value-item excellence">Excelência</div>
+            <div class="value-item availability">Disponibilidade</div>
+        </div>
+        
+
+        <div class="container-fluid values-container-m">
+            <div class="values-intro container">
+                <h1 class="values-title general-title">Os nossos valores</h1>
+                <p class="general-txt">
+                    Na RP & Associados, acreditamos que a justiça é feita por pessoas 
+                    e para as pessoas. Por isso, analisamos cada questão com rigor e 
+                    dedicação, sempre em busca das melhores soluções para garantir um 
+                    serviço jurídico ético, eficiente e humanizado.
+                </p>
+                <button class="values-contact-btn values-contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+            </div>
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                    <div class="value-item col-5 card-block seriousness">Seriedade</div>
+                    <div class="value-item col-5 card-block trust">Confiança</div>
+                    <div class="value-item col-5 card-block professionalism">Profissionalismo</div>
+                    <div class="value-item col-5 card-block excellence">Excelência</div>
+                    <div class="value-item col-5 card-block availability">Disponibilidade</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== VALORES FIM =========================================== -->
+
+
+
     <!-- ========================================== ESCRITORIOS =========================================== -->
 
     <section id="SectionEscritorios">
@@ -634,7 +644,7 @@
             </div>
             
             <div class="map-image-wrapper position-relative">
-                <img id="azoreanMap" src="./assets/imgs/offices/general-map.webp" alt="Mapa dos Açores">
+                <img id="azoreanMap" src="./assets/imgs/offices/general-map.svg" alt="Mapa dos Açores">
 
 
                 <!-- Grid Overlay -->

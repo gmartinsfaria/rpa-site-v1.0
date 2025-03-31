@@ -133,12 +133,12 @@ document.querySelectorAll(".team-item").forEach(item => {
             
             imgElement.src = `./assets/imgs/team/${newImage}.webp`;
 
-                // Atualiza o título da descrição
-            document.getElementById("descriptionName").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";
-            
+
             // Atualiza o texto da descrição
-            document.getElementById("descriptionFunction").textContent = "";
-        
+            document.getElementById("descriptionName").textContent = "";
+
+            // Atualiza o título da descrição
+            document.getElementById("descriptionFunction").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";       
         });
     });
 });
@@ -153,12 +153,12 @@ document.querySelectorAll(".office-item").forEach(item => {
         const targetImage = document.getElementById("azoreanMap");
 
 
-        targetImage.src = `./assets/imgs/offices/${newImage}-office.webp`;
+        targetImage.src = `./assets/imgs/offices/${newImage}-office.svg`;
     });
 
     item.addEventListener("mouseleave", (e) => {
         console.log("O utilizador SAIU");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.webp"
+        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg"
     });
 });
 
@@ -167,13 +167,13 @@ document.querySelectorAll(".office-1").forEach(item => {
     item.addEventListener("mouseenter", (e) => {
         document.getElementById("sao-miguel-container").classList.add("active");
         document.getElementById("sao-miguel-container").classList.add("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/sao-miguel-office.webp";
+        document.getElementById("azoreanMap").src = "./assets/imgs/offices/sao-miguel-office.svg";
     });
 
     item.addEventListener("mouseleave", (e) => {
         document.getElementById("sao-miguel-container").classList.remove("active");
         document.getElementById("sao-miguel-container").classList.remove("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.webp";
+        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
     });
 });
 
@@ -183,13 +183,13 @@ document.querySelectorAll(".office-2").forEach(item => {
     item.addEventListener("mouseenter", (e) => {
         document.getElementById("pico-container").classList.add("active");
         document.getElementById("pico-container").classList.add("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/pico-office.webp";
+        document.getElementById("azoreanMap").src = "./assets/imgs/offices/pico-office.svg";
     });
 
     item.addEventListener("mouseleave", (e) => {
         document.getElementById("pico-container").classList.remove("active");
         document.getElementById("pico-container").classList.remove("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.webp";
+        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
     });
 });
 
@@ -198,11 +198,11 @@ document.querySelectorAll(".office-2").forEach(item => {
 document.getElementById("graciosa-island").addEventListener("mouseenter", () => {
     document.getElementById("graciosa-container").classList.add("active");
     document.getElementById("graciosa-container").classList.add("active-color");
-    document.getElementById("azoreanMap").src = "./assets/imgs/offices/graciosa-office.webp";
+    document.getElementById("azoreanMap").src = "./assets/imgs/offices/graciosa-office.svg";
 });
 
 document.getElementById("graciosa-island").addEventListener("mouseleave", () => {
     document.getElementById("graciosa-container").classList.remove("active");
     document.getElementById("graciosa-container").classList.remove("active-color");
-    document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.webp";
+    document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
 });
