@@ -210,7 +210,7 @@ body {
 
 .news-card-block {
     height: 22vw;
-    width: 28vw;
+    width: 35vw;
     background-position: center;
     background-size: cover;
     transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Suavização aplicada */
@@ -277,6 +277,7 @@ body {
 .news-details a:hover {
     cursor: pointer;
     text-decoration: underline !important;
+    color: #FFFFFF;
 }
 
 .news-detail-link {
@@ -577,8 +578,8 @@ body {
 
 
 .team-card-block{
-    height: 24vw;
-    width: 20vw;
+    height: 24vw !important;
+    width: 20vw !important;
     background-position: center;
     background-size: cover;
     transition: all 0.2s ease-in-out !important;
@@ -757,7 +758,54 @@ body {
 
 
 
+/* ==================================================== CONTACTO ==========================================================*/
 
+
+.contact-form{
+    background: #fff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+    background-color: #A6151F;
+}
+
+
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h1{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color:#FFFFFF
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    padding: 1.5%;
+    background: #FFFFFF;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+/* ==================================================== CONTACTO FIM ==========================================================*/
 
 
 
