@@ -18,17 +18,20 @@ body {
     z-index: 1000;
 }
 
-.light-grey{
+.light-grey,
+.light {
     background-color: #E6E6E6 !important;
 }
 
-.dark-grey{
+.dark-grey,
+.dark {
     background-color: #D9D9D9 !important;
 }
 
 .light-grey:hover,
 .dark-grey:hover {
-    background-color: #A6151F;
+    background-color: #A6151F !important;
+    color: #EEEEEE !important;
 }
 
 /* Alterar a cor dos textos e ícones para preto */
@@ -409,7 +412,6 @@ body {
 
 
 .team-container {
-    background-color: #EFEFEF;
     margin-top: 0 !important;
     /*padding-top: 96px !important;*/
 }
@@ -527,7 +529,7 @@ body {
 }
 
 .active-color {
-    background-color: #A6151F;
+    background-color: #A6151F !important;
 }
 
 .office-focus {
