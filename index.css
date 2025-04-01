@@ -650,6 +650,7 @@ body {
 
 .office-item:hover .office-item-link {
     display: inline;
+    color: #FFFFFF;
 
 }
 
