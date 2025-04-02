@@ -447,9 +447,11 @@ body {
     position: relative;
 }
 
+
 /* Remove as margens exteriores para ocupar toda a largura */
-#SectionEspecialidades .container-fluid {
-    padding: 0;
+#SectionEspecialidades .container {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
 }
 
 /* Remove border-radius e outline azul ao clicar */
