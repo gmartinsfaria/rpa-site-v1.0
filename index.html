@@ -838,6 +838,7 @@
 
     <section id="SectionContacto">
 
+        <!--
         <div class="container-fluid contact-form">
             
             <form action="https://formspree.io/f/xjkyarzg" method="POST">
@@ -854,7 +855,7 @@
                             <input type="tel" id="telefone" name="telefone" class="form-control general-txt" placeholder="Numero de telefone *" value="" required/>
                         </div>
 
-                        <!-- Honeypot para evitar spam -->
+                        <Honeypot para evitar spam 
                         <input type="text" name="_gotcha" style="display: none;">
 
                         <div class="form-group">
@@ -869,6 +870,23 @@
                 </div>
             </form>
         </div>
+    -->
+
+        <form action="https://formspree.io/f/xjkyarzg" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+        
+            <!-- Honeypot para evitar spam -->
+            <input type="text" name="_gotcha" style="display: none;">
+        
+            <button type="submit">Enviar</button>
+        </form>   
 
     </section>
 
