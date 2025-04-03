@@ -241,3 +241,24 @@ document.getElementById("graciosa-island").addEventListener("mouseleave", () => 
     document.getElementById("graciosa-container").classList.remove("active-color");
     document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
 });
+
+
+document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var form = e.target;
+    fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+    }).then(response => {
+        if (response.ok) {
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+        } else {
+            alert("Ocorreu um erro. Tente novamente.");
+        }
+    }).catch(error => {
+        alert("Erro ao enviar formulário.");
+        console.log(error);
+    });
+});
