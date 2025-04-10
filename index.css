@@ -18,6 +18,11 @@ html, body {
 .navbar {
     z-index: 10000 !important;
     background-color: #FFFFFF !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 
