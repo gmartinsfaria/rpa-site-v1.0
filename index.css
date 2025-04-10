@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0062cc;
+    /*background-color: #0062cc;*/
 }
 
 /* Apply a max-width to the body element */
@@ -135,6 +135,18 @@ html, body {
 .round-btn:hover {
     background-color: #A6151F;
     color: #EEEEEE;
+}
+
+#ButtonContacto {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+  
+#ButtonContacto:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
 }
 
 
