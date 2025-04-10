@@ -87,6 +87,10 @@ body {
     margin-top: 0px !important;
 }
 
+.navbar-toggler{
+    margin-right: 20px;
+}
+
 
 
 
@@ -913,11 +917,10 @@ body {
     .menu-icon {
         height: 15px;
         width: 20px;
-        gap: 4px;
     }
 
     .menu-icon * {
-        height: 1px;
+        height: 2px !important;
     }
 
     #SectionNoticias{
