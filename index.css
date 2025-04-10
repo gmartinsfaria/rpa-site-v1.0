@@ -13,9 +13,16 @@ body {
 
  
  /* Tornar a navbar transparente */
- .navbar {
-    background-color: transparent !important;
-    z-index: 1000;
+.navbar {
+    z-index: 10000 !important;
+    background-color: #FFFFFF !important;
+}
+
+
+.navbar-scroll {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: white !important; /* opcional, se quiseres deixar de ser transparente com scroll */
 }
 
 .light-grey,
@@ -77,7 +84,10 @@ body {
     width: 105px;
     height: 62px;
     margin-left: 20px;
+    margin-top: 0px !important;
 }
+
+
 
 
 .navbar-btn-pack {
@@ -170,6 +180,10 @@ body {
 
 
 /* ==================================================== NEWS ====================================================*/
+
+#SectionNoticias{
+    padding-top: 80px;
+}
 
 .news-container {
     margin-top: 0 !important;
@@ -883,6 +897,10 @@ body {
     .values-txt{
         text-align: justify;
     }
+
+    #SectionNoticias{
+        padding-top: 50px;
+    }
 }
 
 
@@ -890,5 +908,19 @@ body {
     .logo-image {
         width: 60px;
         height: 35px;
-    }   
+    }
+    
+    .menu-icon {
+        height: 15px;
+        width: 20px;
+        gap: 4px;
+    }
+
+    .menu-icon * {
+        height: 1px;
+    }
+
+    #SectionNoticias{
+        padding-top: 50px;
+    }
 }

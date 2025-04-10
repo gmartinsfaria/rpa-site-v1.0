@@ -262,3 +262,24 @@ document.querySelector("form").addEventListener("submit", function (e) {
         console.log(error);
     });
 });
+
+
+
+
+function updateNavbarShadow() {
+    const navbar = document.querySelector('.navbar');
+    const collapse = document.querySelector('.navbar-collapse');
+
+    if (window.scrollY > 10 || collapse.classList.contains('show')) {
+        navbar.classList.add('navbar-scroll');
+    } else {
+        navbar.classList.remove('navbar-scroll');
+    }
+}
+
+window.addEventListener('scroll', updateNavbarShadow);
+
+// Atualizar quando o menu é aberto ou fechado
+const collapseEl = document.getElementById('navbarsExample05');
+collapseEl.addEventListener('shown.bs.collapse', updateNavbarShadow);
+collapseEl.addEventListener('hidden.bs.collapse', updateNavbarShadow);
