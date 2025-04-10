@@ -9,26 +9,84 @@ gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
 function scrollAnim(e) {
     console.log(`Clicou em ${e}`);
-    gsap.to(window, { duration: 1.5, scrollTo: `#Section${e}`, ease: "power2.inOut" });
+    gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+            y: `#Section${e}`,
+            offsetY: 80 // Altura da navbar
+        },
+        ease: "power2.inOut"
+    });
 }
 
-document.getElementById("ButtonValores").addEventListener("click", () => scrollAnim("Valores"));
+document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
 
-document.getElementById("ButtonEspecialidades").addEventListener("click", () => scrollAnim("Especialidades"));
+    // Chamar a animação de rolagem
+    scrollAnim("Especialidades");
+});
 
-document.getElementById("ButtonEquipa").addEventListener("click", () => scrollAnim("Equipa"));
+document.getElementById("ButtonEquipa").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
 
-document.getElementById("ButtonEscritorios").addEventListener("click", () => scrollAnim("Escritorios"));
+    // Chamar a animação de rolagem
+    scrollAnim("Equipa");
+});
 
-document.getElementById("ButtonBlog").addEventListener("click", () => scrollAnim("Blog"));
+// Adicionar o evento de clique à navbar
+document.getElementById("ButtonValores").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
 
-document.getElementById("ButtonContacto").addEventListener("click", () => scrollAnim("Contacto"));
+    // Chamar a animação de rolagem
+    scrollAnim("Valores");
+});
 
-document.querySelector(".values-contact-btn").addEventListener("click", () => scrollAnim("Contacto"));
+document.getElementById("ButtonEscritorios").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
 
-document.querySelector(".values-contact-btn-m").addEventListener("click", () => scrollAnim("Contacto"));
+    // Chamar a animação de rolagem
+    scrollAnim("Escritorios");
+});
 
-document.querySelector(".team-contact-btn").addEventListener("click", () => scrollAnim("Contacto"));
+document.getElementById("ButtonBlog").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Blog");
+});
+
+
+
+document.querySelector(".values-contact-btn").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    console.log("Clicou no contacto dentro do manifesto");
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Contacto");
+});
+
+document.querySelector(".values-contact-btn-m").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Contacto");
+});
+
+document.querySelector(".team-contact-btn").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Contacto");
+});
+
 
 
 

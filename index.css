@@ -5,11 +5,13 @@
 }
 
 /* Apply a max-width to the body element */
-body {
+html, body {
     max-width: 100%;
     overflow-x: hidden;
+    width: 100%;         /* Garante que a largura total seja 100% */
     font-family: 'EB Garamond', serif;
 }
+
 
  
  /* Tornar a navbar transparente */
@@ -436,7 +438,7 @@ body {
     display: none;
 }
 
-
+.special-btn,
 .values-contact-btn,
 .values-contact-btn-m {
     font-size: clamp(1rem, 2vw, 1.7rem);
