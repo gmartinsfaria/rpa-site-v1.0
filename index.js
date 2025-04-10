@@ -7,16 +7,18 @@ let esp6Shown = false;
 
 gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
+const navbarHeight = document.querySelector('.navbar').offsetHeight;
+
 function scrollAnim(e) {
-    console.log(`Clicou em ${e}`);
-    gsap.to(window, {
-        duration: 1,
-        scrollTo: {
-            y: `#Section${e}`,
-            offsetY: 80 // Altura da navbar
-        },
-        ease: "power2.inOut"
-    });
+  gsap.to(window, {
+    duration: 1, // mais curto para mobile
+    scrollTo: {
+      y: `#Section${e}`,
+      offsetY: navbarHeight
+    },
+    ease: "power1.out",
+    immediateRender: false
+  });
 }
 
 document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
