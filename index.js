@@ -10,16 +10,18 @@ gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
 function scrollAnim(e) {
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: {
-      y: `#Section${e}`,
-      offsetY: navbarHeight
-    },
-    ease: "none", // direto, sem curva lenta no início
-    immediateRender: false
-  });
-}
+    console.log(`Clicou em ${e}`);
+    gsap.to(window, { 
+        duration: 1.5, 
+        scrollTo: {
+            y: `#Section${e}`,
+            offsetY: navbarHeight
+          }, 
+        ease: "power2.inOut",
+        immediateRender: true
+    });
+};
+  
 
 document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
@@ -130,11 +132,26 @@ let interact1 = lottie.loadAnimation({
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.querySelector(".menu-icon");
     const navbarToggler = document.querySelector(".navbar-toggler");
+    const navColapse = document.querySelector(".navbar-collapse");
+    const navLinks = document.querySelectorAll('.nav-item');
 
     navbarToggler.addEventListener("click", function() {
         menuIcon.classList.toggle("active");
     });
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            console.log("Clicou num dos links da nav collapsed!");
+
+            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navColapse);
+            bsCollapse.hide(); // Fechar o menu com transição
+
+            menuIcon.classList.remove("active"); // Voltar ao hambúrguer
+        });
+    });
 });
+
+
 
 
 // ================================================ NEWS ===============================================================
