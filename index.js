@@ -11,17 +11,17 @@ const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
 function scrollAnim(e) {
   gsap.to(window, {
-    duration: 1.5, // mais curto para mobile
+    duration: 1,
     scrollTo: {
       y: `#Section${e}`,
       offsetY: navbarHeight
     },
-    ease: "power1.out",
+    ease: "none", // direto, sem curva lenta no início
     immediateRender: false
   });
 }
 
-document.getElementById("ButtonEspecialidades").addEventListener("pointerdown", (event) => {
+document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -29,7 +29,7 @@ document.getElementById("ButtonEspecialidades").addEventListener("pointerdown", 
     scrollAnim("Especialidades");
 });
 
-document.getElementById("ButtonEquipa").addEventListener("pointerdown", (event) => {
+document.getElementById("ButtonEquipa").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -38,7 +38,7 @@ document.getElementById("ButtonEquipa").addEventListener("pointerdown", (event) 
 });
 
 // Adicionar o evento de clique à navbar
-document.getElementById("ButtonValores").addEventListener("pointerdown", (event) => {
+document.getElementById("ButtonValores").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -46,7 +46,7 @@ document.getElementById("ButtonValores").addEventListener("pointerdown", (event)
     scrollAnim("Valores");
 });
 
-document.getElementById("ButtonEscritorios").addEventListener("pointerdown", (event) => {
+document.getElementById("ButtonEscritorios").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -54,7 +54,7 @@ document.getElementById("ButtonEscritorios").addEventListener("pointerdown", (ev
     scrollAnim("Escritorios");
 });
 
-document.getElementById("ButtonBlog").addEventListener("pointerdown", (event) => {
+document.getElementById("ButtonBlog").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -62,7 +62,7 @@ document.getElementById("ButtonBlog").addEventListener("pointerdown", (event) =>
     scrollAnim("Blog");
 });
 
-document.querySelector(".round-btn").addEventListener("pointerdown", (event) => {
+document.querySelector(".round-btn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     console.log("Clicou no contacto dentro do manifesto");
     event.preventDefault();
@@ -71,7 +71,7 @@ document.querySelector(".round-btn").addEventListener("pointerdown", (event) => 
     scrollAnim("Contacto");
 });
 
-document.querySelector(".values-contact-btn").addEventListener("pointerdown", (event) => {
+document.querySelector(".values-contact-btn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     console.log("Clicou no contacto dentro do manifesto");
     event.preventDefault();
@@ -80,7 +80,7 @@ document.querySelector(".values-contact-btn").addEventListener("pointerdown", (e
     scrollAnim("Contacto");
 });
 
-document.querySelector(".values-contact-btn-m").addEventListener("pointerdown", (event) => {
+document.querySelector(".values-contact-btn-m").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -88,7 +88,7 @@ document.querySelector(".values-contact-btn-m").addEventListener("pointerdown", 
     scrollAnim("Contacto");
 });
 
-document.querySelector(".team-contact-btn").addEventListener("pointerdown", (event) => {
+document.querySelector(".team-contact-btn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
