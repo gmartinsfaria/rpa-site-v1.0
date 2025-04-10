@@ -923,6 +923,19 @@ body {
         height: 2px !important;
     }
 
+    /* Animação quando ativo */
+    .menu-icon.active span:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .menu-icon.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active span:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+    }
+
     #SectionNoticias{
         padding-top: 50px;
     }
