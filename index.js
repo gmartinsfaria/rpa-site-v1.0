@@ -5,6 +5,8 @@ let esp4Shown = false;
 let esp5Shown = false;
 let esp6Shown = false;
 
+let dropOpen = false;
+
 gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
 const navbarHeight = document.querySelector('.navbar').offsetHeight;
@@ -129,28 +131,55 @@ let interact1 = lottie.loadAnimation({
 
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.querySelector(".menu-icon");
     const navbarToggler = document.querySelector(".navbar-toggler");
     const navColapse = document.querySelector(".navbar-collapse");
-    const navLinks = document.querySelectorAll('.nav-item');
 
-    navbarToggler.addEventListener("click", function() {
-        menuIcon.classList.toggle("active");
+    const bsCollapse = new bootstrap.Collapse(navColapse, {
+        toggle: false // Inicialmente não queremos que o menu se abra automaticamente
     });
 
+    // Controlar a alternância do menu ao clicar no ícone de hambúrguer
+    navbarToggler.addEventListener("click", function() {
+        // Alterna o ícone de hambúrguer
+        menuIcon.classList.toggle("active");
+
+        // Se o menu não estiver visível, abri-lo; caso contrário, fechá-lo
+        if (navColapse.classList.contains('show')) {
+            bsCollapse.hide(); // Fechar o menu
+        } else {
+            bsCollapse.show(); // Abrir o menu
+        }
+    });
+
+    // Fechar o menu quando um link for clicado
+    const navLinks = document.querySelectorAll('.nav-item');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             console.log("Clicou num dos links da nav collapsed!");
 
-            const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navColapse);
             bsCollapse.hide(); // Fechar o menu com transição
-
             menuIcon.classList.remove("active"); // Voltar ao hambúrguer
+            dropOpen = false;
         });
     });
 });
 
+
+document.getElementById("ham-btn").addEventListener("click", () => {
+    const dropDown = document.getElementById("drop-menu"); 
+    if (!dropOpen) {
+        dropDown.classList.remove("show");
+        dropOpen = true;
+    } else {
+        dropDown.classList.add("show");
+        dropOpen = false;
+    }
+      
+    console.log("CLICOU NO BOTÃO HAMBURGUER");
+})
 
 
 
