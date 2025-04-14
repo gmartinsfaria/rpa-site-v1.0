@@ -396,3 +396,4 @@ window.addEventListener('scroll', updateNavbarShadow);
 const collapseEl = document.getElementById('navbarsExample05');
 collapseEl.addEventListener('shown.bs.collapse', updateNavbarShadow);
 collapseEl.addEventListener('hidden.bs.collapse', updateNavbarShadow);
+
