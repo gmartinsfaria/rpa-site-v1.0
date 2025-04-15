@@ -927,6 +927,12 @@ html, body {
     #SectionNoticias{
         padding-top: 50px;
     }
+
+
+    .team-card-block{
+        height: 43.2vw !important;
+        width: 36vw !important;
+    }
 }
 
 
@@ -960,5 +966,10 @@ html, body {
 
     #SectionNoticias{
         padding-top: 50px;
+    }
+
+    .team-card-block{
+        height: 72vw !important;
+        width: 60vw !important;
     }
 }
