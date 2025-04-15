@@ -297,8 +297,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const arrowLeft = document.getElementById("arrow-left");
     const arrowRight = document.getElementById("arrow-right");
 
-    const scrollAmount = 800; // Ajusta conforme a largura dos cards
-    const scrollDuration = 0.8; // Duração da animação em segundos
+    const scrollAmount = 305; // Ajusta conforme a largura dos cards
+    const scrollDuration = 0.6; // Duração da animação em segundos
 
     arrowRight.addEventListener("click", () => {
         gsap.to(scrollContainer, {
