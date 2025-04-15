@@ -623,7 +623,7 @@ html, body {
     flex-wrap: nowrap; /* Impede a quebra de linha */
     scrollbar-width: none; /* Oculta no Firefox */
     -ms-overflow-style: none; /* Oculta no Edge/IE */
-    cursor: grab; /* Cursor de "mão" ao arrastar */
+    cursor: pointer; /* Cursor de "mão" ao arrastar */
     margin-left: 0 !important;
     padding-left: 0 !important;
     gap: 1vw;
