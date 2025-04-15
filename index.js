@@ -220,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ================================================ NEWS FIM ===============================================================
 
 
-//secção TEAM
+//================================================= secção TEAM ============================================================
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".team-scrolling-wrapper");
     let isDown = false;
@@ -290,6 +290,8 @@ document.querySelectorAll(".team-item").forEach(item => {
         });
     });
 });
+
+//================================================= TEAM FIM ============================================================
 
 
 //secção escritórios

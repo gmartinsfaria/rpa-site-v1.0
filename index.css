@@ -385,9 +385,13 @@ html, body {
 }
 
 .general-title{
-    font-size: clamp(2rem, 4vw, 5rem);
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
     font-weight: 200;
     text-align: left;
+}
+
+.text-body-emphasis{
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
 /* Estilização responsiva do texto */
@@ -488,11 +492,7 @@ html, body {
 }
 
 
-/* Remove as margens exteriores para ocupar toda a largura */
-#SectionEspecialidades .container {
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
-}
+
 
 /* Remove border-radius e outline azul ao clicar */
 .accordion-button {
@@ -544,7 +544,7 @@ html, body {
 /* Remove a seta padrão */
 .accordion-button::after {
     background-image: url("https://icons.getbootstrap.com/assets/icons/plus-lg.svg");
-    background-size: 1.5rem; /* Ajusta o tamanho */
+    background-size: clamp(1.5rem, 2.5vw, 2rem); /* Ajusta o tamanho */
     background-repeat: no-repeat;
     background-position: center;
     content: ""; /* Remove qualquer outro texto */
