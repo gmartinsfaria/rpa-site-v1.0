@@ -646,6 +646,27 @@ html, body {
     -ms-user-select: none; /* Para versões antigas do Edge/IE */
 }
 
+.carousel-arrows {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.arrow-btn {
+    background-color: #efefef;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.arrow-btn:hover {
+    background-color: #A6151F;
+    color: #EEEEEE;
+}
+
+
 
 
 .offices-title-container {
@@ -933,6 +954,12 @@ html, body {
         height: 43.2vw !important;
         width: 36vw !important;
     }
+
+    .arrow-btn {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
 }
 
 
@@ -971,5 +998,11 @@ html, body {
     .team-card-block{
         height: 72vw !important;
         width: 60vw !important;
+    }
+
+    .arrow-btn {
+        width: 1.7rem;
+        height: 1.7rem;
+        font-size: 0.8rem;
     }
 }

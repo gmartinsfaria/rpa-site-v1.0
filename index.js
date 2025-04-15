@@ -291,6 +291,34 @@ document.querySelectorAll(".team-item").forEach(item => {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainer = document.querySelector(".team-scrolling-wrapper");
+    const arrowLeft = document.getElementById("arrow-left");
+    const arrowRight = document.getElementById("arrow-right");
+
+    const scrollAmount = 800; // Ajusta conforme a largura dos cards
+    const scrollDuration = 0.8; // Duração da animação em segundos
+
+    arrowRight.addEventListener("click", () => {
+        gsap.to(scrollContainer, {
+            scrollLeft: scrollContainer.scrollLeft + scrollAmount,
+            duration: scrollDuration,
+            ease: "power2.out"
+        });
+    });
+
+    arrowLeft.addEventListener("click", () => {
+        gsap.to(scrollContainer, {
+            scrollLeft: scrollContainer.scrollLeft - scrollAmount,
+            duration: scrollDuration,
+            ease: "power2.out"
+        });
+    });
+});
+
+
+
 //================================================= TEAM FIM ============================================================
 
 
