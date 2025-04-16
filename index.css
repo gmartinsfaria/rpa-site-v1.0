@@ -267,7 +267,8 @@ html, body {
 }
 
 
-.news-scrolling-wrapper {
+.news-scrolling-wrapper,
+.scrolling-wrapper {
     display: flex;
     align-items: flex-end; /* Mantém todas as divs alinhadas pelo fundo */
     overflow-x: scroll;
@@ -276,17 +277,20 @@ html, body {
     cursor: grab;
 }
 
-.news-scrolling-wrapper::-webkit-scrollbar {
+.news-scrolling-wrapper::-webkit-scrollbar,
+.scrolling-wrapper::-webkit-scrollbar {
     display: none; /* Oculta no Chrome/Safari */
 }
 
 
-.news-scrolling-wrapper:active {
+.news-scrolling-wrapper:active,
+.scrolling-wrapper:active {
     cursor: grabbing; /* Cursor de "mão apertada" enquanto o elemento está sendo arrastado */
 }
 
 .news-scrolling-wrapper, 
-.news-scrolling-wrapper .value-item {
+.news-scrolling-wrapper .value-item,
+.scrolling-wrapper {
     user-select: none; /* Impede a seleção de texto */
     -webkit-user-select: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
     -moz-user-select: none; /* Para Firefox */
@@ -337,7 +341,7 @@ html, body {
     margin: 0;
     display: grid;
     grid-template-columns: [line1] auto [line2] 25% [line3] 25% [line4] 25%;
-    grid-template-rows: 25vw 25vw; /* Mantém as células quadradas */
+    grid-template-rows: 20vw 20vw; /* Mantém as células quadradas */
     background-color: #EFEFEF;
     font-family: 'EB Garamond', serif;
     font-size: 1.6rem;
@@ -364,6 +368,7 @@ html, body {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     display: flex;
+    justify-content: start;
     gap:10px;
     flex-direction: column; /* Mantém os elementos empilhados */
     align-items: flex-start; /* Alinha os itens à esquerda */
@@ -371,7 +376,6 @@ html, body {
     padding-top: 10;
     text-align: left;
     max-height: 100%;
-    overflow: hidden;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -906,55 +910,87 @@ html, body {
         text-align: right;
     }
 
+    /* Configuração padrão com grid */
+    .values-container {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: [line1] auto [line2] 25% [line3] 25% [line4] 25% !important;
+        grid-template-rows: 35vw 20vw !important; /* Mantém as células quadradas */
+    }
+
 }
 
 
 
-/* Media query para telas com largura até 834px */
 @media (max-width: 982px) {
-    .values-container-m{
+    .values-container-m {
         display: block;
         font-family: 'EB Garamond', serif;
+        padding: 0;
+        margin: 0;
+        background-color: #EFEFEF;
     }
 
     .values-container {
         display: none;
     }
 
-    .values-container-m {
-        padding: 0;
-        margin: 0;
-        background-color: #EFEFEF;
-    }
-    
-    .scrolling-wrapper{
-        overflow-x: auto;
-    }
-    
-    .card-block{
-        height: 15vw;
-        width: 40vw;
-        background-position: center;
-        background-size: cover;
-        transition: all 0.2s ease-in-out !important;
-    }
-
-    .values-intro{
+    .values-intro {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 5%;
     }
 
-    .values-txt{
+    .values-txt {
         text-align: justify;
     }
 
-    #SectionNoticias{
+    .card-block {
+        height: 15vw;
+        min-width: 40vw; /* ou 50vw, como preferires */
+        width: auto;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.2s ease-in-out !important;
+    }
+
+    .scrolling-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-left: 1.5rem;  /* Igual às margens do container */
+        padding-right: 1.5rem;
+        margin-left: 0;
+        margin-right: 0;
+
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+        box-sizing: border-box;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+
+    .scrolling-wrapper:active {
+        cursor: grabbing;
+    }
+
+    .scrolling-wrapper,
+    .scrolling-wrapper .value-item {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    #SectionNoticias {
         padding-top: 50px;
     }
 
-
-    .team-card-block{
+    .team-card-block {
         height: 43.2vw !important;
         width: 36vw !important;
     }
@@ -965,6 +1001,7 @@ html, body {
         font-size: 1rem;
     }
 }
+
 
 
 @media (max-width: 600px) {
