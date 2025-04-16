@@ -652,6 +652,10 @@ html, body {
     -ms-user-select: none; /* Para versões antigas do Edge/IE */
 }
 
+.invisible-txt {
+    color: #FFFFFF !important;
+}
+
 .carousel-arrows {
     display: flex;
     gap: 0.5rem;

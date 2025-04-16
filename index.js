@@ -267,6 +267,7 @@ document.querySelectorAll(".team-item").forEach(item => {
 
         // Atualiza o título da descrição
         document.getElementById("descriptionName").textContent = newName;
+        document.getElementById("descriptionName").classList.remove("invisible-txt");
         
         // Atualiza o texto da descrição
         document.getElementById("descriptionFunction").textContent = newFunction;
@@ -283,7 +284,8 @@ document.querySelectorAll(".team-item").forEach(item => {
 
 
             // Atualiza o texto da descrição
-            document.getElementById("descriptionName").textContent = "";
+            document.getElementById("descriptionName").classList.add("invisible-txt");
+            document.getElementById("descriptionName").textContent = "Nome Colaborador";
 
             // Atualiza o título da descrição
             document.getElementById("descriptionFunction").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";       
