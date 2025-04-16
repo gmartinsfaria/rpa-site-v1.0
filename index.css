@@ -948,7 +948,7 @@ html, body {
 
     .card-block {
         height: 15vw;
-        min-width: 40vw; /* ou 50vw, como preferires */
+        min-width: 30vw; /* ou 50vw, como preferires */
         width: auto;
         background-position: center;
         background-size: cover;
