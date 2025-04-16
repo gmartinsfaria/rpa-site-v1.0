@@ -591,7 +591,9 @@ html, body {
 }
 
 
-
+.team-title{
+    margin-bottom: -2.2rem;
+}
 
 .team-item img {
     width: 100%; 
@@ -665,6 +667,8 @@ html, body {
     background-color: #A6151F;
     color: #EEEEEE;
 }
+
+
 
 
 
