@@ -364,67 +364,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //================================================== secção escritórios =================================================
-document.querySelectorAll(".office-item").forEach(item => {
-    item.addEventListener("mouseenter", (e) => {
-        console.log("O utilizador está a ver um escritório específico");
-
-        const newImage = e.target.getAttribute("data-map");
-        const targetImage = document.getElementById("azoreanMap");
 
 
-        targetImage.src = `./assets/imgs/offices/${newImage}-office.svg`;
-    });
-
-    item.addEventListener("mouseleave", (e) => {
-        console.log("O utilizador SAIU");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg"
-    });
-});
-
-
-document.querySelectorAll(".office-1").forEach(item => {
-    item.addEventListener("mouseenter", (e) => {
-        document.getElementById("sao-miguel-container").classList.add("active");
-        document.getElementById("sao-miguel-container").classList.add("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/sao-miguel-office.svg";
-    });
-
-    item.addEventListener("mouseleave", (e) => {
-        document.getElementById("sao-miguel-container").classList.remove("active");
-        document.getElementById("sao-miguel-container").classList.remove("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
-    });
-});
-
-
-
-document.querySelectorAll(".office-2").forEach(item => {
-    item.addEventListener("mouseenter", (e) => {
-        document.getElementById("pico-container").classList.add("active");
-        document.getElementById("pico-container").classList.add("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/pico-office.svg";
-    });
-
-    item.addEventListener("mouseleave", (e) => {
-        document.getElementById("pico-container").classList.remove("active");
-        document.getElementById("pico-container").classList.remove("active-color");
-        document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
-    });
-});
-
-
-
-document.getElementById("graciosa-island").addEventListener("mouseenter", () => {
-    document.getElementById("graciosa-container").classList.add("active");
-    document.getElementById("graciosa-container").classList.add("active-color");
-    document.getElementById("azoreanMap").src = "./assets/imgs/offices/graciosa-office.svg";
-});
-
-document.getElementById("graciosa-island").addEventListener("mouseleave", () => {
-    document.getElementById("graciosa-container").classList.remove("active");
-    document.getElementById("graciosa-container").classList.remove("active-color");
-    document.getElementById("azoreanMap").src = "./assets/imgs/offices/general-map.svg";
-});
+//================================================== secção escritórios FIM =================================================
 
 
 document.querySelector("form").addEventListener("submit", function (e) {
