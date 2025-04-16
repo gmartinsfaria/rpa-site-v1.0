@@ -322,7 +322,48 @@ document.addEventListener("DOMContentLoaded", function () {
 //================================================= TEAM FIM ============================================================
 
 
-//secção escritórios
+
+// ================================================ VALUES ==============================================================
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".scrolling-wrapper");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+    });
+
+    slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 2; // Ajusta a velocidade do arrasto
+        slider.scrollLeft = scrollLeft - walk;
+    });
+});
+
+
+// =============================================== VALUES FIM ============================================================
+
+
+
+
+//================================================== secção escritórios =================================================
 document.querySelectorAll(".office-item").forEach(item => {
     item.addEventListener("mouseenter", (e) => {
         console.log("O utilizador está a ver um escritório específico");
