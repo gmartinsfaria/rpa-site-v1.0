@@ -114,9 +114,11 @@ html, body {
 }
 
 
-.nav-link:hover {
-    text-decoration: underline;
+.nav-link:hover,
+.footer-link:hover {
+    text-decoration: underline !important;
     color: #A6151F !important;
+    cursor: pointer;
 }
 
 
@@ -131,19 +133,30 @@ html, body {
     margin-left: 30px;
 }
 
+.round-btn-footer {
+    font-family: 'Instrument Sans' !important;
+    padding: 10px 25px !important; /* Ajuste o padding conforme necessário */
+    border-radius: 50px; 
+    background-color: #efefef;
+    font-style: none;
+}
 
-.round-btn:hover {
+
+.round-btn:hover,
+.round-btn-footer:hover {
     background-color: #A6151F;
     color: #EEEEEE;
 }
 
-#ButtonContacto {
+#ButtonContacto,
+#ButtonSubscricao {
     outline: none;
     box-shadow: none;
     border: none;
 }
   
-#ButtonContacto:focus {
+#ButtonContacto:focus,
+#ButtonSubscricao:focus {
     outline: none;
     box-shadow: none;
     border: none;
@@ -766,10 +779,6 @@ html, body {
 
 .big-icon {
     font-size: 24px;
-}
-
-.footer-links {
-    color: 
 }
 
 

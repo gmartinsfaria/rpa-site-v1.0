@@ -33,6 +33,15 @@ document.getElementById("ButtonEspecialidades").addEventListener("click", (event
     scrollAnim("Especialidades");
 });
 
+document.getElementById("FooterBtnEspecialidades").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Especialidades");
+});
+
+
 document.getElementById("ButtonEquipa").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
@@ -41,7 +50,15 @@ document.getElementById("ButtonEquipa").addEventListener("click", (event) => {
     scrollAnim("Equipa");
 });
 
-// Adicionar o evento de clique à navbar
+document.getElementById("FooterBtnEquipa").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Equipa");
+});
+
+
 document.getElementById("ButtonValores").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
@@ -49,6 +66,15 @@ document.getElementById("ButtonValores").addEventListener("click", (event) => {
     // Chamar a animação de rolagem
     scrollAnim("Valores");
 });
+
+document.getElementById("FooterBtnValores").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Valores");
+});
+
 
 document.getElementById("ButtonEscritorios").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
@@ -58,6 +84,15 @@ document.getElementById("ButtonEscritorios").addEventListener("click", (event) =
     scrollAnim("Escritorios");
 });
 
+document.getElementById("FooterBtnEscritorios").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Escritorios");
+});
+
+
 document.getElementById("ButtonBlog").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
@@ -65,6 +100,15 @@ document.getElementById("ButtonBlog").addEventListener("click", (event) => {
     // Chamar a animação de rolagem
     scrollAnim("Blog");
 });
+
+document.getElementById("FooterBtnBlog").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Blog");
+});
+
 
 document.querySelector(".round-btn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
@@ -74,6 +118,15 @@ document.querySelector(".round-btn").addEventListener("click", (event) => {
     // Chamar a animação de rolagem
     scrollAnim("Contacto");
 });
+
+document.getElementById("FooterBtnContacto").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Contacto");
+});
+
 
 document.querySelector(".values-contact-btn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
