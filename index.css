@@ -483,9 +483,8 @@ html, body {
     display: none;
 }
 
-.special-btn,
-.values-contact-btn,
-.values-contact-btn-m {
+.contact-btn,
+.contact-btn-m {
     font-size: clamp(1rem, 2vw, 1.7rem);
     color: #A6151F;
     background-color: transparent;
@@ -496,8 +495,8 @@ html, body {
     border: none;
 }
 
-.values-contact-btn:hover,
-.values-contact-btn-m:hover {
+.contact-btn:hover,
+.contact-btn-m:hover {
     text-decoration: underline;
 }
 
@@ -709,7 +708,7 @@ html, body {
 }
 
 .arrow-btn {
-    background-color: #efefef;
+    background-color: #FFFFFF;
     border: none;
     border-radius: 50%;
     width: 2.5rem;
@@ -718,13 +717,10 @@ html, body {
     cursor: pointer;
 }
 
-.arrow-btn:hover {
-    background-color: #A6151F;
-    color: #EEEEEE;
+.slide-arrow {
+    height: 30px;
+    width: 30px;
 }
-
-
-
 
 
 
@@ -777,10 +773,9 @@ html, body {
 
 /* ==================================================== CONTACTO FIM ==========================================================*/
 
-.big-icon {
+.social-network-icon {
     font-size: 24px;
 }
-
 
 
 @media (max-width: 1199px) {
@@ -821,6 +816,11 @@ html, body {
         display: grid;
         grid-template-columns: [line1] auto [line2] 25% [line3] 25% [line4] 25% !important;
         grid-template-rows: 35vw 20vw !important; /* Mantém as células quadradas */
+    }
+
+    .slide-arrow {
+        height: 24px;
+        width: 24px;
     }
 
 }
@@ -904,6 +904,11 @@ html, body {
         height: 2rem;
         font-size: 1rem;
     }
+
+    .slide-arrow {
+        height: 20px !important;
+        width: 20px !important;
+    }
 }
 
 
@@ -950,4 +955,10 @@ html, body {
         height: 1.7rem;
         font-size: 0.8rem;
     }
+
+    .slide-arrow {
+        height: 20px !important;
+        width: 20px !important;
+    }
+    
 }

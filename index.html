@@ -172,7 +172,7 @@
                 </div>
             </div>
 
-            <button class="special-btn team-contact-btn">Veja o que temos a partilhar consigo <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+            <button class="contact-btn">Veja o que temos a partilhar consigo <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
         </div>
     
     </section>
@@ -650,8 +650,8 @@
         </div>
 
         <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
-            <button type="button" id="arrow-left" class="arrow-btn me-2"><i class="bi bi-caret-left-fill"></i></button>
-            <button type="button" id="arrow-right" class="arrow-btn"><i class="bi bi-caret-right-fill"></i></button>
+            <button type="button" id="arrow-left" class="slide-arrow arrow-btn me-2"><img src="./assets/icons/slide-arrow-left-black.svg" alt="seta contacto"></button>
+            <button type="button" id="arrow-right" class="slide-arrow arrow-btn ms-2 me-2"><img class="batatas" src="./assets/icons/slide-arrow-right-black.svg" alt="seta contacto"></button>
         </div>
     <section>
 
@@ -736,7 +736,7 @@
         <div class="py-1 px-3">
             <h2 id="descriptionName" class="text-body-emphasis invisible-txt">Nome Colaborador</h2>
             <p id="descriptionFunction" class="col-lg-8 lead general-txt px-0">Especialistas dedicados a defender os seus direitos com excelência.</p>
-            <button class="special-btn team-contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+            <button id="equipaContactBtn" class="contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
         </div>
         
         
@@ -762,7 +762,7 @@
                     transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
                     e na confiança dos nossos clientes.
                 </p>
-                <button class="special-btn values-contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+                <button id="valuesContactBtn" class="contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
             </div>
             <div class="value-item seriousness">Seriedade</div>
             <div class="value-item trust">Confiança</div>
@@ -781,7 +781,7 @@
                     transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
                     e na confiança dos nossos clientes.
                 </p>
-                <button class="special-btn values-contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+                <button id="valuesContactBtnMobile" class="contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
             </div>
             <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
                     <div class="value-item col-5 card-block seriousness">Seriedade</div>
@@ -801,12 +801,10 @@
 
     <section class="pt-5" id="SectionEscritorios">
         <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
-            <h1 class="general-title">Os nossos escritórios</h1> 
+            <h1 class="general-title">Os nossos escritórios</h1>
         </div>
-            
-            
 
-        
+        <p>Adicionar aqui coisas lindas de Sever do Vouga.</p>
     </section>
 
     <!-- ========================================== ESCRITORIOS FIM =========================================== -->
@@ -814,9 +812,13 @@
 
     <!-- ========================================== CONTACTO =========================================== -->
 
-    <section id="SectionContacto" class="container py-5">
+    <section id="SectionContacto" class="py-5">
+        
+        <div id="SectionValores" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
+            <h5 class="office-item-title display-6">Interessado ou ainda ficou com dúvidas?</h5>
+        </div>
 
-        <form action="https://formspree.io/f/mdkewzrk" method="POST">
+        <form class="container" action="https://formspree.io/f/mdkewzrk" method="POST">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
         
@@ -876,8 +878,8 @@
                     <p class="general-txt fat">Subscreva à nossa Newsletter</p>
                     <p class="general-font mt-3">Atualizamos regularmente a nossa Newsletter no LinkedIn para que fique sempre a par das nossas novidades.</p>
                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                      <!--https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles  -->
-                        <a href="https://www.linkedin.com/newsletters/bosch-insights-7178058110542962688"><button id="ButtonSubscricao" type="button" class="btn round-btn-footer">Subscrever</button></a>
+                      <!--https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles ALTERAR PARA A NEWSLETTER DO LINKEDIN DA RPA -->
+                        <a href="https://www.linkedin.com/newsletters/bosch-insights-7178058110542962688" target="_blank"><button id="ButtonSubscricao" type="button" class="btn round-btn-footer">Subscrever</button></a>
                     </div>
                   </form>
                 </div>
@@ -886,9 +888,9 @@
               <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                 <p class="general-txt">© <span id="currentYear"></span> Ricardo Pacheco & Associados</p>
                 <ul class="list-unstyled d-flex">
-                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/ricardopachecoadvogados/" aria-label="Instagram"><i class="bi bi-instagram big-icon"></i></a></li>
-                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/rpassociados/?locale=pt_PT" aria-label="Facebook"><i class="bi bi-facebook big-icon"></i></a></li>
-                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/company/rp-associadoss/" aria-label="LinkedIn"><i class="bi bi-linkedin big-icon"></i></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/ricardopachecoadvogados/"  target="_blank" aria-label="Instagram"><i class="bi bi-instagram social-network-icon"></i></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/rpassociados/?locale=pt_PT" target="_blank" aria-label="Facebook"><i class="bi bi-facebook social-network-icon"></i></a></li>
+                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/company/rp-associadoss/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin social-network-icon"></i></a></li>
                 </ul>
               </div>
             </footer>

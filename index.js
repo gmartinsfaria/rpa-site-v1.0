@@ -128,16 +128,8 @@ document.getElementById("FooterBtnContacto").addEventListener("click", (event) =
 });
 
 
-document.querySelector(".values-contact-btn").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    console.log("Clicou no contacto dentro do manifesto");
-    event.preventDefault();
 
-    // Chamar a animação de rolagem
-    scrollAnim("Contacto");
-});
-
-document.querySelector(".values-contact-btn-m").addEventListener("click", (event) => {
+document.getElementById("valuesContactBtn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -145,7 +137,15 @@ document.querySelector(".values-contact-btn-m").addEventListener("click", (event
     scrollAnim("Contacto");
 });
 
-document.querySelector(".team-contact-btn").addEventListener("click", (event) => {
+document.getElementById("valuesContactBtnMobile").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Contacto");
+});
+
+document.getElementById("equipaContactBtn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
 
@@ -372,6 +372,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+const arrowRight = document.querySelector('#arrow-right img');
+
+
+arrowRight.addEventListener('mouseenter', () => {
+  arrowRight.src = './assets/icons/slide-arrow-right-red.svg';
+});
+
+arrowRight.addEventListener('mouseleave', () => {
+  arrowRight.src = './assets/icons/slide-arrow-right-black.svg';
+});
+
+const arrowLeft = document.querySelector('#arrow-left img');
+
+arrowLeft.addEventListener('mouseenter', () => {
+    arrowLeft.src = './assets/icons/slide-arrow-left-red.svg';
+  });
+  
+  arrowLeft.addEventListener('mouseleave', () => {
+    arrowLeft.src = './assets/icons/slide-arrow-left-black.svg';
+  });
 
 
 //================================================= TEAM FIM ============================================================
