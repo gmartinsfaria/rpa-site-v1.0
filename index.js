@@ -407,8 +407,19 @@ function updateNavbarShadow() {
 
 window.addEventListener('scroll', updateNavbarShadow);
 
-// Atualizar quando o menu é aberto ou fechado
-const collapseEl = document.getElementById('navbarsExample05');
-collapseEl.addEventListener('shown.bs.collapse', updateNavbarShadow);
-collapseEl.addEventListener('hidden.bs.collapse', updateNavbarShadow);
 
+
+
+
+// ************************************************************** FOOTER *******************************************************
+
+document.addEventListener("DOMContentLoaded", function () {
+    const d = new Date();
+    let year = d.getFullYear();
+    console.log("Estamos no ano " + year);
+    document.getElementById("currentYear").innerHTML = year;
+});
+
+
+
+// ************************************************************** FOOTER FIM *******************************************************
