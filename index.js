@@ -7,7 +7,7 @@ let esp6Shown = false;
 
 let dropOpen = false;
 
-gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
+gsap.registerPlugin(ScrollToPlugin); // Regista o plugin!
 
 const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
@@ -496,6 +496,11 @@ function updateNavbarShadow() {
 }
 
 window.addEventListener('scroll', updateNavbarShadow);
+
+// Atualizar quando o menu é aberto ou fechado
+const collapseEl = document.getElementById('navbarsExample05');
+collapseEl.addEventListener('shown.bs.collapse', updateNavbarShadow);
+collapseEl.addEventListener('hidden.bs.collapse', updateNavbarShadow);
 
 
 
