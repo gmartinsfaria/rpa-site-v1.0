@@ -349,8 +349,8 @@ document.querySelectorAll(".team-item").forEach(item => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollContainer = document.querySelector(".team-scrolling-wrapper");
-    const arrowLeft = document.getElementById("arrow-left");
-    const arrowRight = document.getElementById("arrow-right");
+    const arrowLeft = document.getElementById("arrow-left-team");
+    const arrowRight = document.getElementById("arrow-right-team");
 
     function getCardWidth() {
         const card = scrollContainer.querySelector(".team-card-block");
