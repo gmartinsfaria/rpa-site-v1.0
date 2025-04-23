@@ -715,6 +715,9 @@ html, body {
     height: 2.5rem;
     font-size: 1.2rem;
     cursor: pointer;
+    background: red !important; /* só para teste visual */
+    z-index: 99999 !important;
+    position: relative; /* garante que o z-index tenha efeito */
 }
 
 .slide-arrow {
