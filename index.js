@@ -484,6 +484,21 @@ document.querySelector("form").addEventListener("submit", function (e) {
 
 
 
+
+
+// ************************************************************** FOOTER *******************************************************
+
+document.addEventListener("DOMContentLoaded", function () {
+    const d = new Date();
+    let year = d.getFullYear();
+    console.log("Estamos no ano " + year);
+    document.getElementById("currentYear").innerHTML = year;
+});
+
+
+
+// ************************************************************** FOOTER FIM *******************************************************
+
 function updateNavbarShadow() {
     const navbar = document.querySelector('.navbar');
     const collapse = document.querySelector('.navbar-collapse');
@@ -501,20 +516,3 @@ window.addEventListener('scroll', updateNavbarShadow);
 const collapseEl = document.getElementById('navbarsExample05');
 collapseEl.addEventListener('shown.bs.collapse', updateNavbarShadow);
 collapseEl.addEventListener('hidden.bs.collapse', updateNavbarShadow);
-
-
-
-
-
-// ************************************************************** FOOTER *******************************************************
-
-document.addEventListener("DOMContentLoaded", function () {
-    const d = new Date();
-    let year = d.getFullYear();
-    console.log("Estamos no ano " + year);
-    document.getElementById("currentYear").innerHTML = year;
-});
-
-
-
-// ************************************************************** FOOTER FIM *******************************************************
