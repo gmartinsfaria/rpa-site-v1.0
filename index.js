@@ -349,8 +349,8 @@ document.querySelectorAll(".team-item").forEach(item => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollContainer = document.querySelector(".team-scrolling-wrapper");
-    const arrowLeft = document.getElementById("arrow-left-team");
-    const arrowRight = document.getElementById("arrow-right-team");
+    const arrowLeft = document.getElementById("arrow-left");
+    const arrowRight = document.getElementById("arrow-right");
 
     function getCardWidth() {
         const card = scrollContainer.querySelector(".team-card-block");
@@ -389,26 +389,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const arrowRight = document.querySelector('#arrow-right img');
+const arrowRights = document.querySelectorAll('.arrow-right img');
 
+arrowRights.forEach(arrow => {
+  arrow.addEventListener('mouseenter', () => {
+    arrow.src = './assets/icons/slide-arrow-right-red.svg';
+  });
 
-arrowRight.addEventListener('mouseenter', () => {
-  arrowRight.src = './assets/icons/slide-arrow-right-red.svg';
+  arrow.addEventListener('mouseleave', () => {
+    arrow.src = './assets/icons/slide-arrow-right-black.svg';
+  });
 });
 
-arrowRight.addEventListener('mouseleave', () => {
-  arrowRight.src = './assets/icons/slide-arrow-right-black.svg';
+const arrowLefts = document.querySelectorAll('.arrow-left img');
+
+arrowLefts.forEach(arrow => {
+  arrow.addEventListener('mouseenter', () => {
+    arrow.src = './assets/icons/slide-arrow-left-red.svg';
+  });
+
+  arrow.addEventListener('mouseleave', () => {
+    arrow.src = './assets/icons/slide-arrow-left-black.svg';
+  });
 });
-
-const arrowLeft = document.querySelector('#arrow-left img');
-
-arrowLeft.addEventListener('mouseenter', () => {
-    arrowLeft.src = './assets/icons/slide-arrow-left-red.svg';
-  });
-  
-  arrowLeft.addEventListener('mouseleave', () => {
-    arrowLeft.src = './assets/icons/slide-arrow-left-black.svg';
-  });
 
 
 //================================================= TEAM FIM ============================================================

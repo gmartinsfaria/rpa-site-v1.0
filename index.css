@@ -17,13 +17,12 @@ html, body {
  
  /* Tornar a navbar transparente */
 .navbar {
-    z-index: 10000 !important;
     background-color: #FFFFFF !important;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 100000 !important;
 }
 
 
@@ -715,14 +714,15 @@ html, body {
     height: 2.5rem;
     font-size: 1.2rem;
     cursor: pointer;
-    background: red !important; /* só para teste visual */
     z-index: 99999 !important;
     position: relative; /* garante que o z-index tenha efeito */
 }
 
-.slide-arrow {
-    height: 30px;
-    width: 30px;
+.slide-arrow,
+.arrow-right, 
+.arrow-left {
+    height: 30px !important;
+    width: 30px !important;
 }
 
 .footer-title {
@@ -824,7 +824,9 @@ html, body {
         grid-template-rows: 35vw 20vw !important; /* Mantém as células quadradas */
     }
 
-    .slide-arrow {
+    .slide-arrow,
+    .arrow-right, 
+    .arrow-left {
         height: 24px;
         width: 24px;
     }
@@ -911,7 +913,9 @@ html, body {
         font-size: 1rem;
     }
 
-    .slide-arrow {
+    .slide-arrow,
+    .arrow-right, 
+    .arrow-left {
         height: 20px !important;
         width: 20px !important;
     }
@@ -962,7 +966,9 @@ html, body {
         font-size: 0.8rem;
     }
 
-    .slide-arrow {
+    .slide-arrow,
+    .arrow-right, 
+    .arrow-left {
         height: 20px !important;
         width: 20px !important;
     }
