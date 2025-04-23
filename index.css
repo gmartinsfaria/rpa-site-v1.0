@@ -234,49 +234,36 @@ html, body {
 
 .news-item {
     display: flex;
-    align-items: flex-end; /* Garante que o conteúdo dentro da div fique alinhado ao fundo */
-    justify-content: end;
+    flex-direction: column;
+    align-items: flex-start; /* Garante que o conteúdo dentro da div fique alinhado ao fundo */
+    justify-content: flex-end;
     overflow: hidden;
     position: relative;
-    height: 22vw; /* Altura base */
-    transition: height 0.2s ease-in-out;
+    height: 30vw; /* Altura base */
+    width: 45vw;
     padding: 0;
+    transition: transform 0.4s ease;
 }
-
-.news-item:hover {
-    height: 30vw; /* Garante que a expansão acontece para cima */
-    width: 50vw; /* Mantém a largura dinâmica no hover */
-}
-
 
 .news-item img {
     width: 100%; 
     height: 100%;
-    object-fit: cover; /* Mantém a imagem inteira dentro da div, sem cortes */
-    object-position: center; /* Centraliza a imagem na div */
-    user-drag: none; /* Impede o arrasto da imagem (Safari) */
-    -webkit-user-drag: none; /* Impede o arrasto da imagem (Chrome, Edge) */
-    pointer-events: none; /* Bloqueia interações do mouse */
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease; /* Suaviza a transformação */
+    user-drag: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+
+.news-item:hover img {
+    transform: scale(1.07); /* Aumenta ligeiramente a imagem ao passar o rato */
+    filter: grayscale(0%);
 }
 
 
-.news-card-block {
-    height: 22vw;
-    width: 35vw;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Suavização aplicada */
-    margin-left: 1vw;
-}
 
-.news-card-block:hover {
-    height: 30vw;
-    width: 50vw;
-    background-position: center;
-    background-size: cover;
-    /*transition: all 0.2s ease-in-out !important; */
-    margin-left: 1vw;
-}
 
 
 .news-scrolling-wrapper,
@@ -286,7 +273,9 @@ html, body {
     overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    cursor: grab;
+    cursor: pointer;
+    gap: 1vw;
+    margin-left: 1vw;
 }
 
 .news-scrolling-wrapper::-webkit-scrollbar,

@@ -270,6 +270,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollContainer = document.querySelector(".news-scrolling-wrapper");
+    const arrowLeft = document.getElementById("arrow-left-news");
+    const arrowRight = document.getElementById("arrow-right-news");
+
+    function getCardWidth() {
+        const card = scrollContainer.querySelector(".team-card-block");
+        const cardWidth = card ? card.offsetWidth : 300;
+        const gapInPixels = window.innerWidth * 0.01; // 1vw
+        return cardWidth + gapInPixels;
+    }
+
+    function getScrollAmount() {
+        const cardWidthWithGap = getCardWidth();
+        const isMobile = window.innerWidth <= 600;
+        const cardsToScroll = isMobile ? 1 : 2;
+        return cardWidthWithGap * cardsToScroll;
+    }
+
+    const scrollDuration = 0.6;
+
+    arrowRight.addEventListener("click", () => {
+        const scrollAmount = getScrollAmount();
+        gsap.to(scrollContainer, {
+            scrollLeft: scrollContainer.scrollLeft + scrollAmount,
+            duration: scrollDuration,
+            ease: "power2.out"
+        });
+    });
+
+    arrowLeft.addEventListener("click", () => {
+        const scrollAmount = getScrollAmount();
+        gsap.to(scrollContainer, {
+            scrollLeft: scrollContainer.scrollLeft - scrollAmount,
+            duration: scrollDuration,
+            ease: "power2.out"
+        });
+    });
+});
+
 // ================================================ NEWS FIM ===============================================================
 
 
