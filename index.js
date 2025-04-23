@@ -352,10 +352,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const arrowLeft = document.getElementById("arrow-left");
     const arrowRight = document.getElementById("arrow-right");
 
-    const scrollAmount = 305; // Ajusta conforme a largura dos cards
-    const scrollDuration = 0.6; // Duração da animação em segundos
+    function getCardWidth() {
+        const card = scrollContainer.querySelector(".team-card-block");
+        const cardWidth = card ? card.offsetWidth : 300;
+        const gapInPixels = window.innerWidth * 0.01; // 1vw
+        return cardWidth + gapInPixels;
+    }
+
+    function getScrollAmount() {
+        const cardWidthWithGap = getCardWidth();
+        const isMobile = window.innerWidth <= 600;
+        const cardsToScroll = isMobile ? 1 : 2;
+        return cardWidthWithGap * cardsToScroll;
+    }
+
+    const scrollDuration = 0.6;
 
     arrowRight.addEventListener("click", () => {
+        const scrollAmount = getScrollAmount();
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft + scrollAmount,
             duration: scrollDuration,
@@ -364,6 +378,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     arrowLeft.addEventListener("click", () => {
+        const scrollAmount = getScrollAmount();
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft - scrollAmount,
             duration: scrollDuration,
@@ -371,6 +386,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
 
 const arrowRight = document.querySelector('#arrow-right img');
 
