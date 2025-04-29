@@ -239,60 +239,28 @@ document.getElementById("ham-btn").addEventListener("click", () => {
 // ================================================ NEWS ===============================================================
 
 document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector(".news-scrolling-wrapper");
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    slider.addEventListener("mousedown", (e) => {
-        isDown = true;
-        slider.classList.add("active");
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
-
-    slider.addEventListener("mouseleave", () => {
-        isDown = false;
-        slider.classList.remove("active");
-    });
-
-    slider.addEventListener("mouseup", () => {
-        isDown = false;
-        slider.classList.remove("active");
-    });
-
-    slider.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 2; // Ajusta a velocidade do arrasto
-        slider.scrollLeft = scrollLeft - walk;
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     const scrollContainer = document.querySelector(".news-scrolling-wrapper");
     const arrowLeft = document.getElementById("arrow-left-news");
     const arrowRight = document.getElementById("arrow-right-news");
 
-    function getCardWidth() {
-        const card = scrollContainer.querySelector(".team-card-block");
-        const cardWidth = card ? card.offsetWidth : 300;
-        const gapInPixels = window.innerWidth * 0.01; // 1vw
-        return cardWidth + gapInPixels;
-    }
+    // Calcula a largura real de um item + o gap
+    function getSingleCardWidthWithGap() {
+        const card = scrollContainer.querySelector(".news-item");
+        if (!card) return 0;
 
-    function getScrollAmount() {
-        const cardWidthWithGap = getCardWidth();
-        const isMobile = window.innerWidth <= 600;
-        const cardsToScroll = isMobile ? 1 : 2;
-        return cardWidthWithGap * cardsToScroll;
+        const cardStyle = window.getComputedStyle(card);
+        const containerStyle = window.getComputedStyle(scrollContainer);
+
+        const cardWidth = card.offsetWidth;
+        const gap = parseFloat(containerStyle.columnGap || containerStyle.gap || 0);
+
+        return cardWidth + gap;
     }
 
     const scrollDuration = 0.6;
 
     arrowRight.addEventListener("click", () => {
-        const scrollAmount = getScrollAmount();
+        const scrollAmount = getSingleCardWidthWithGap();
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft + scrollAmount,
             duration: scrollDuration,
@@ -301,14 +269,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     arrowLeft.addEventListener("click", () => {
-        const scrollAmount = getScrollAmount();
+        const scrollAmount = getSingleCardWidthWithGap();
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft - scrollAmount,
             duration: scrollDuration,
             ease: "power2.out"
         });
     });
+
+    // Scroll por arrasto
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    scrollContainer.addEventListener("mousedown", (e) => {
+        isDown = true;
+        scrollContainer.classList.add("active");
+        startX = e.pageX - scrollContainer.offsetLeft;
+        scrollLeft = scrollContainer.scrollLeft;
+    });
+
+    scrollContainer.addEventListener("mouseleave", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
+    });
+
+    scrollContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
+    });
+
+    scrollContainer.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollContainer.offsetLeft;
+        const walk = (x - startX) * 2;
+        scrollContainer.scrollLeft = scrollLeft - walk;
+    });
 });
+
+
 
 // ================================================ NEWS FIM ===============================================================
 

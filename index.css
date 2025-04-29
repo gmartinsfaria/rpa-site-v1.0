@@ -219,117 +219,143 @@ html, body {
 
 /* ==================================================== NEWS ====================================================*/
 
-#SectionNoticias{
+/* =========================== NEWS =========================== */
+
+#SectionNoticias {
     padding-top: 80px;
+    background-color: #fff !important;
 }
 
 .news-container {
-    margin-top: 0 !important;
-    /*padding-top: 96px !important;*/
-    z-index: 1000 !important;
-    position: relative; /* ADICIONADO para que o z-index tenha efeito */
-    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1000;
 }
 
+.news-scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.news-scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
 
 .news-item {
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Garante que o conteúdo dentro da div fique alinhado ao fundo */
-    justify-content: flex-end;
-    overflow: hidden;
-    position: relative;
-    height: 30vw; /* Altura base */
-    width: 45vw;
+    align-items: flex-start;
     padding: 0;
     transition: transform 0.4s ease;
+
+    user-select: none;
+    width: 90%;
+    max-width: 700px;
+}
+
+.news-img-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.news-img-wrapper:hover {
+    cursor: pointer;
 }
 
 .news-item img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: transform 0.4s ease; /* Suaviza a transformação */
+    transition: transform 0.4s ease;
+    filter: grayscale(100%);
+    pointer-events: none;
     user-drag: none;
     -webkit-user-drag: none;
-    pointer-events: none;
-    filter: grayscale(100%);
+    user-select: none;
 }
 
-.news-item:hover img {
-    transform: scale(1.07); /* Aumenta ligeiramente a imagem ao passar o rato */
-    filter: grayscale(0%);
+.news-item a {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
-
-
-
-
-.news-scrolling-wrapper,
-.scrolling-wrapper {
-    display: flex;
-    align-items: flex-end; /* Mantém todas as divs alinhadas pelo fundo */
-    overflow-x: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    cursor: pointer;
-    gap: 1vw;
-    margin-left: 1vw;
-}
-
-.news-scrolling-wrapper::-webkit-scrollbar,
-.scrolling-wrapper::-webkit-scrollbar {
-    display: none; /* Oculta no Chrome/Safari */
-}
-
-
-.news-scrolling-wrapper:active,
-.scrolling-wrapper:active {
-    cursor: grabbing; /* Cursor de "mão apertada" enquanto o elemento está sendo arrastado */
-}
-
-.news-scrolling-wrapper, 
-.news-scrolling-wrapper .value-item,
-.scrolling-wrapper {
-    user-select: none; /* Impede a seleção de texto */
-    -webkit-user-select: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
-    -moz-user-select: none; /* Para Firefox */
-    -ms-user-select: none; /* Para versões antigas do Edge/IE */
-}
-
-
-.news-details {
-    display: none;
-    width: 100%;
-    height: auto;
-    background-color: #A6151F;
-    color: #FFFFFF;
-    position: absolute; /* Fixa a posição dentro da .news-item */
-    bottom: 0; /* Faz com que fique alinhado ao fundo */
-    left: 0;
-    z-index: 10; /* Garante que fica acima da imagem */
-    opacity: 0.8;
-}
-
-
-/* Garante que aparece corretamente no hover */
-.news-item:hover .news-details {
-    display: block;
-}
-
-
-.news-details a:hover {
-    cursor: pointer;
-    text-decoration: underline !important;
-    color: #FFFFFF;
+/* Impede seleção de texto nos títulos também */
+.news-item h2,
+.news-item h5 {
+    user-select: none;
 }
 
 .news-detail-link {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
 }
 
+.news-detail-link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.news-item:hover img {
+    transform: scale(1.07);
+    filter: grayscale(0%);
+}
+
+.news-item h2,
+.news-item h5 {
+    margin: 0;
+    user-select: none;
+}
+
+.carousel-arrows {
+    display: flex;
+    align-items: center;
+}
+
+/* ======================== MEDIA QUERIES ======================== */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .news-item {
+        width: 75%;
+    }
+}
+
+/* Laptops e desktops médios */
+@media (min-width: 1024px) {
+    .news-item {
+        width: 60%;
+    }
+}
+
+/* Desktops grandes */
+@media (min-width: 1400px) {
+    .news-item {
+        width: 50%;
+    }
+}
+
+/* Monitores ultra-wide */
+@media (min-width: 1800px) {
+    .news-item {
+        width: 45%;
+    }
+}
 
 
 /* ==================================================== NEWS ====================================================*/
