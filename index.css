@@ -56,6 +56,8 @@ html, body {
 }
 
 
+
+
 /* Ícone do botão de toggle */
 .navbar-toggler {
     outline: none !important;
@@ -747,49 +749,26 @@ html, body {
 
 /* ==================================================== CONTACTO ==========================================================*/
 
-
-.contact-form{
-    background: #fff;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 70%;
-    background-color: #A6151F;
-}
-
-
-.contact-form form{
-    padding: 14%;
-}
-.contact-form form .row{
-    margin-bottom: -7%;
-}
-.contact-form h1{
-    margin-bottom: 8%;
-    margin-top: -10%;
-    text-align: center;
-    color:#FFFFFF
-}
-.contact-form .btnContact {
-    width: 50%;
-    border: none;
-    padding: 1.5%;
-    background: #FFFFFF;
-    font-weight: 600;
+.form-input {
     color: #000000;
-    cursor: pointer;
+    background-color: #efefef;
+    border-style: none;
+    font-family: "Instrument Sans", sans-serif;
 }
-.btnContactSubmit
-{
-    width: 50%;
-    padding: 1.5%;
-    color: #fff;
-    background-color: #0062cc;
-    border: none;
-    cursor: pointer;
-}
+
 
 .form-control {
     border-radius: 0 !important;
+}
+
+.form-control:focus {
+    border-color: #A6151F !important;
+}
+
+@media (max-width: 768px) {
+    .contact-img{
+        display: none;
+    }
 }
 
 /* ==================================================== CONTACTO FIM ==========================================================*/

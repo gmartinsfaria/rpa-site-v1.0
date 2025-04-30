@@ -66,7 +66,7 @@
     <!-- ==================================== NEWS ======================================= -->
 
     <section id="SectionNoticias">
-        <div class="container-fluid p-5 mt-4">
+        <div class="container-fluid px-5 pt-5 mt-4">
             <h1 class="general-title">Na linha da frente em todos os grandes casos dos Açores.</h1>
             <p class="general-txt">Desde 2010</p>
         </div>
@@ -81,7 +81,7 @@
         </div>
     
         <div class="news-container container-fluid px-5">
-            <div class="news-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+            <div class="news-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
                 
                 <div class="news-item">
                     <div class="news-img-wrapper">
@@ -868,22 +868,58 @@
             <h5 class="office-item-title display-6">Interessado ou ainda ficou com dúvidas?</h5>
         </div>
 
-        <form class="container" action="https://formspree.io/f/mdkewzrk" method="POST">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-        
-            <!-- Campo escondido para evitar spam (Honeypot) -->
-            <input type="text" name="_gotcha" style="display: none;">
-        
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <div class="row featurette">
+                <div class="col-md-8">
+                    <p id="descriptionFunction" class="general-txt px-0">Deixe-nos uma mensagem e iremos responder-lhe o mais brevemente possível ou então visite a nossa sede. As nossas portas estarão sempre abertas.</p>
+                    
+                    <form action="https://formspree.io/f/mdkewzrk" method="POST">
+                        <div class="form-row pt-lg-4 pt-3">
+                            <div class="col">
+                                <label for="name" style="display: none;"></label>
+                                <input type="text" id="name" name="name" class="form-control form-input" placeholder="Nome" required> <!-- class is-valid / is-invalid para dar feedback-->
+                                <div class="invalid-feedback">
+                                    Por favor insira o seu nome.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="email" style="display: none;"></label>
+                                <input type="email" id="email" name="email" class="form-control form-input" placeholder="Email" required> <!-- class is-valid / is-invalid para dar feedback-->
+                                <div class="invalid-feedback">
+                                    Por favor insira um endereço de email válido.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <label for="message" style="display: none;"></label>
+                            <textarea class="form-control form-input" id="message" name="message" placeholder="Escreva aqui a sua mensagem" required rows="5"></textarea> <!-- class is-valid / is-invalid para dar feedback-->
+                            <div class="invalid-feedback">
+                              Por favor insira uma mensagem.
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
 
+                            <!-- Campo escondido para evitar spam (Honeypot) -->
+                            <input type="text" name="_gotcha" style="display: none;">
+                        </div>
+                        <div class="my-3">
+                            <button type="submit" class="btn round-btn-footer">Enviar Mensagem</button></a>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-4">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto contact-img" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                </div>
+            </div>
+        </div>
     </section>
 
 
