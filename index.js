@@ -504,7 +504,14 @@ document.addEventListener("DOMContentLoaded", function () {
 //================================================== secção escritórios FIM =================================================
 
 
+//***************************************************** FORM CONTACTO ***********************************************************
+let messageSuccess = document.getElementById('alertSuccess');
+let messageFail = document.getElementById('alertFail');
+let closeBtnSuccess = document.getElementById('alertSuccessBtn');
+let closeBtnFail = document.getElementById('alertFailBtn');
+
 document.querySelector("form").addEventListener("submit", function (e) {
+    
     e.preventDefault();
     var form = e.target;
     fetch(form.action, {
@@ -513,18 +520,39 @@ document.querySelector("form").addEventListener("submit", function (e) {
         headers: { "Accept": "application/json" }
     }).then(response => {
         if (response.ok) {
-            alert("Mensagem enviada com sucesso!");
+            //alert("Mensagem enviada com sucesso!");
+            messageSuccess.classList.remove('disp-none');
             form.reset();
         } else {
-            alert("Ocorreu um erro. Tente novamente.");
+            //alert("Ocorreu um erro. Tente novamente.");
+            messageFail.classList.remove('disp-none');
         }
     }).catch(error => {
-        alert("Erro ao enviar formulário.");
+        //alert("Erro ao enviar formulário.");
+        messageFail.classList.remove('disp-none');
         console.log(error);
     });
+
+    setTimeout(() => {
+        messageSuccess.classList.add('disp-none');
+        messageFail.classList.add('disp-none');
+    }, 10000);
+
 });
 
 
+closeBtnSuccess.addEventListener("click", (e) => {
+    console.log("Clicou no botão fechar - verde");
+    messageSuccess.classList.add('disp-none');
+});
+
+
+closeBtnFail.addEventListener("click", (e) => {
+    console.log("Clicou no botão fechar - vermelho");
+    messageFail.classList.add('disp-none');
+});
+
+//***************************************************** FORM CONTACTO ***********************************************************
 
 
 

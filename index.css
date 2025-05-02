@@ -771,6 +771,25 @@ html, body {
     }
 }
 
+.form-sent-success,
+.form-sent-fail {
+    color: #FFFFFF;
+    font-family: "Instrument Sans", sans-serif;
+    border-radius: 0;
+}
+
+.disp-none {
+    display: none;
+}
+
+.form-sent-success {
+    background-color: #009900;
+}
+
+.form-sent-fail {
+    background-color: #A6151F;
+}
+
 /* ==================================================== CONTACTO FIM ==========================================================*/
 
 .social-network-icon {

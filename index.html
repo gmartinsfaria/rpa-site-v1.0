@@ -874,7 +874,7 @@
                     <p id="descriptionFunction" class="general-txt px-0">Deixe-nos uma mensagem e iremos responder-lhe o mais brevemente possível ou então visite a nossa sede. As nossas portas estarão sempre abertas.</p>
                     
                     <form action="https://formspree.io/f/mdkewzrk" method="POST">
-                        <div class="form-row pt-lg-4 pt-3">
+                        <div class="form-row mt-lg-4 mt-3">
                             <div class="col">
                                 <label for="name" style="display: none;"></label>
                                 <input type="text" id="name" name="name" class="form-control form-input" placeholder="Nome" required> <!-- class is-valid / is-invalid para dar feedback-->
@@ -909,6 +909,19 @@
                             <!-- Campo escondido para evitar spam (Honeypot) -->
                             <input type="text" name="_gotcha" style="display: none;">
                         </div>
+
+                        <div id="alertSuccess" class="alert alert-warning alert-dismissible form-sent-success fade show disp-none sending-result mt-3" role="alert">
+                            <strong>Mensagem enviada com sucesso.</strong>
+                            <button id="alertSuccessBtn" type="button" class="btn-close"></button>
+                        </div>
+                          
+                        <div id="alertFail" class="alert alert-warning alert-dismissible form-sent-fail fade show disp-none sending-result mt-3" role="alert">
+                            <strong>Não foi possível enviar a sua mensagem.</strong>
+                            <br>
+                            Tente novamente ou contacte-nos diretamente por email.
+                            <button id="alertFailBtn" type="button" class="btn-close"></button>
+                        </div>
+
                         <div class="my-3">
                             <button type="submit" class="btn round-btn-footer">Enviar Mensagem</button></a>
                         </div>
