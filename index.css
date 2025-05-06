@@ -434,6 +434,7 @@ html, body {
 
 .fat {
     font-weight: bold !important;
+    font-size: clamp(1.2rem, 1.2vw, 1.4rem) !important;
 }
 
 .general-txt {
@@ -776,6 +777,7 @@ html, body {
     color: #FFFFFF;
     font-family: "Instrument Sans", sans-serif;
     border-radius: 0;
+    border-width: 0;
 }
 
 .disp-none {
