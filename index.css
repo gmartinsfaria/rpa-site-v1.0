@@ -127,7 +127,8 @@ html, body {
     text-transform: capitalize !important;
     font-family: 'Instrument Sans' !important;
     font-size: 1.2rem !important;
-    font-weight: bold !important;
+    /*font-weight: bold !important;*/
+    color: #000000;
     padding: 10px 40px !important; /* Ajuste o padding conforme necessário */
     border-radius: 50px; 
     background-color: #efefef;
@@ -502,7 +503,7 @@ html, body {
 
 .contact-btn,
 .contact-btn-m {
-    font-size: clamp(1rem, 2vw, 1.7rem);
+    font-size: clamp(1.2rem, 1.5vw, 1.7rem);
     color: #A6151F;
     background-color: transparent;
     font-weight: bold;
