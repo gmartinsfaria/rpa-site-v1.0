@@ -502,7 +502,8 @@ html, body {
 }
 
 .contact-btn,
-.contact-btn-m {
+.contact-btn-m,
+.more-news-btn {
     font-size: clamp(1.2rem, 1.5vw, 1.7rem);
     color: #A6151F;
     background-color: transparent;
@@ -514,10 +515,20 @@ html, body {
 }
 
 .contact-btn:hover,
-.contact-btn-m:hover {
+.contact-btn-m:hover,
+.more-news-btn:hover {
     text-decoration: underline;
 }
 
+.more-news-btn {
+    margin-left: -0.6rem;
+}
+
+@media (max-width: 600px) {
+    .title-mobile-format {
+        margin-left: -1.5rem;
+    }
+}
 
 .container-left {
     margin-left: calc((100% - 1140px) / 2); /* ou o valor do breakpoint atual */
@@ -745,8 +756,35 @@ html, body {
 }
 
 .footer-title {
-    font-family: 'EB Garamond', serif;
+    font-family: "Instrument Sans";
 }
+
+
+/* **************************************************** ESCRITORIOS ****************************************************** */
+
+#officeOne:hover {
+    text-decoration: underline;
+}
+
+.office-highlight {
+    background-color: #A6151F;
+    color: #FFFFFF;
+}
+
+.office-details-hidden {
+    display: none;
+}
+
+.office-details-shown {
+    background-color: #EFEFEF;
+}
+
+
+
+
+/* **************************************************** ESCRITORIOS FIM ****************************************************** */
+
+
 
 
 /* ==================================================== CONTACTO ==========================================================*/

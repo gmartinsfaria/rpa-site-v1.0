@@ -500,6 +500,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //================================================== secção escritórios =================================================
 
+document.getElementById("officeOne").addEventListener("click", () => {
+    const officeOneDetails = document.getElementById("officeOneDetails");
+    const officeOneBackground = document.getElementById("officeOneBackground");
+
+    showDetail(officeOneDetails, officeOneBackground);
+});
+
+
+function showDetail(detailToShow, backgroundToShow) {
+    detailToShow.classList.remove("office-details-hidden");
+    backgroundToShow.classList.remove("office-details-hidden");
+}
 
 //================================================== secção escritórios FIM =================================================
 
