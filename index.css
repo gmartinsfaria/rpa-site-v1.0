@@ -762,24 +762,31 @@ html, body {
 
 /* **************************************************** ESCRITORIOS ****************************************************** */
 
-#officeOne:hover {
-    text-decoration: underline;
+.sticky-content {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .sticky-content.fixed {
+      position: fixed;
+      top: 100px; /* Ajuste conforme necessário */
+      width: calc(100% - 30px);
+    }
+
+    @media (max-width: 768px) {
+        .office-img {
+          width: 50px !important;
+        }
+    }
+  
+    .sticky-content.bottom {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
 }
-
-.office-highlight {
-    background-color: #A6151F;
-    color: #FFFFFF;
-}
-
-.office-details-hidden {
-    display: none;
-}
-
-.office-details-shown {
-    background-color: #EFEFEF;
-}
-
-
+  
+  
 
 
 /* **************************************************** ESCRITORIOS FIM ****************************************************** */
