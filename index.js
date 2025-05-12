@@ -537,6 +537,33 @@ onScroll(); // Executa na carga inicial
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const targetElement = document.getElementById("SectionEscritoriosLeft");
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+  
+    function updateClasses(e) {
+      if (!targetElement) return;
+  
+      if (e.matches) {
+        // Largura >= 768px
+        targetElement.classList.add("container-left");
+        targetElement.classList.remove("container");
+      } else {
+        // Largura < 768px
+        targetElement.classList.add("container");
+        targetElement.classList.remove("container-left");
+      }
+    }
+  
+    // Executa à carga
+    updateClasses(mediaQuery);
+  
+    // E ao mudar de tamanho
+    mediaQuery.addEventListener("change", updateClasses);
+  });
+  
+
+
   
 
 

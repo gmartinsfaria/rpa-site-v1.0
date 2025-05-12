@@ -425,7 +425,9 @@ html, body {
 }
 
 .text-body-emphasis{
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-family: "Instrument Sans", sans-serif;
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    font-weight: 200;
 }
 
 /* Estilização responsiva do texto */
@@ -440,12 +442,15 @@ html, body {
 
 .general-txt {
     font-family: "Instrument Sans", sans-serif;
-    font-weight: 200;
     font-size: clamp(1rem, 1.2vw, 1.4rem);
     text-align: left;
     margin: 0;
     text-overflow: ellipsis;
     max-height: 90%;
+}
+
+.regular {
+    font-weight: 200;
 }
 
 .value-item {
@@ -769,22 +774,46 @@ html, body {
   @media (min-width: 768px) {
     .sticky-content.fixed {
       position: fixed;
-      top: 100px; /* Ajuste conforme necessário */
-      width: calc(100% - 30px);
+      top: 100px;
+      /* Ajusta para a largura real da coluna (ex: 50% ou 33.33%) */
+      width: calc(45.5%); /* Se a tua coluna é .col-md-6 */
+      z-index: 10;
     }
-
-    @media (max-width: 768px) {
-        .office-img {
-          width: 50px !important;
-        }
+  
+    .sticky-wrapper .col-md-6 .sticky-content.fixed {
+      width: calc(45.5%);
+    }
+  
+    .sticky-wrapper .col-md-4 .sticky-content.fixed {
+      width: calc(33.3333% - 15px);
     }
   
     .sticky-content.bottom {
       position: absolute;
       top: auto;
       bottom: 0;
+      width: 100%;
     }
-}
+  
+    .sticky-wrapper {
+      position: relative;
+    }
+  
+    .scrolling-column {
+      padding-top: 0 !important;
+    }
+  }
+  
+  .office-picture {
+    filter: grayscale(100%);
+    width: 100%;
+    height: auto;
+  }
+  
+  .office-picture:hover {
+    filter: grayscale(10%);
+  }
+  
   
   
 
