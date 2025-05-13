@@ -18,1205 +18,1221 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
 
-    <!-- ==================================== NAVBAR ======================================= -->
 
-    <nav class="navbar navbar-expand-xl fixed-top mb-5">
-    <div class="container-fluid nav-white-background">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/imgs/logo_website.png" class="img-fluid logo-image mt-3" alt="Ricardo Pacheco Advogados Logótipo">
-        </a>
-        <button id="ham-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
-            aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
+    <!-- **************************************** LOADER ************************************** -->
 
-        <div id="drop-menu" class="collapse navbar-collapse navbar-btn-pack" id="navbarsExample05">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a id="ButtonEspecialidades" class="nav-link" aria-current="page" href="#">Atividade</a>
-                </li>
-                <li class="nav-item">
-                    <a id="ButtonEquipa" class="nav-link" aria-current="page" href="#">Equipa</a>
-                </li>
-                <li class="nav-item">
-                    <a id="ButtonValores" class="nav-link navbar-btn" aria-current="page" href="#">Manifesto</a>
-                </li>
-                <li class="nav-item">
-                    <a id="ButtonEscritorios" class="nav-link" aria-current="page" href="#">Escritórios</a>
-                </li>
-                <li class="nav-item">
-                    <a id="ButtonBlog" class="nav-link" aria-current="page" href="#">Insights</a>
-                </li>
-                <button id="ButtonContacto" type="button" class="nav-item btn round-btn"><span class="text-capitalize">Entrar </span><span class="text-lowercase">em contacto</span></button>
-            </ul>
+    <div id="mainLoader" class="loader-container">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
-</nav>
-
-
-    <!-- ==================================== NAVBAR FIM ======================================= -->
-
-
-
-
-    <!-- ==================================== NEWS ======================================= -->
-
-    <section id="SectionNoticias">
-        <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-            <h1 class="general-title">Na linha da frente em todos os grandes casos dos Açores.</h1>
-            <p class="general-txt">Desde 2010</p>
-        </div>
     
-        <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
-            <button type="button" id="arrow-left-news" class="arrow-left arrow-btn me-2">
-                <img src="./assets/icons/slide-arrow-left-black.svg" alt="seta esquerda">
-            </button>
-            <button type="button" id="arrow-right-news" class="arrow-right arrow-btn ms-2 me-2">
-                <img src="./assets/icons/slide-arrow-right-black.svg" alt="seta direita">
-            </button>
-        </div>
-    
-        <div class="news-container container-fluid px-5">
-            <div class="news-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
-                
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação Asclépio</h2>
-                        </a>
-                        <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
-                    </div>
-                </div>
 
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação MAYDAY</h2>
-                        </a>
-                        <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
-                    </div>
-                </div>
+    <!-- **************************************** LOADER FIM ************************************** -->
 
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação Asclépio</h2>
-                        </a>
-                        <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
-                    </div>
-                </div>
+    <div id="mainContent" class="disp-none">
 
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação MAYDAY</h2>
-                        </a>
-                        <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
-                    </div>
-                </div>
+        <!-- ==================================== NAVBAR ======================================= -->
 
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
-                        </a>
+        <nav class="navbar navbar-expand-xl fixed-top mb-5">
+            <div class="container-fluid nav-white-background">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/imgs/logo_website.png" class="img-fluid logo-image mt-3" alt="Ricardo Pacheco Advogados Logótipo">
+                </a>
+                <button id="ham-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
+                    aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação Asclépio</h2>
-                        </a>
-                        <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
-                    </div>
-                </div>
+                </button>
 
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação MAYDAY</h2>
-                        </a>
-                        <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
-                    </div>
+                <div id="drop-menu" class="collapse navbar-collapse navbar-btn-pack" id="navbarsExample05">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="ButtonEspecialidades" class="nav-link" aria-current="page" href="#">Atividade</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ButtonEquipa" class="nav-link" aria-current="page" href="#">Equipa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ButtonValores" class="nav-link navbar-btn" aria-current="page" href="#">Manifesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ButtonEscritorios" class="nav-link" aria-current="page" href="#">Escritórios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ButtonParcerias" class="nav-link" aria-current="page" href="#">Parcerias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ButtonBlog" class="nav-link" aria-current="page" href="#">Insights</a>
+                        </li>
+                        <button id="ButtonContacto" type="button" class="nav-item btn round-btn"><span class="text-capitalize">Entrar </span><span class="text-lowercase">em contacto</span></button>
+                    </ul>
                 </div>
-
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação Asclépio</h2>
-                        </a>
-                        <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação MAYDAY</h2>
-                        </a>
-                        <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação Asclépio</h2>
-                        </a>
-                        <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
-                    </div>
-                </div>
-
-                <div class="news-item">
-                    <div class="news-img-wrapper">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
-                        </a>
-                    </div>
-                    <div class="mt-4">
-                        <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                            <h2 class="general-font">Operação MAYDAY</h2>
-                        </a>
-                        <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
-                    </div>
-                </div>
-    
             </div>
-            <a href="https://www.linkedin.com/newsletters/bosch-insights-7178058110542962688" target="_blank"><button id="moreNewsBtn" class="more-news-btn">Saiba mais através da nossa Newsletter <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-            
-            
-        </div>
-    </section>
-    
+        </nav>
 
-    <!-- ==================================== NEWS FIM ======================================= -->
+
+        <!-- ==================================== NAVBAR FIM ======================================= -->
 
 
 
 
-    <!-- ==================================== ANIMACOES ======================================= -->
-    <section class="home-page">
-        <div class="px-4 pt-5 mt-5 text-center container">
-            <!-- <h1 class="display-4 fw-bold welcome-sentence">DE PONTA DELGADA PARA O MUNDO</h1> -->
-           <!-- <div id="lottie-animation-txt" class="welcome-sentence change-div-size "></div> --> 
-        </div>
+        <!-- ==================================== NEWS ======================================= -->
 
-        <!-- HTML: Conteiner para a animação -->
-        <div id="lottie-animation"></div> 
-    </section>
-
-    <!-- ==================================== ANIMACOES FIM ======================================= -->
-
-
-
-    
-
-    <!-- ========================================== ATIVIDADE =========================================== -->
-   
-    <section class="pt-5" id="SectionEspecialidades">
-        <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
-            <h1 class="general-title title-mobile-format">Atividade</h1> 
-        </div>
+        <section id="SectionNoticias">
+            <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
+                <h1 class="general-title">Na linha da frente em todos os grandes casos dos Açores.</h1>
+                <p class="general-txt">Desde 2010</p>
+            </div>
         
-        <div class="container">
-            <div class="accordion mt-4 pb-4 pt-2" id="accordionExample">
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button id="accordion-btn-1" class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <h2 class="text-body-emphasis">Direito e Contencioso Civil</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p class="general-txt">
-                            O <span class="bold-in-description">Direito Civil</span> é a base do ordenamento jurídico 
-                            e regula as relações entre particulares, assegurando direitos e deveres no quotidiano da 
-                            sociedade. Este ramo do direito abrange diversas áreas, incluindo obrigações contratuais, 
-                            responsabilidade civil, direitos reais, relações familiares e sucessões. 
-                        </p>
-                        <p class="general-txt mt-3">
-                            Essencial para garantir a justiça nas interações entre indivíduos, o Direito Civil estabelece 
-                            os princípios que regem os contratos, a posse e propriedade de bens, bem como os direitos e 
-                            deveres nas relações familiares. A sua aplicação visa promover a segurança jurídica, proteger 
-                            os interesses dos cidadãos e assegurar a resolução justa de conflitos privados.
-                        </p>
-                        <p class="general-txt mt-3">
-                            Dentro desta área atuamos nas seguintes questões:
-                        </p>
-                        <ul class="general-txt pt-2">
-                            <li>Obrigações e contratos</li>
-                            <li>Propriedade horizontal</li>
-                            <li>Família e menores</li>
-                            <li>Sucessório e Testamentos</li>
-                            <li>Tribunais judiciais</li>
-                            <li>Ações Cíveis</li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h2 class="text-body-emphasis">Direito Comercial e Societários</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito Comercial e Societário</span> regula as atividades 
-                                económicas e empresariais, assegurando um quadro jurídico estável para a criação, gestão e 
-                                dissolução de empresas. Este ramo do direito abrange as normas que regem as relações entre 
-                                comerciantes, sociedades e demais agentes económicos, promovendo a segurança e transparência no mercado.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Fundamental para o funcionamento das empresas, o Direito Comercial e Societário define as regras 
-                                para a constituição de sociedades, contratos comerciais, responsabilidade dos sócios e administradores, 
-                                bem como os mecanismos de resolução de conflitos empresariais. A sua aplicação visa garantir o 
-                                equilíbrio nas relações comerciais e fomentar um ambiente de negócios sólido e competitivo.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Contratos comerciais</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h2 class="text-body-emphasis">Direito Rodoviário e Contencioso</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito Rodoviário e Contencioso</span> regula as normas 
-                                de circulação e segurança rodoviária, bem como a resolução de litígios decorrentes de infrações 
-                                e acidentes de viação. Este ramo do direito visa garantir a correta aplicação das regras de 
-                                trânsito, proteger os direitos dos condutores, peões e demais utentes da estrada, e assegurar 
-                                a responsabilidade civil e penal em casos de infração.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Além disso, abrange a defesa de condutores em processos administrativos e judiciais, impugnação 
-                                de contraordenações, ações de responsabilidade por danos decorrentes de acidentes rodoviários e 
-                                questões relacionadas com seguros automóveis. O seu objetivo é promover a segurança nas vias 
-                                públicas e assegurar a justa resolução de conflitos no âmbito rodoviário.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Registo automóvel</li>
-                                <li>Habilitação de condução</li>
-                                <li>Trânsito Impugnação contra-ordenações</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <h2 class="text-body-emphasis">Notariado e Registos</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Notariado e Registos</span> é uma área do direito que assegura a 
-                                autenticidade, validade e publicidade dos atos jurídicos, garantindo a sua legalidade e 
-                                segurança jurídica. A atividade notarial desempenha um papel essencial na formalização de 
-                                contratos, escrituras, testamentos e outros atos que exigem fé pública.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Por sua vez, o sistema de registos assegura a inscrição e publicidade de factos jurídicos relevantes, 
-                                como o registo civil (nascimentos, casamentos e óbitos), registo predial (transmissões e encargos sobre 
-                                imóveis) e registo comercial (constituição e alterações de sociedades). Esta área do direito é 
-                                fundamental para garantir a transparência, segurança e eficácia jurídica das relações patrimoniais e 
-                                empresariais.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Registos</li>
-                                <li>Autenticação de documentos</li>
-                                <li>Reconhecimento assinaturas</li>
-                                <li>Nacionalidade</li>
-                                <li>Autorização de residência</li>
-                                <li>Sociedades constituição/dissolução</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <h2 class="text-body-emphasis">Direito e Contencioso do Trabalho </h2>
-                    </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito e Contencioso do Trabalho</span> O Direito e Contencioso 
-                                do Trabalho regula as relações laborais entre empregadores e trabalhadores, assegurando o equilíbrio 
-                                entre os direitos e deveres de ambas as partes. Esta área do direito abrange a celebração, execução e 
-                                cessação dos contratos de trabalho, a proteção dos direitos dos trabalhadores, bem como a regulamentação 
-                                das condições laborais, segurança e saúde no trabalho.
-                            </p>
-                            <p class="general-txt mt-3">
-                                No âmbito do <span class="bold-in-description">contencioso laboral</span>, trata-se da resolução de 
-                                conflitos resultantes das relações de trabalho, seja por via negocial, administrativa ou judicial. 
-                                Questões como despedimentos, assédio laboral, acidentes de trabalho, incumprimento de normas contratuais 
-                                e reivindicações salariais são frequentemente objeto de litígios que exigem uma intervenção jurídica 
-                                especializada para garantir a defesa dos interesses dos envolvidos.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Contratos</li>
-                                <li>Relação laboral</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        <h2 class="text-body-emphasis">Direito Executivo</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito Executivo</span> é a área do direito que regula 
-                                os processos destinados à cobrança coerciva de obrigações, como dívidas, cumprimento de contratos 
-                                e execução de decisões judiciais. Através dos meios legais disponíveis, visa garantir que credores 
-                                obtenham a satisfação dos seus créditos quando os devedores não cumprem voluntariamente as suas 
-                                obrigações.
-                            </p>
-                            <p class="general-txt mt-3">
-                                
-                            </p>
-                            <p class="general-txt mt-4">
-                                Este ramo do direito abrange mecanismos como penhoras, arrestos, execuções hipotecárias e outras 
-                                medidas coercivas, assegurando que os credores possam recuperar os valores devidos de forma justa 
-                                e eficaz, sempre respeitando os direitos fundamentais das partes envolvidas.
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Cartas de cobrança de dívidas</li>
-                                <li>Instauração de processos executivos</li>
-                                <li>Processos Injuntivos</li>
-                                <li>Outros</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        <h2 class="text-body-emphasis">Direito do Consumidor</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito do Consumidor</span> é um ramo do direito que protege 
-                                os interesses dos consumidores em suas relações com fornecedores de bens e serviços. Este campo abrange 
-                                diversas questões, como a defesa contra práticas comerciais desleais, publicidade enganosa, e cláusulas 
-                                contratuais abusivas. O objetivo principal é garantir que o consumidor tenha acesso à informação clara, 
-                                que seus direitos sejam respeitados e que ele possa buscar reparação por danos sofridos devido a 
-                                práticas ilegais ou prejudiciais.
-                            </p>
-                            <p class="general-txt mt-3">
-                                No contexto jurídico, o direito do consumidor busca equilibrar a relação entre consumidores e 
-                                empresas, reconhecendo a vulnerabilidade do consumidor e assegurando-lhe uma posição de proteção 
-                                em face de práticas que possam prejudicar a sua integridade física, moral ou patrimonial. Isso 
-                                inclui o direito à devolução de produtos, à reparação de danos, e à compensação por perdas sofridas, 
-                                sempre com base na legislação que regula as relações de consumo.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Garantias</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        <h2 class="text-body-emphasis">Contencioso Fiscal e Tributário</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Contencioso Fiscal e Tributário</span> trata das disputas 
-                                legais entre contribuintes e o Estado relacionadas à aplicação das leis tributárias. Este ramo do 
-                                direito envolve a resolução de conflitos sobre a obrigação de pagamento de tributos, a interpretação 
-                                de normas fiscais, e a contestação de autuações fiscais e sanções impostas pelos órgãos tributários. 
-                                O foco é garantir que a tributação seja justa e que as obrigações fiscais sejam cumpridas conforme 
-                                a legislação vigente.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Este campo inclui a defesa dos direitos do contribuinte em situações de cobrança indevida, contestação 
-                                de impostos e outras medidas fiscais, além de regulamentar a atuação do Estado na fiscalização e 
-                                arrecadação de tributos. O objetivo é assegurar um equilíbrio entre o cumprimento das obrigações 
-                                fiscais e a proteção dos direitos dos contribuintes perante o sistema tributário.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        <h2 class="text-body-emphasis">Direito e Contencioso Penal</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito e Contencioso Penal</span> é o ramo do direito que 
-                                regula as infrações penais e as sanções aplicáveis aos indivíduos que cometem crimes. Este campo 
-                                da lei define o que constitui um crime, os procedimentos para a investigação, acusação e julgamento, 
-                                e as penas que podem ser impostas aos infratores. O Contencioso Penal refere-se especificamente às 
-                                disputas judiciais relacionadas a crimes, onde o Estado, através do Ministério Público, processa os 
-                                indivíduos que infringem a lei. 
-                            </p>
-                            <p class="general-txt mt-3">
-                                O objetivo do Direito Penal é assegurar a ordem social, prevenindo comportamentos que possam prejudicar 
-                                a coletividade, punindo os responsáveis e reabilitando os infratores sempre que possível. Em um 
-                                processo penal, o réu tem direitos constitucionais a um julgamento justo e imparcial, e o advogado de 
-                                defesa desempenha um papel essencial na proteção desses direitos, podendo contestar as provas, 
-                                questionar as alegações e pleitear pela absolvição ou redução das penas.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Contra-ordenações</li>
-                                <li>Penal</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        <h2 class="text-body-emphasis">Contencioso Administrativo</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Contencioso Administrativo</span> refere-se ao conjunto de 
-                                processos judiciais que envolvem a Administração Pública e seus atos. Este ramo do direito visa 
-                                garantir que os atos administrativos, como decisões, normas ou contratos, sejam executados de acordo 
-                                com a lei, protegendo os direitos dos cidadãos contra possíveis abusos de poder por parte do Estado. 
-                                Através do contencioso administrativo, os indivíduos podem questionar a legalidade de atos 
-                                administrativos e buscar reparação por danos causados por ações do poder público.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Este tipo de contencioso envolve a análise de decisões administrativas que afetam diretamente os 
-                                interesses dos cidadãos, como questões fiscais, licenças, ou autorizações. Quando uma pessoa ou 
-                                empresa considera que seus direitos foram prejudicados por um ato administrativo, pode recorrer ao 
-                                tribunal administrativo para buscar a revisão ou anulação dessa decisão. O contencioso administrativo 
-                                é, portanto, uma ferramenta crucial para assegurar a transparência, a legalidade e a justiça nas 
-                                ações do Estado.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                        <h2 class="text-body-emphasis">Direito da Família</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito da Família</span> é o ramo do direito que regula as 
-                                relações jurídicas entre membros de uma família, abordando questões essenciais como o casamento, a 
-                                união de facto, a filiação, a guarda dos filhos, a adoção e a sucessão. Este campo do direito visa 
-                                proteger os direitos individuais e coletivos dos membros da família, promovendo a convivência 
-                                harmoniosa e o bem-estar das pessoas envolvidas. A legislação neste âmbito também lida com a 
-                                proteção da criança, do idoso e de outros membros vulneráveis da família.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Além disso, o Direito da Família trata de questões como o regime de bens no casamento, a partilha 
-                                de património, pensões alimentícias e a definição de responsabilidades parentais. O objetivo é 
-                                resolver litígios familiares de forma equilibrada e justa, assegurando que os direitos de cada 
-                                indivíduo sejam respeitados e que o melhor interesse das crianças seja sempre uma prioridade nas 
-                                decisões judiciais.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Divórcio por mútuo consentimento e sem consentimento de outro cônjuge</li>
-                                <li>Anulação do casamento católico</li>
-                                <li>Ações de Separação de Bens e de Pessoas e Bens</li>
-                                <li>Adopção</li>
-                                <li>Mediação Familiar</li>
-                                <li>Ações de Paternidade e de prestações de alimentos</li>
-                                <li>Responsabilidades Parentais</li>
-                                <li>Deserdação</li>
-                                <li>Proteção de Crianças e Jovens em Risco</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                        <h2 class="text-body-emphasis">Direito Imobiliário</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito Imobiliário</span> é o ramo do direito que regula as 
-                                relações jurídicas relativas aos bens imóveis, incluindo a compra, venda, arrendamento, construção, 
-                                utilização e administração de imóveis. Este campo abrange tanto o direito de propriedade como os 
-                                direitos reais sobre imóveis, bem como questões relacionadas com a posse e o uso dos mesmos. Também 
-                                lida com a elaboração e a execução de contratos imobiliários, como os de compra e venda, contratos 
-                                de arrendamento, permuta, entre outros.
-                            </p>
-                            <p class="general-txt mt-3">
-                                Além disso, o Direito Imobiliário trata de matérias como a regularização de propriedades, a obtenção 
-                                de licenças e alvarás, e a resolução de disputas decorrentes de questões fundiárias. Este ramo 
-                                também envolve a análise de contratos e a resolução de conflitos entre compradores, vendedores, 
-                                arrendadores e arrendatários, sempre com o objetivo de garantir a segurança jurídica e o cumprimento 
-                                das normas legais aplicáveis ao setor imobiliário.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                        <h2 class="text-body-emphasis">Direito das Sucessões/Inventário</h2>
-                    </button>
-                    </h2>
-                    <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="general-txt">
-                                O <span class="bold-in-description">Direito das Sucessões/Inventário</span> trata da transferência 
-                                dos bens, direitos e deveres de uma pessoa falecida para os seus herdeiros. Este ramo do direito 
-                                abrange as regras relativas à sucessão testamentária e legítima, ou seja, a distribuição dos bens 
-                                de acordo com o que foi estabelecido no testamento ou, na ausência deste, conforme as disposições 
-                                legais. O Direito das Sucessões também se ocupa da responsabilidade dos herdeiros em relação às 
-                                dívidas do falecido e da gestão do espólio.
-                            </p>
-                            <p class="general-txt mt-3">
-                                O Inventário é um procedimento legal que visa identificar e avaliar os bens deixados pelo falecido, 
-                                bem como apurar os direitos e obrigações dos herdeiros. Este processo é essencial para formalizar a 
-                                partilha dos bens, podendo ser realizado judicialmente ou extrajudicialmente, dependendo da 
-                                complexidade do caso e da concordância entre os herdeiros. Através do inventário, busca-se assegurar 
-                                que a sucessão seja feita de forma justa e conforme a legislação vigente, evitando conflitos entre os 
-                                envolvidos.
-                            </p>
-                            <p class="general-txt mt-4">
-                                Dentro desta área atuamos nas seguintes questões:
-                            </p>
-                            <ul class="general-txt pt-2">
-                                <li>Testamentos, permutas e doações</li>
-                                <li>Partilha Judicial de Bens e Extrajudicial</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
+                <button type="button" id="arrow-left-news" class="arrow-left arrow-btn me-2">
+                    <img src="./assets/icons/slide-arrow-left-black.svg" alt="seta esquerda">
+                </button>
+                <button type="button" id="arrow-right-news" class="arrow-right arrow-btn ms-2 me-2">
+                    <img src="./assets/icons/slide-arrow-right-black.svg" alt="seta direita">
+                </button>
             </div>
-        </div>
-    </section>
-
-    <!-- ========================================== ATIVIDADE FIM =========================================== -->
-
-
-
-    <!-- ========================================== EQUIPA =========================================== -->
-
-    
-    <section class="pt-5" id="SectionEquipa">
-        <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
-            <h1 class="general-title team-title title-mobile-format">A nossa equipa</h1> 
-        </div>
-
-        <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
-            <button type="button" id="arrow-left" class="arrow-left slide-arrow arrow-btn me-2"><img src="./assets/icons/slide-arrow-left-black.svg" alt="seta contacto"></button>
-            <button type="button" id="arrow-right" class="arrow-right slide-arrow arrow-btn ms-2 me-2"><img class="batatas" src="./assets/icons/slide-arrow-right-black.svg" alt="seta contacto"></button>
-        </div>
-    <section>
-
-    <div class="container" id="SectionEquipa2">
         
-
-        <div class="team-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-            <div class="team-item col-5 team-card-block light-grey"
-            data-name="Ricardo Pacheco"
-            data-function="Advogado e Sócio"
-            data-img="ricardo">
-                <img id="team-element-1" src="./assets/imgs/team/ricardo.webp" alt="Ricardo Pacheco">
-            </div>
-
-            <div class="team-item col-5 team-card-block dark-grey"
-            data-name="Carolina Carreiro"
-            data-function="Advogada e Sócia"
-            data-img="carolina">
-                <img id="team-element-2" src="./assets/imgs/team/carolina.webp" alt="Carolina Carreiro">
-            </div>
-
-            <div class="team-item col-5 team-card-block light-grey"
-            data-name="Brito Ventura"
-            data-function="Advogado"
-            data-img="brito">
-                <img id="team-element-3" src="./assets/imgs/team/brito.webp" alt="Brito Ventura">
-            </div>
-
-            <div class="team-item col-5 team-card-block dark-grey"
-            data-name="Verónica Casimiro"
-            data-function="Advogada"
-            data-img="veronica">
-                <img id="team-element-4" src="./assets/imgs/team/veronica.webp" alt="Verónica Casimiro">
-            </div>
-
-            <div class="team-item col-5 team-card-block light-grey"
-            data-name="Júlia Filipe"
-            data-function="Advogada"
-            data-img="julia">
-                <img id="team-element-5" src="./assets/imgs/team/julia.webp" alt="Júlia Filipe">
-            </div>
-
-            <div class="team-item col-5 team-card-block dark-grey"
-            data-name="João Morais"
-            data-function="Advogado"
-            data-img="joaom">
-                <img id="team-element-6" src="./assets/imgs/team/joaom.webp" alt="João Morais">
-            </div>
-
-            <div class="team-item col-5 team-card-block dark-grey"
-            data-name="João Baptista"
-            data-function="Advogado-estagiário"
-            data-img="joao">
-                <img id="team-element-7" src="./assets/imgs/team/joao.webp" alt="João Baptista">
-            </div>
-
-            <div class="team-item col-5 team-card-block dark-grey"
-            data-name="Bianca Pereira"
-            data-function="Advogada-estagiária"
-            data-img="bianca">
-                <img id="team-element-8" src="./assets/imgs/team/bianca.webp" alt="Bianca Pereira">
-            </div>
-
-            <div class="team-item col-5 team-card-block light-grey"
-            data-name="Joana Rosa"
-            data-function="Advogada"
-            data-img="joana">
-                <img id="team-element-9" src="./assets/imgs/team/joana.webp" alt="Joana Rosa">
-            </div>
-
-            <div class="team-item col-5 team-card-block dark-grey"
-            data-name="Goreti Cabral"
-            data-function="Secretária"
-            data-img="goreti">
-                <img id="team-element-10" src="./assets/imgs/team/goreti.webp" alt="Goreti Cabral">
-            </div>
-
-            <div class="team-item col-2 col-md-2 me-0 me-md-2">
-            </div>
-        </div>
-    
-        <div class="py-1 px-3">
-            <h2 id="descriptionName" class="text-body-emphasis invisible-txt">Nome Colaborador</h2>
-            <p id="descriptionFunction" class="col-lg-8 lead general-txt px-0">Especialistas dedicados a defender os seus direitos com excelência.</p>
-            <button id="equipaContactBtn" class="contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
-        </div>
-        
-        
-    </div>
-
-    <!-- ========================================== EQUIPA FIM =========================================== -->
-
-
-
-    <!-- ========================================== MANIFESTO =========================================== -->
-
-    <div id="SectionValores" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
-        <h1 class="general-title team-title title-mobile-format">Manifesto</h1> 
-    </div>
-
-    <section class="pt-5 container-fluid px-0">    
-        <div class="container-left values-container">
-            <div class="values-intro container">
-                <p class="general-txt regular">
-                    Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
-                    eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
-                    com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
-                    transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
-                    e na confiança dos nossos clientes.
-                </p>
-                <button id="valuesContactBtn" class="contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
-            </div>
-            <div class="value-item seriousness">Seriedade</div>
-            <div class="value-item trust">Confiança</div>
-            <div class="value-item professionalism">Profissionalismo</div>
-            <div class="value-item excellence">Excelência</div>
-            <div class="value-item availability">Disponibilidade</div>
-        </div>
-        
-
-        <div class="container-fluid values-container-m">
-            <div class="values-intro container">
-                <p class="general-txt">
-                    Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
-                    eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
-                    com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
-                    transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
-                    e na confiança dos nossos clientes.
-                </p>
-                <button id="valuesContactBtnMobile" class="contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
-            </div>
-            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-                    <div class="value-item col-5 card-block seriousness">Seriedade</div>
-                    <div class="value-item col-5 card-block trust">Confiança</div>
-                    <div class="value-item col-5 card-block professionalism">Profissionalismo</div>
-                    <div class="value-item col-5 card-block excellence">Excelência</div>
-                    <div class="value-item col-5 card-block availability">Disponibilidade</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================== MANIFESTO FIM =========================================== -->
-
-
-
-    <!-- ========================================== ESCRITORIOS =========================================== -->
-
-    <div id="SectionEscritorios" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-3 pb-3 mb-xl-3 pb-xl-3">
-        <h1 class="general-title team-title title-mobile-format">Os nossos escritórios</h1> 
-    </div>
-
-    <section id="SectionEscritoriosLeft" class="container-left">      
-        <!-- Escritório 1 -->
-        <div class="mt-4 mt-lg-5">
-          <div class="row featurette position-relative sticky-wrapper">
-                <div class="col-md-6">
-                    <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                        <h2 class="general-font">São Miguel <span class="text-body-secondary">(Sede)</span></h2>
-
-                        <p class="general-txt mb-3">
-                            O nosso escritório principal situa-se no centro de Ponta Delgada,
-                            numa zona de fácil acesso e próxima de serviços essenciais.
-                            O ambiente é discreto e profissional, garantindo conforto
-                            e privacidade.
-                        </p>
-
-                        <div class="office-address-out">
-                            <p class="general-txt"><b>Morada: </b></p>
-                            <p class="general-txt">Rua Caetano de Andrade, n.º 7 e 11</p>
-                            <p class="general-txt">9500-037 Ponta Delgada</p>
-                            <p class="general-txt mb-3">Ilha de São Miguel - Açores</p>
-                        </div>
-                        
-
-                        <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="picture-wrapper col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                    <img id="saoMiguelOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/sao-miguel-office.webp" alt="Edifício típico dos Açores">
-                </div>
-          </div>
-        </div>
-
-        <!-- Escritório 2 -->
-        <div class="mt-4 mt-lg-5">
-            <div class="row featurette position-relative sticky-wrapper">
-                  <div class="col-md-6">
-                      <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                          <h2 class="general-font">Pico</h2>
-  
-                          <p class="general-txt mb-3">
-                              Com presença na ilha do Pico,  estamos disponíveis
-                              para o apoiar, com a mesma solidez que define a ilha,
-                              através de parcerias locais de confiança.
-                          </p>
-  
-                          <div class="office-address-out">
-                            <p class="general-txt"><b>Morada: </b></p>
-                            <p class="general-txt">Rua X, n.º Y</p>
-                            <p class="general-txt">0000-000 Madalena</p>
-                            <p class="general-txt mb-3">Ilha do Pico - Açores</p>
-                          </div>
-                          
-                          <a href="https://maps.app.goo.gl/XsYQ2EEhFa1je1iz7" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-                      </div>
-                  </div>
-                  <div class="col-md-1"></div>
-                  <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                      <img id="picoOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/pico-office.webp" alt="Edifício típico dos Açores">
-                  </div>
-            </div>
-        </div>
-
-        <!-- Escritório 3 -->
-        <div class="mt-4 mt-lg-5">
-            <div class="row featurette position-relative sticky-wrapper">
-                  <div class="col-md-6">
-                      <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                          <h2 class="general-font">Graciosa</h2>
-  
-                          <p class="general-txt mb-3">
-                              Agora também na ilha Graciosa, estamos tão presentes quanto
-                              o vento na Barra e a calma da Praça — sempre perto quando precisar.
-                          </p>
-  
-                          <div class="office-address-out">
-                            <p class="general-txt"><b>Morada: </b></p>
-                            <p class="general-txt">Rua Jacinto Cândido, n.º 4 e 6</p>
-                            <p class="general-txt">9880-357 Santa Cruz da Graciosa</p>
-                            <p class="general-txt mb-3">Ilha Graciosa - Açores</p>
-                          </div>
-                          
-  
-                          <a href="https://maps.app.goo.gl/Xd4itiF7LjZYYRXu8" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-                      </div>
-                  </div>
-                  <div class="col-md-1"></div>
-                  <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                      <img id="graciosaOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/graciosa-office.webp" alt="Edifício típico dos Açores">
-                  </div>
-            </div>
-          </div>
-    </section>
-
-    <!-- ========================================== ESCRITORIOS FIM =========================================== -->
-
-    
-
-    <!-- ========================================== PARCERIAS =========================================== -->
-
-    <div id="SectionParcerias" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-3 pb-3 mb-xl-3 pb-xl-3">
-        <h1 class="general-title team-title title-mobile-format">Parcerias</h1> 
-    </div>
-
-
-    <section id="SectionParceriasLeft" class="container-left">      
-        <!-- Escritório 1 -->
-        <div class="mt-4 mt-lg-5">
-          <div class="row featurette position-relative sticky-wrapper">
-                <div class="col-md-6">
-                    <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                        <h2 class="general-font">Boston <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
-
-                        <p class="general-txt mb-3">
-                            Parceria com o escritório X.
-                        </p>
-
-                        <div class="office-address-out">
-                            <p class="general-txt"><b>Morada: </b></p>
-                            <p class="general-txt">Y Street</p>
-                            <p class="general-txt">00000 Massachusetts</p>
-                            <p class="general-txt mb-3">Boston - EUA</p>
-                        </div>
-                        
-
-                        <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                    <img id="bostonPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/boston.jpg" alt="Edifício típico dos Açores">
-                </div>
-          </div>
-        </div>
-
-        <!-- Escritório 2 -->
-        <div class="mt-4 mt-lg-5">
-            <div class="row featurette position-relative sticky-wrapper">
-                  <div class="col-md-6">
-                      <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                          <h2 class="general-font">Providence <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
-  
-                          <p class="general-txt mb-3">
-                              Parceria com o escritório X.
-                          </p>
-  
-                          <div class="office-address-out">
-                            <p class="general-txt"><b>Morada: </b></p>
-                            <p class="general-txt">Y Street</p>
-                            <p class="general-txt">00000 Providence</p>
-                            <p class="general-txt mb-3">Rhode Island - EUA</p>
-                          </div>
-                          
-  
-                          <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-                      </div>
-                  </div>
-                  <div class="col-md-1"></div>
-                  <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                      <img id="providencePartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/providence.jpg" alt="Edifício típico dos Açores">
-                  </div>
-            </div>
-        </div>
-
-        <!-- Escritório 3 -->
-        <div class="mt-4 mt-lg-5">
-            <div class="row featurette position-relative sticky-wrapper">
-                  <div class="col-md-6">
-                      <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                          <h2 class="general-font">Toronto <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m512 256c0-101.494-59.065-189.19-144.696-230.598v461.195c85.631-41.407 144.696-129.103 144.696-230.597z"/><path d="m0 256c0 101.494 59.065 189.19 144.696 230.598v-461.196c-85.631 41.408-144.696 129.104-144.696 230.598z"/><path d="m300.522 289.391 44.521-22.261-22.26-11.13v-22.261l-44.522 22.261 22.261-44.522h-22.261l-22.261-33.391-22.261 33.391h-22.261l22.261 44.522-44.522-22.261v22.261l-22.26 11.13 44.521 22.261-11.13 22.261h44.522v33.391h22.26v-33.391h44.522z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
-  
-                          <p class="general-txt mb-3">
-                              Parceria com o escritório X.
-                          </p>
-  
-                          <div class="office-address-out">
-                            <p class="general-txt"><b>Morada: </b></p>
-                            <p class="general-txt">Y Street</p>
-                            <p class="general-txt">X0X 0X0 Toronto</p>
-                            <p class="general-txt mb-3">Ontário - Canadá</p>
-                          </div>
-                          
-  
-                          <a href="https://maps.app.goo.gl/Xd4itiF7LjZYYRXu8" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
-                      </div>
-                  </div>
-                  <div class="col-md-1"></div>
-                  <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                      <img id="torontoPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/toronto.jpg" alt="Edifício típico dos Açores">
-                  </div>
-            </div>
-          </div>
-    </section>
-
-    <!-- ========================================== PARCERIAS FIM =========================================== -->
-
-
-    <!-- ========================================== CONTACTO =========================================== -->
-
-    <section id="SectionContacto" class="py-5">
-        
-        <div id="SectionValores" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
-            <h5 class="office-item-title display-6 title-mobile-format">Interessado ou ainda ficou com dúvidas?</h5>
-        </div>
-
-        <div class="container">
-            <div class="row featurette">
-                <div class="col-md-12"> <!--mudar para col-md-8 caso seja para ter uma imagem ao lado-->
-                    <p id="descriptionFunction" class="general-txt px-0">Deixe-nos uma mensagem e iremos responder-lhe o mais brevemente possível ou então visite a nossa sede.</p>
+            <div class="news-container container-fluid px-5">
+                <div class="news-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4">
                     
-                    <form action="https://formspree.io/f/mdkewzrk" method="POST">
-                        <div class="row mt-lg-4 mt-3">
-                          <div class="col-lg-6">
-                            <div class="form-row">
-                              <div class="col-12 mb-3">
-                                <label for="name" style="display: none;"></label>
-                                <input type="text" id="name" name="Nome" class="form-control form-input" placeholder="*Nome" required>
-                              </div>
-                              <div class="col-12 mb-3">
-                                <label for="email" style="display: none;"></label>
-                                <input type="email" id="email" name="Email" class="form-control form-input" placeholder="*Email" 
-                                       oninvalid="this.setCustomValidity('Por favor, introduza um email válido.')"
-                                       oninput="this.setCustomValidity('')" required>
-                              </div>
-                              <div class="col-12 mb-3">
-                                <label for="phone" style="display: none;"></label>
-                                <input type="tel" id="phone" name="Telefone" class="form-control form-input" placeholder="*Telefone" 
-                                       pattern="[\d\s\-\+\(\)]{9,}" 
-                                       oninvalid="this.setCustomValidity('Por favor, introduza um número de telefone válido.')"
-                                       oninput="this.setCustomValidity('')" required>
-                              </div>                              
-                              <div class="col-12 mb-3">
-                                <select name="Ramo" class="custom-select form-control form-input" required>
-                                  <option value="">Ramo do direito associado ao assunto que quer tratar?</option>
-                                  <option value="Direito Civil">Direito Civil</option>
-                                  <option value="Direito Comercial e Societário">Direito Comercial e Societário</option>
-                                  <option value="Direito Rodoviário">Direito Rodoviário</option>
-                                  <option value="Notariado e Registos">Notariado e Registos</option>
-                                  <option value="Direito do Trabalho">Direito do Trabalho</option>
-                                  <option value="Direito Executivo">Direito Executivo</option>
-                                  <option value="Direito do Consumidor">Direito do Consumidor</option>
-                                  <option value="Contencioso Fiscal e Tributário">Contencioso Fiscal e Tributário</option>
-                                  <option value="Direito e Contencioso Penal">Direito e Contencioso Penal</option>
-                                  <option value="Contencioso Administrativo">Contencioso Administrativo</option>
-                                  <option value="Direito da Família">Direito da Família</option>
-                                  <option value="Direito Imobiliário">Direito Imobiliário</option>
-                                  <option value="Direito das Sucessões/Inventário">Direito das Sucessões/Inventário</option>
-                                  <option value="Outro">Outro</option>
-                                </select>
-                              </div>
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação Asclépio</h2>
+                            </a>
+                            <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação MAYDAY</h2>
+                            </a>
+                            <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação Asclépio</h2>
+                            </a>
+                            <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação MAYDAY</h2>
+                            </a>
+                            <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação Asclépio</h2>
+                            </a>
+                            <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação MAYDAY</h2>
+                            </a>
+                            <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação Asclépio</h2>
+                            </a>
+                            <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação MAYDAY</h2>
+                            </a>
+                            <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação Asclépio</h2>
+                            </a>
+                            <h5 class="general-font mt-3">16 arguidos acusados de 55 crimes</h5>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
+                                <h2 class="general-font">Operação MAYDAY</h2>
+                            </a>
+                            <h5 class="general-font mt-3">PJ detém nove pessoas por lesarem o Estado em vários milhões</h5>
+                        </div>
+                    </div>
+        
+                </div>
+                <a href="https://www.linkedin.com/newsletters/bosch-insights-7178058110542962688" target="_blank"><button id="moreNewsBtn" class="more-news-btn">Saiba mais através da nossa Newsletter <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                
+                
+            </div>
+        </section>
+        
+
+        <!-- ==================================== NEWS FIM ======================================= -->
+
+
+
+
+        <!-- ==================================== ANIMACOES ======================================= -->
+        <section class="home-page">
+            <div class="px-4 pt-5 mt-5 text-center container">
+                <!-- <h1 class="display-4 fw-bold welcome-sentence">DE PONTA DELGADA PARA O MUNDO</h1> -->
+            <!-- <div id="lottie-animation-txt" class="welcome-sentence change-div-size "></div> --> 
+            </div>
+
+            <!-- HTML: Conteiner para a animação -->
+            <div id="lottie-animation"></div> 
+        </section>
+
+        <!-- ==================================== ANIMACOES FIM ======================================= -->
+
+
+
+        
+
+        <!-- ========================================== ATIVIDADE =========================================== -->
+    
+        <section class="pt-5" id="SectionEspecialidades">
+            <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
+                <h1 class="general-title title-mobile-format">Atividade</h1> 
+            </div>
+            
+            <div class="container">
+                <div class="accordion mt-4 pb-4 pt-2" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button id="accordion-btn-1" class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h2 class="text-body-emphasis">Direito e Contencioso Civil</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p class="general-txt">
+                                O <span class="bold-in-description">Direito Civil</span> é a base do ordenamento jurídico 
+                                e regula as relações entre particulares, assegurando direitos e deveres no quotidiano da 
+                                sociedade. Este ramo do direito abrange diversas áreas, incluindo obrigações contratuais, 
+                                responsabilidade civil, direitos reais, relações familiares e sucessões. 
+                            </p>
+                            <p class="general-txt mt-3">
+                                Essencial para garantir a justiça nas interações entre indivíduos, o Direito Civil estabelece 
+                                os princípios que regem os contratos, a posse e propriedade de bens, bem como os direitos e 
+                                deveres nas relações familiares. A sua aplicação visa promover a segurança jurídica, proteger 
+                                os interesses dos cidadãos e assegurar a resolução justa de conflitos privados.
+                            </p>
+                            <p class="general-txt mt-3">
+                                Dentro desta área atuamos nas seguintes questões:
+                            </p>
+                            <ul class="general-txt pt-2">
+                                <li>Obrigações e contratos</li>
+                                <li>Propriedade horizontal</li>
+                                <li>Família e menores</li>
+                                <li>Sucessório e Testamentos</li>
+                                <li>Tribunais judiciais</li>
+                                <li>Ações Cíveis</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="text-body-emphasis">Direito Comercial e Societários</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito Comercial e Societário</span> regula as atividades 
+                                    económicas e empresariais, assegurando um quadro jurídico estável para a criação, gestão e 
+                                    dissolução de empresas. Este ramo do direito abrange as normas que regem as relações entre 
+                                    comerciantes, sociedades e demais agentes económicos, promovendo a segurança e transparência no mercado.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Fundamental para o funcionamento das empresas, o Direito Comercial e Societário define as regras 
+                                    para a constituição de sociedades, contratos comerciais, responsabilidade dos sócios e administradores, 
+                                    bem como os mecanismos de resolução de conflitos empresariais. A sua aplicação visa garantir o 
+                                    equilíbrio nas relações comerciais e fomentar um ambiente de negócios sólido e competitivo.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Contratos comerciais</li>
+                                </ul>
                             </div>
-                          </div>
-                      
-                          <!-- TEXTAREA ao lado direito em ecrãs grandes -->
-                          <div class="col-lg-6 mt-3 mt-lg-0">
-                            <label for="message" style="display: none;"></label>
-                            <textarea class="form-control form-input" id="message" name="Mensagem" placeholder="*Escreva aqui a sua mensagem" required rows="8"></textarea>
-                      
-                            <!-- Honeypot -->
-                            <input type="text" name="_gotcha" style="display: none;">
-                          </div>
                         </div>
-                      
-                        <!-- ALERTAS -->
-                        <div id="alertSuccess" class="alert alert-warning alert-dismissible form-sent-success fade show disp-none sending-result mt-3" role="alert">
-                          <strong>Mensagem enviada com sucesso.</strong>
-                          <button id="alertSuccessBtn" type="button" class="btn-close"></button>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="text-body-emphasis">Direito Rodoviário e Contencioso</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito Rodoviário e Contencioso</span> regula as normas 
+                                    de circulação e segurança rodoviária, bem como a resolução de litígios decorrentes de infrações 
+                                    e acidentes de viação. Este ramo do direito visa garantir a correta aplicação das regras de 
+                                    trânsito, proteger os direitos dos condutores, peões e demais utentes da estrada, e assegurar 
+                                    a responsabilidade civil e penal em casos de infração.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Além disso, abrange a defesa de condutores em processos administrativos e judiciais, impugnação 
+                                    de contraordenações, ações de responsabilidade por danos decorrentes de acidentes rodoviários e 
+                                    questões relacionadas com seguros automóveis. O seu objetivo é promover a segurança nas vias 
+                                    públicas e assegurar a justa resolução de conflitos no âmbito rodoviário.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Registo automóvel</li>
+                                    <li>Habilitação de condução</li>
+                                    <li>Trânsito Impugnação contra-ordenações</li>
+                                </ul>
+                            </div>
                         </div>
-                      
-                        <div id="alertFail" class="alert alert-warning alert-dismissible form-sent-fail fade show disp-none sending-result mt-3" role="alert">
-                          <strong>Não foi possível enviar a sua mensagem.</strong>
-                          <br>Tente novamente ou contacte-nos diretamente por email.
-                          <button id="alertFailBtn" type="button" class="btn-close"></button>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h2 class="text-body-emphasis">Notariado e Registos</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Notariado e Registos</span> é uma área do direito que assegura a 
+                                    autenticidade, validade e publicidade dos atos jurídicos, garantindo a sua legalidade e 
+                                    segurança jurídica. A atividade notarial desempenha um papel essencial na formalização de 
+                                    contratos, escrituras, testamentos e outros atos que exigem fé pública.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Por sua vez, o sistema de registos assegura a inscrição e publicidade de factos jurídicos relevantes, 
+                                    como o registo civil (nascimentos, casamentos e óbitos), registo predial (transmissões e encargos sobre 
+                                    imóveis) e registo comercial (constituição e alterações de sociedades). Esta área do direito é 
+                                    fundamental para garantir a transparência, segurança e eficácia jurídica das relações patrimoniais e 
+                                    empresariais.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Registos</li>
+                                    <li>Autenticação de documentos</li>
+                                    <li>Reconhecimento assinaturas</li>
+                                    <li>Nacionalidade</li>
+                                    <li>Autorização de residência</li>
+                                    <li>Sociedades constituição/dissolução</li>
+                                </ul>
+                            </div>
                         </div>
-                      
-                        <!-- BOTÃO -->
-                        <div class="my-3">
-                          <button type="submit" class="btn round-btn-footer">Enviar Mensagem</button>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h2 class="text-body-emphasis">Direito e Contencioso do Trabalho </h2>
+                        </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito e Contencioso do Trabalho</span> O Direito e Contencioso 
+                                    do Trabalho regula as relações laborais entre empregadores e trabalhadores, assegurando o equilíbrio 
+                                    entre os direitos e deveres de ambas as partes. Esta área do direito abrange a celebração, execução e 
+                                    cessação dos contratos de trabalho, a proteção dos direitos dos trabalhadores, bem como a regulamentação 
+                                    das condições laborais, segurança e saúde no trabalho.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    No âmbito do <span class="bold-in-description">contencioso laboral</span>, trata-se da resolução de 
+                                    conflitos resultantes das relações de trabalho, seja por via negocial, administrativa ou judicial. 
+                                    Questões como despedimentos, assédio laboral, acidentes de trabalho, incumprimento de normas contratuais 
+                                    e reivindicações salariais são frequentemente objeto de litígios que exigem uma intervenção jurídica 
+                                    especializada para garantir a defesa dos interesses dos envolvidos.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Contratos</li>
+                                    <li>Relação laboral</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h2 class="text-body-emphasis">Direito Executivo</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito Executivo</span> é a área do direito que regula 
+                                    os processos destinados à cobrança coerciva de obrigações, como dívidas, cumprimento de contratos 
+                                    e execução de decisões judiciais. Através dos meios legais disponíveis, visa garantir que credores 
+                                    obtenham a satisfação dos seus créditos quando os devedores não cumprem voluntariamente as suas 
+                                    obrigações.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Este ramo do direito abrange mecanismos como penhoras, arrestos, execuções hipotecárias e outras 
+                                    medidas coercivas, assegurando que os credores possam recuperar os valores devidos de forma justa 
+                                    e eficaz, sempre respeitando os direitos fundamentais das partes envolvidas.
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Cartas de cobrança de dívidas</li>
+                                    <li>Instauração de processos executivos</li>
+                                    <li>Processos Injuntivos</li>
+                                    <li>Outros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <h2 class="text-body-emphasis">Direito do Consumidor</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito do Consumidor</span> é um ramo do direito que protege 
+                                    os interesses dos consumidores em suas relações com fornecedores de bens e serviços. Este campo abrange 
+                                    diversas questões, como a defesa contra práticas comerciais desleais, publicidade enganosa, e cláusulas 
+                                    contratuais abusivas. O objetivo principal é garantir que o consumidor tenha acesso à informação clara, 
+                                    que seus direitos sejam respeitados e que ele possa buscar reparação por danos sofridos devido a 
+                                    práticas ilegais ou prejudiciais.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    No contexto jurídico, o direito do consumidor busca equilibrar a relação entre consumidores e 
+                                    empresas, reconhecendo a vulnerabilidade do consumidor e assegurando-lhe uma posição de proteção 
+                                    em face de práticas que possam prejudicar a sua integridade física, moral ou patrimonial. Isso 
+                                    inclui o direito à devolução de produtos, à reparação de danos, e à compensação por perdas sofridas, 
+                                    sempre com base na legislação que regula as relações de consumo.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Garantias</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <h2 class="text-body-emphasis">Contencioso Fiscal e Tributário</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Contencioso Fiscal e Tributário</span> trata das disputas 
+                                    legais entre contribuintes e o Estado relacionadas à aplicação das leis tributárias. Este ramo do 
+                                    direito envolve a resolução de conflitos sobre a obrigação de pagamento de tributos, a interpretação 
+                                    de normas fiscais, e a contestação de autuações fiscais e sanções impostas pelos órgãos tributários. 
+                                    O foco é garantir que a tributação seja justa e que as obrigações fiscais sejam cumpridas conforme 
+                                    a legislação vigente.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Este campo inclui a defesa dos direitos do contribuinte em situações de cobrança indevida, contestação 
+                                    de impostos e outras medidas fiscais, além de regulamentar a atuação do Estado na fiscalização e 
+                                    arrecadação de tributos. O objetivo é assegurar um equilíbrio entre o cumprimento das obrigações 
+                                    fiscais e a proteção dos direitos dos contribuintes perante o sistema tributário.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            <h2 class="text-body-emphasis">Direito e Contencioso Penal</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito e Contencioso Penal</span> é o ramo do direito que 
+                                    regula as infrações penais e as sanções aplicáveis aos indivíduos que cometem crimes. Este campo 
+                                    da lei define o que constitui um crime, os procedimentos para a investigação, acusação e julgamento, 
+                                    e as penas que podem ser impostas aos infratores. O Contencioso Penal refere-se especificamente às 
+                                    disputas judiciais relacionadas a crimes, onde o Estado, através do Ministério Público, processa os 
+                                    indivíduos que infringem a lei. 
+                                </p>
+                                <p class="general-txt mt-3">
+                                    O objetivo do Direito Penal é assegurar a ordem social, prevenindo comportamentos que possam prejudicar 
+                                    a coletividade, punindo os responsáveis e reabilitando os infratores sempre que possível. Em um 
+                                    processo penal, o réu tem direitos constitucionais a um julgamento justo e imparcial, e o advogado de 
+                                    defesa desempenha um papel essencial na proteção desses direitos, podendo contestar as provas, 
+                                    questionar as alegações e pleitear pela absolvição ou redução das penas.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Contra-ordenações</li>
+                                    <li>Penal</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            <h2 class="text-body-emphasis">Contencioso Administrativo</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Contencioso Administrativo</span> refere-se ao conjunto de 
+                                    processos judiciais que envolvem a Administração Pública e seus atos. Este ramo do direito visa 
+                                    garantir que os atos administrativos, como decisões, normas ou contratos, sejam executados de acordo 
+                                    com a lei, protegendo os direitos dos cidadãos contra possíveis abusos de poder por parte do Estado. 
+                                    Através do contencioso administrativo, os indivíduos podem questionar a legalidade de atos 
+                                    administrativos e buscar reparação por danos causados por ações do poder público.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Este tipo de contencioso envolve a análise de decisões administrativas que afetam diretamente os 
+                                    interesses dos cidadãos, como questões fiscais, licenças, ou autorizações. Quando uma pessoa ou 
+                                    empresa considera que seus direitos foram prejudicados por um ato administrativo, pode recorrer ao 
+                                    tribunal administrativo para buscar a revisão ou anulação dessa decisão. O contencioso administrativo 
+                                    é, portanto, uma ferramenta crucial para assegurar a transparência, a legalidade e a justiça nas 
+                                    ações do Estado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            <h2 class="text-body-emphasis">Direito da Família</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito da Família</span> é o ramo do direito que regula as 
+                                    relações jurídicas entre membros de uma família, abordando questões essenciais como o casamento, a 
+                                    união de facto, a filiação, a guarda dos filhos, a adoção e a sucessão. Este campo do direito visa 
+                                    proteger os direitos individuais e coletivos dos membros da família, promovendo a convivência 
+                                    harmoniosa e o bem-estar das pessoas envolvidas. A legislação neste âmbito também lida com a 
+                                    proteção da criança, do idoso e de outros membros vulneráveis da família.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Além disso, o Direito da Família trata de questões como o regime de bens no casamento, a partilha 
+                                    de património, pensões alimentícias e a definição de responsabilidades parentais. O objetivo é 
+                                    resolver litígios familiares de forma equilibrada e justa, assegurando que os direitos de cada 
+                                    indivíduo sejam respeitados e que o melhor interesse das crianças seja sempre uma prioridade nas 
+                                    decisões judiciais.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Divórcio por mútuo consentimento e sem consentimento de outro cônjuge</li>
+                                    <li>Anulação do casamento católico</li>
+                                    <li>Ações de Separação de Bens e de Pessoas e Bens</li>
+                                    <li>Adopção</li>
+                                    <li>Mediação Familiar</li>
+                                    <li>Ações de Paternidade e de prestações de alimentos</li>
+                                    <li>Responsabilidades Parentais</li>
+                                    <li>Deserdação</li>
+                                    <li>Proteção de Crianças e Jovens em Risco</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            <h2 class="text-body-emphasis">Direito Imobiliário</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito Imobiliário</span> é o ramo do direito que regula as 
+                                    relações jurídicas relativas aos bens imóveis, incluindo a compra, venda, arrendamento, construção, 
+                                    utilização e administração de imóveis. Este campo abrange tanto o direito de propriedade como os 
+                                    direitos reais sobre imóveis, bem como questões relacionadas com a posse e o uso dos mesmos. Também 
+                                    lida com a elaboração e a execução de contratos imobiliários, como os de compra e venda, contratos 
+                                    de arrendamento, permuta, entre outros.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    Além disso, o Direito Imobiliário trata de matérias como a regularização de propriedades, a obtenção 
+                                    de licenças e alvarás, e a resolução de disputas decorrentes de questões fundiárias. Este ramo 
+                                    também envolve a análise de contratos e a resolução de conflitos entre compradores, vendedores, 
+                                    arrendadores e arrendatários, sempre com o objetivo de garantir a segurança jurídica e o cumprimento 
+                                    das normas legais aplicáveis ao setor imobiliário.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            <h2 class="text-body-emphasis">Direito das Sucessões/Inventário</h2>
+                        </button>
+                        </h2>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="general-txt">
+                                    O <span class="bold-in-description">Direito das Sucessões/Inventário</span> trata da transferência 
+                                    dos bens, direitos e deveres de uma pessoa falecida para os seus herdeiros. Este ramo do direito 
+                                    abrange as regras relativas à sucessão testamentária e legítima, ou seja, a distribuição dos bens 
+                                    de acordo com o que foi estabelecido no testamento ou, na ausência deste, conforme as disposições 
+                                    legais. O Direito das Sucessões também se ocupa da responsabilidade dos herdeiros em relação às 
+                                    dívidas do falecido e da gestão do espólio.
+                                </p>
+                                <p class="general-txt mt-3">
+                                    O Inventário é um procedimento legal que visa identificar e avaliar os bens deixados pelo falecido, 
+                                    bem como apurar os direitos e obrigações dos herdeiros. Este processo é essencial para formalizar a 
+                                    partilha dos bens, podendo ser realizado judicialmente ou extrajudicialmente, dependendo da 
+                                    complexidade do caso e da concordância entre os herdeiros. Através do inventário, busca-se assegurar 
+                                    que a sucessão seja feita de forma justa e conforme a legislação vigente, evitando conflitos entre os 
+                                    envolvidos.
+                                </p>
+                                <p class="general-txt mt-4">
+                                    Dentro desta área atuamos nas seguintes questões:
+                                </p>
+                                <ul class="general-txt pt-2">
+                                    <li>Testamentos, permutas e doações</li>
+                                    <li>Partilha Judicial de Bens e Extrajudicial</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== ATIVIDADE FIM =========================================== -->
+
+
+
+        <!-- ========================================== EQUIPA =========================================== -->
+
+        
+        <section class="pt-5" id="SectionEquipa">
+            <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
+                <h1 class="general-title team-title title-mobile-format">A nossa equipa</h1> 
+            </div>
+
+            <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
+                <button type="button" id="arrow-left" class="arrow-left slide-arrow arrow-btn me-2"><img src="./assets/icons/slide-arrow-left-black.svg" alt="seta contacto"></button>
+                <button type="button" id="arrow-right" class="arrow-right slide-arrow arrow-btn ms-2 me-2"><img class="batatas" src="./assets/icons/slide-arrow-right-black.svg" alt="seta contacto"></button>
+            </div>
+        <section>
+
+        <div class="container" id="SectionEquipa2">
+            
+
+            <div class="team-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                <div class="team-item col-5 team-card-block light-grey"
+                data-name="Ricardo Pacheco"
+                data-function="Advogado e Sócio"
+                data-img="ricardo">
+                    <img id="team-element-1" src="./assets/imgs/team/ricardo.webp" alt="Ricardo Pacheco">
+                </div>
+
+                <div class="team-item col-5 team-card-block dark-grey"
+                data-name="Carolina Carreiro"
+                data-function="Advogada e Sócia"
+                data-img="carolina">
+                    <img id="team-element-2" src="./assets/imgs/team/carolina.webp" alt="Carolina Carreiro">
+                </div>
+
+                <div class="team-item col-5 team-card-block light-grey"
+                data-name="Brito Ventura"
+                data-function="Advogado"
+                data-img="brito">
+                    <img id="team-element-3" src="./assets/imgs/team/brito.webp" alt="Brito Ventura">
+                </div>
+
+                <div class="team-item col-5 team-card-block dark-grey"
+                data-name="Verónica Casimiro"
+                data-function="Advogada"
+                data-img="veronica">
+                    <img id="team-element-4" src="./assets/imgs/team/veronica.webp" alt="Verónica Casimiro">
+                </div>
+
+                <div class="team-item col-5 team-card-block light-grey"
+                data-name="Júlia Filipe"
+                data-function="Advogada"
+                data-img="julia">
+                    <img id="team-element-5" src="./assets/imgs/team/julia.webp" alt="Júlia Filipe">
+                </div>
+
+                <div class="team-item col-5 team-card-block dark-grey"
+                data-name="João Morais"
+                data-function="Advogado"
+                data-img="joaom">
+                    <img id="team-element-6" src="./assets/imgs/team/joaom.webp" alt="João Morais">
+                </div>
+
+                <div class="team-item col-5 team-card-block dark-grey"
+                data-name="João Baptista"
+                data-function="Advogado-estagiário"
+                data-img="joao">
+                    <img id="team-element-7" src="./assets/imgs/team/joao.webp" alt="João Baptista">
+                </div>
+
+                <div class="team-item col-5 team-card-block dark-grey"
+                data-name="Bianca Pereira"
+                data-function="Advogada-estagiária"
+                data-img="bianca">
+                    <img id="team-element-8" src="./assets/imgs/team/bianca.webp" alt="Bianca Pereira">
+                </div>
+
+                <div class="team-item col-5 team-card-block light-grey"
+                data-name="Joana Rosa"
+                data-function="Advogada"
+                data-img="joana">
+                    <img id="team-element-9" src="./assets/imgs/team/joana.webp" alt="Joana Rosa">
+                </div>
+
+                <div class="team-item col-5 team-card-block dark-grey"
+                data-name="Goreti Cabral"
+                data-function="Secretária"
+                data-img="goreti">
+                    <img id="team-element-10" src="./assets/imgs/team/goreti.webp" alt="Goreti Cabral">
+                </div>
+
+                <div class="team-item col-2 col-md-2 me-0 me-md-2">
+                </div>
+            </div>
+        
+            <div class="py-1 px-3">
+                <h2 id="descriptionName" class="text-body-emphasis invisible-txt">Nome Colaborador</h2>
+                <p id="descriptionFunction" class="col-lg-8 lead general-txt px-0">Especialistas dedicados a defender os seus direitos com excelência.</p>
+                <button id="equipaContactBtn" class="contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+            </div>
+            
+            
+        </div>
+
+        <!-- ========================================== EQUIPA FIM =========================================== -->
+
+
+
+        <!-- ========================================== MANIFESTO =========================================== -->
+
+        <div id="SectionValores" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
+            <h1 class="general-title team-title title-mobile-format">Manifesto</h1> 
+        </div>
+
+        <section class="pt-5 container-fluid px-0">    
+            <div class="container-left values-container">
+                <div class="values-intro container">
+                    <p class="general-txt regular">
+                        Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
+                        eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
+                        com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
+                        transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
+                        e na confiança dos nossos clientes.
+                    </p>
+                    <button id="valuesContactBtn" class="contact-btn">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+                </div>
+                <div class="value-item seriousness">Seriedade</div>
+                <div class="value-item trust">Confiança</div>
+                <div class="value-item professionalism">Profissionalismo</div>
+                <div class="value-item excellence">Excelência</div>
+                <div class="value-item availability">Disponibilidade</div>
+            </div>
+            
+
+            <div class="container-fluid values-container-m">
+                <div class="values-intro container">
+                    <p class="general-txt">
+                        Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
+                        eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
+                        com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
+                        transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
+                        e na confiança dos nossos clientes.
+                    </p>
+                    <button id="valuesContactBtnMobile" class="contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+                </div>
+                <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                        <div class="value-item col-5 card-block seriousness">Seriedade</div>
+                        <div class="value-item col-5 card-block trust">Confiança</div>
+                        <div class="value-item col-5 card-block professionalism">Profissionalismo</div>
+                        <div class="value-item col-5 card-block excellence">Excelência</div>
+                        <div class="value-item col-5 card-block availability">Disponibilidade</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== MANIFESTO FIM =========================================== -->
+
+
+
+        <!-- ========================================== ESCRITORIOS =========================================== -->
+
+        <div id="SectionEscritorios" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-3 pb-3 mb-xl-3 pb-xl-3">
+            <h1 class="general-title team-title title-mobile-format">Os nossos escritórios</h1> 
+        </div>
+
+        <section id="SectionEscritoriosLeft" class="container-left">      
+            <!-- Escritório 1 -->
+            <div class="mt-4 mt-lg-5">
+            <div class="row featurette position-relative sticky-wrapper">
+                    <div class="col-md-6">
+                        <div class="sticky-content pt-1 mt-2 pt-md-2 mt-md-3">
+                            <h2 class="general-font">São Miguel <span class="text-body-secondary">(Sede)</span></h2>
+
+                            <p class="general-txt mb-3">
+                                O nosso escritório principal situa-se no centro de Ponta Delgada,
+                                numa zona de fácil acesso e próxima de serviços essenciais.
+                                O ambiente é discreto e profissional, garantindo conforto
+                                e privacidade.
+                            </p>
+
+                            <div class="office-address-out">
+                                <p class="general-txt"><b>Morada: </b></p>
+                                <p class="general-txt">Rua Caetano de Andrade, n.º 7 e 11</p>
+                                <p class="general-txt">9500-037 Ponta Delgada</p>
+                                <p class="general-txt mb-3">Ilha de São Miguel - Açores</p>
+                            </div>
+                            
+
+                            <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="picture-wrapper col-md-5 scrolling-column pt-1 mt-2 pt-md-2 mt-md-3">
+                        <img id="saoMiguelOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/sao-miguel-office.webp" alt="Edifício típico dos Açores">
+                    </div>
+            </div>
+            </div>
+
+            <!-- Escritório 2 -->
+            <div class="mt-4 mt-lg-5">
+                <div class="row featurette position-relative sticky-wrapper">
+                    <div class="col-md-6">
+                        <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
+                            <h2 class="general-font">Pico</h2>
+    
+                            <p class="general-txt mb-3">
+                                Com presença na ilha do Pico,  estamos disponíveis
+                                para o apoiar, com a mesma solidez que define a ilha,
+                                através de parcerias locais de confiança.
+                            </p>
+    
+                            <div class="office-address-out">
+                                <p class="general-txt"><b>Morada: </b></p>
+                                <p class="general-txt">Rua X, n.º Y</p>
+                                <p class="general-txt">0000-000 Madalena</p>
+                                <p class="general-txt mb-3">Ilha do Pico - Açores</p>
+                            </div>
+                            
+                            <a href="https://maps.app.goo.gl/XsYQ2EEhFa1je1iz7" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
+                        <img id="picoOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/pico-office.webp" alt="Edifício típico dos Açores">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escritório 3 -->
+            <div class="mt-4 mt-lg-5">
+                <div class="row featurette position-relative sticky-wrapper">
+                    <div class="col-md-6">
+                        <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
+                            <h2 class="general-font">Graciosa</h2>
+    
+                            <p class="general-txt mb-3">
+                                Agora também na ilha Graciosa, estamos tão presentes quanto
+                                o vento na Barra e a calma da Praça — sempre perto quando precisar.
+                            </p>
+    
+                            <div class="office-address-out">
+                                <p class="general-txt"><b>Morada: </b></p>
+                                <p class="general-txt">Rua Jacinto Cândido, n.º 4 e 6</p>
+                                <p class="general-txt">9880-357 Santa Cruz da Graciosa</p>
+                                <p class="general-txt mb-3">Ilha Graciosa - Açores</p>
+                            </div>
+                            
+    
+                            <a href="https://maps.app.goo.gl/Xd4itiF7LjZYYRXu8" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
+                        <img id="graciosaOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/graciosa-office.webp" alt="Edifício típico dos Açores">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== ESCRITORIOS FIM =========================================== -->
+
+        
+
+        <!-- ========================================== PARCERIAS =========================================== -->
+
+        <div id="SectionParcerias" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-3 pb-3 mb-xl-3 pb-xl-3">
+            <h1 class="general-title team-title title-mobile-format">Parcerias</h1> 
+        </div>
+
+        <section id="SectionParceriasLeft" class="container-left">      
+            <!-- Escritório 1 -->
+            <div class="mt-4 mt-lg-5">
+            <div class="row featurette position-relative sticky-wrapper">
+                    <div class="col-md-6">
+                        <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
+                            <h2 class="general-font">Boston <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
+
+                            <p class="general-txt mb-3">
+                                Parceria com o escritório X.
+                            </p>
+
+                            <div class="office-address-out">
+                                <p class="general-txt"><b>Morada: </b></p>
+                                <p class="general-txt">Y Street</p>
+                                <p class="general-txt">00000 Massachusetts</p>
+                                <p class="general-txt mb-3">Boston - EUA</p>
+                            </div>
+                            
+
+                            <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
+                        <img id="bostonPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/boston.jpg" alt="Edifício típico dos Açores">
+                    </div>
+            </div>
+            </div>
+
+            <!-- Escritório 2 -->
+            <div class="mt-4 mt-lg-5">
+                <div class="row featurette position-relative sticky-wrapper">
+                    <div class="col-md-6">
+                        <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
+                            <h2 class="general-font">Providence <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
+    
+                            <p class="general-txt mb-3">
+                                Parceria com o escritório X.
+                            </p>
+    
+                            <div class="office-address-out">
+                                <p class="general-txt"><b>Morada: </b></p>
+                                <p class="general-txt">Y Street</p>
+                                <p class="general-txt">00000 Providence</p>
+                                <p class="general-txt mb-3">Rhode Island - EUA</p>
+                            </div>
+                            
+    
+                            <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
+                        <img id="providencePartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/providence.jpg" alt="Edifício típico dos Açores">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escritório 3 -->
+            <div class="mt-4 mt-lg-5">
+                <div class="row featurette position-relative sticky-wrapper">
+                    <div class="col-md-6">
+                        <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
+                            <h2 class="general-font">Toronto <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m512 256c0-101.494-59.065-189.19-144.696-230.598v461.195c85.631-41.407 144.696-129.103 144.696-230.597z"/><path d="m0 256c0 101.494 59.065 189.19 144.696 230.598v-461.196c-85.631 41.408-144.696 129.104-144.696 230.598z"/><path d="m300.522 289.391 44.521-22.261-22.26-11.13v-22.261l-44.522 22.261 22.261-44.522h-22.261l-22.261-33.391-22.261 33.391h-22.261l22.261 44.522-44.522-22.261v22.261l-22.26 11.13 44.521 22.261-11.13 22.261h44.522v33.391h22.26v-33.391h44.522z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
+    
+                            <p class="general-txt mb-3">
+                                Parceria com o escritório X.
+                            </p>
+    
+                            <div class="office-address-out">
+                                <p class="general-txt"><b>Morada: </b></p>
+                                <p class="general-txt">Y Street</p>
+                                <p class="general-txt">X0X 0X0 Toronto</p>
+                                <p class="general-txt mb-3">Ontário - Canadá</p>
+                            </div>
+                            
+    
+                            <a href="https://maps.app.goo.gl/Xd4itiF7LjZYYRXu8" target="_blank"><button class="more-news-btn ps-2">Ver localização <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
+                        <img id="torontoPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/toronto.jpg" alt="Edifício típico dos Açores">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== PARCERIAS FIM =========================================== -->
+
+
+        <!-- ========================================== CONTACTO =========================================== -->
+
+        <section id="SectionContacto" class="py-5">
+            
+            <div id="SectionValores" class="container-fluid pt-5 ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
+                <h5 class="office-item-title display-6 title-mobile-format">Interessado ou ainda ficou com dúvidas?</h5>
+            </div>
+
+            <div class="container">
+                <div class="row featurette">
+                    <div class="col-md-12"> <!--mudar para col-md-8 caso seja para ter uma imagem ao lado-->
+                        <p id="descriptionFunction" class="general-txt px-0">Deixe-nos uma mensagem e iremos responder-lhe o mais brevemente possível ou então visite a nossa sede.</p>
+                        
+                        <form action="https://formspree.io/f/mdkewzrk" method="POST">
+                            <div class="row mt-lg-4 mt-3">
+                            <div class="col-lg-6">
+                                <div class="form-row">
+                                <div class="col-12 mb-3">
+                                    <label for="name" style="display: none;"></label>
+                                    <input type="text" id="name" name="Nome" class="form-control form-input" placeholder="*Nome" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="email" style="display: none;"></label>
+                                    <input type="email" id="email" name="Email" class="form-control form-input" placeholder="*Email" 
+                                        oninvalid="this.setCustomValidity('Por favor, introduza um email válido.')"
+                                        oninput="this.setCustomValidity('')" required>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="phone" style="display: none;"></label>
+                                    <input type="tel" id="phone" name="Telefone" class="form-control form-input" placeholder="*Telefone" 
+                                        pattern="[\d\s\-\+\(\)]{9,}" 
+                                        oninvalid="this.setCustomValidity('Por favor, introduza um número de telefone válido.')"
+                                        oninput="this.setCustomValidity('')" required>
+                                </div>                              
+                                <div class="col-12 mb-3">
+                                    <select name="Ramo" class="custom-select form-control form-input" required>
+                                    <option value="">Ramo do direito associado ao assunto que quer tratar?</option>
+                                    <option value="Direito Civil">Direito Civil</option>
+                                    <option value="Direito Comercial e Societário">Direito Comercial e Societário</option>
+                                    <option value="Direito Rodoviário">Direito Rodoviário</option>
+                                    <option value="Notariado e Registos">Notariado e Registos</option>
+                                    <option value="Direito do Trabalho">Direito do Trabalho</option>
+                                    <option value="Direito Executivo">Direito Executivo</option>
+                                    <option value="Direito do Consumidor">Direito do Consumidor</option>
+                                    <option value="Contencioso Fiscal e Tributário">Contencioso Fiscal e Tributário</option>
+                                    <option value="Direito e Contencioso Penal">Direito e Contencioso Penal</option>
+                                    <option value="Contencioso Administrativo">Contencioso Administrativo</option>
+                                    <option value="Direito da Família">Direito da Família</option>
+                                    <option value="Direito Imobiliário">Direito Imobiliário</option>
+                                    <option value="Direito das Sucessões/Inventário">Direito das Sucessões/Inventário</option>
+                                    <option value="Outro">Outro</option>
+                                    </select>
+                                </div>
+                                </div>
+                            </div>
+                        
+                            <!-- TEXTAREA ao lado direito em ecrãs grandes -->
+                            <div class="col-lg-6 mt-3 mt-lg-0">
+                                <label for="message" style="display: none;"></label>
+                                <textarea class="form-control form-input" id="message" name="Mensagem" placeholder="*Escreva aqui a sua mensagem" required rows="8"></textarea>
+                        
+                                <!-- Honeypot -->
+                                <input type="text" name="_gotcha" style="display: none;">
+                            </div>
+                            </div>
+                        
+                            <!-- ALERTAS -->
+                            <div id="alertSuccess" class="alert alert-warning alert-dismissible form-sent-success fade show disp-none sending-result mt-3" role="alert">
+                            <strong>Mensagem enviada com sucesso.</strong>
+                            <button id="alertSuccessBtn" type="button" class="btn-close"></button>
+                            </div>
+                        
+                            <div id="alertFail" class="alert alert-warning alert-dismissible form-sent-fail fade show disp-none sending-result mt-3" role="alert">
+                            <strong>Não foi possível enviar a sua mensagem.</strong>
+                            <br>Tente novamente ou contacte-nos diretamente por email.
+                            <button id="alertFailBtn" type="button" class="btn-close"></button>
+                            </div>
+                        
+                            <!-- BOTÃO -->
+                            <div class="my-3">
+                            <button type="submit" class="btn round-btn-footer">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                        
+
+                    </div>
+                    <!--
+                    <div class="container col-md-4">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto contact-img" src="./assets/imgs/contact-img.png" alt="Edifício típico dos Açores">
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================== CONTACTO FIM =========================================== -->
+
+
+
+        <!-- ========================================== FOOTER =========================================== -->
+
+        <section id="SectionFooter">
+            <hr>
+            <div class="container">
+                <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <p class="footer-title general-txt fat mb-3">RPA Advogados</p>
+
+                        <p class="general-font mb-0"><b>Morada:</b></p>
+                        <p class="general-font mb-0">Rua Caetano de Andrade, n.º 7 e 11</p>
+                        <p class="general-font mb-0">9500-037 Ponta Delgada</p>
+                        <p class="general-font">São Miguel <b>(Sede)</b></p>
+
+                        <p class="general-font mb-0"><b>Email:</b></p>
+                        <p class="general-font">ricardopacheco-177a@adv.oa.pt</p>
+
+                        <p class="general-font mb-0"><b>Telefone:</b></p>
+                        <p class="general-font">+351 296 281 574</p>
+                    
+                    </div>
+            
+                    <div class="col-6 col-md-2 mb-3">
+                        <p class="footer-title general-txt fat">Links Úteis</p>
+
+                        <p id="FooterBtnEspecialidades" class="general-font mt-3 text-body-secondary"><a class="footer-link">Atividade</a></p>
+                        <p id="FooterBtnEquipa" class="general-font mt-3 text-body-secondary"><a class="footer-link">Equipa</a></p>
+                        <p id="FooterBtnValores" class="general-font mt-3 text-body-secondary"><a class="footer-link">Manifesto</a></p>
+                        <p id="FooterBtnEscritorios" class="general-font mt-3 text-body-secondary"><a class="footer-link">Escritórios</a></p>
+                        <p id="FooterBtnParcerias" class="general-font mt-3 text-body-secondary"><a class="footer-link">Parcerias</a></p>
+                        <p id="FooterBtnBlog" class="general-font mt-3 text-body-secondary"><a class="footer-link">Insights</a></p>
+                    </div>
+            
+                    <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <p class="footer-title general-txt fat">Subscreva à nossa Newsletter</p>
+
+                        <p class="general-font mt-3">Atualizamos regularmente a nossa Newsletter no LinkedIn para que fique sempre a par das nossas novidades.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <!--https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles ALTERAR PARA A NEWSLETTER DO LINKEDIN DA RPA -->
+                            <a href="https://www.linkedin.com/newsletters/bosch-insights-7178058110542962688" target="_blank"><button id="ButtonSubscricao" type="button" class="btn round-btn-footer">Subscrever</button></a>
                         </div>
                     </form>
-                      
-
-                </div>
-                <!--
-                <div class="container col-md-4">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto contact-img" src="./assets/imgs/contact-img.png" alt="Edifício típico dos Açores">
-                </div>
-                -->
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ========================================== CONTACTO FIM =========================================== -->
-
-
-
-    <!-- ========================================== FOOTER =========================================== -->
-
-    <section id="SectionFooter">
-        <hr>
-        <div class="container">
-            <footer class="py-5">
-              <div class="row">
-                <div class="col-6 col-md-4 mb-3">
-                    <p class="footer-title general-txt fat mb-3">RPA Advogados</p>
-
-                    <p class="general-font mb-0"><b>Morada:</b></p>
-                    <p class="general-font mb-0">Rua Caetano de Andrade, n.º 7 e 11</p>
-                    <p class="general-font mb-0">9500-037 Ponta Delgada</p>
-                    <p class="general-font">São Miguel <b>(Sede)</b></p>
-
-                    <p class="general-font mb-0"><b>Email:</b></p>
-                    <p class="general-font">ricardopacheco-177a@adv.oa.pt</p>
-
-                    <p class="general-font mb-0"><b>Telefone:</b></p>
-                    <p class="general-font">+351 296 281 574</p>
-                  
-                </div>
-          
-                <div class="col-6 col-md-2 mb-3">
-                    <p class="footer-title general-txt fat">Links Úteis</p>
-
-                    <p id="FooterBtnEspecialidades" class="general-font mt-3 text-body-secondary"><a class="footer-link">Atividade</a></p>
-                    <p id="FooterBtnEquipa" class="general-font mt-3 text-body-secondary"><a class="footer-link">Equipa</a></p>
-                    <p id="FooterBtnValores" class="general-font mt-3 text-body-secondary"><a class="footer-link">Manifesto</a></p>
-                    <p id="FooterBtnEscritorios" class="general-font mt-3 text-body-secondary"><a class="footer-link">Escritórios</a></p>
-                    <p id="FooterBtnBlog" class="general-font mt-3 text-body-secondary"><a class="footer-link">Insights</a></p>
-                    <p id="FooterBtnContacto" class="general-font mt-3 text-body-secondary"><a class="footer-link">Entrar em contacto</a></p>
-                </div>
-          
-                <div class="col-md-5 offset-md-1 mb-3">
-                  <form>
-                    <p class="footer-title general-txt fat">Subscreva à nossa Newsletter</p>
-
-                    <p class="general-font mt-3">Atualizamos regularmente a nossa Newsletter no LinkedIn para que fique sempre a par das nossas novidades.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                      <!--https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles ALTERAR PARA A NEWSLETTER DO LINKEDIN DA RPA -->
-                        <a href="https://www.linkedin.com/newsletters/bosch-insights-7178058110542962688" target="_blank"><button id="ButtonSubscricao" type="button" class="btn round-btn-footer">Subscrever</button></a>
                     </div>
-                  </form>
                 </div>
-              </div>
-          
-              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p class="general-txt">© <span id="currentYear"></span> Ricardo Pacheco & Associados</p>
-                <ul class="list-unstyled d-flex">
-                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/ricardopachecoadvogados/"  target="_blank" aria-label="Instagram"><i class="bi bi-instagram social-network-icon"></i></a></li>
-                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/rpassociados/?locale=pt_PT" target="_blank" aria-label="Facebook"><i class="bi bi-facebook social-network-icon"></i></a></li>
-                  <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/company/rp-associadoss/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin social-network-icon"></i></a></li>
-                </ul>
-              </div>
-            </footer>
-          </div>
+            
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p class="general-txt">© <span id="currentYear"></span> Ricardo Pacheco & Associados</p>
+                    <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/ricardopachecoadvogados/"  target="_blank" aria-label="Instagram"><i class="bi bi-instagram social-network-icon"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/rpassociados/?locale=pt_PT" target="_blank" aria-label="Facebook"><i class="bi bi-facebook social-network-icon"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/company/rp-associadoss/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin social-network-icon"></i></a></li>
+                    </ul>
+                </div>
+                </footer>
+            </div>
 
 
-    </section>
+        </section>
 
-    <!-- ========================================== FOOTER FIM =========================================== -->
+        <!-- ========================================== FOOTER FIM =========================================== -->
     
-
+    </div>
     <!-- Scripts -->
     
 

@@ -93,6 +93,23 @@ document.getElementById("FooterBtnEscritorios").addEventListener("click", (event
 });
 
 
+document.getElementById("ButtonParcerias").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Parcerias");
+});
+
+document.getElementById("FooterBtnParcerias").addEventListener("click", (event) => {
+    // Impedir o comportamento padrão do link
+    event.preventDefault();
+
+    // Chamar a animação de rolagem
+    scrollAnim("Parcerias");
+});
+
+
 document.getElementById("ButtonBlog").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
@@ -113,14 +130,6 @@ document.getElementById("FooterBtnBlog").addEventListener("click", (event) => {
 document.querySelector(".round-btn").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     console.log("Clicou no contacto dentro do manifesto");
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Contacto");
-});
-
-document.getElementById("FooterBtnContacto").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
     event.preventDefault();
 
     // Chamar a animação de rolagem
@@ -154,6 +163,19 @@ document.getElementById("equipaContactBtn").addEventListener("click", (event) =>
 });
 
 
+// ******************************************************* LOADER **********************************************
+
+const loader = document.getElementById("mainLoader");
+const content = document.getElementById("mainContent");
+
+setTimeout(() => {
+        loader.classList.add('disp-none');
+        content.classList.remove('disp-none');
+}, 1250);
+
+
+
+// ******************************************************* LOADER FIM **********************************************
 
 
 let animation = lottie.loadAnimation({

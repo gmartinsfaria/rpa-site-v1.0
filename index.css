@@ -14,6 +14,24 @@ html, body {
 }
 
 
+/* ****************************************************** LOADER ******************************************************* */
+
+.loader-container {
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000;
+}
+
+
+
+
+/* ****************************************************** LOADER FIM ******************************************************* */
+
+
  
  /* Tornar a navbar transparente */
 .navbar {
@@ -148,6 +166,15 @@ html, body {
 .round-btn-footer:hover {
     background-color: #A6151F;
     color: #EEEEEE;
+}
+
+.round-btn:active,
+.round-btn-footer:active {
+    background-color: #ffffff !important;
+    color: #A6151F !important;
+    border-style: solid !important;
+    border-width: 1px 1px !important;
+    border-color: #A6151F !important;
 }
 
 #ButtonContacto,
