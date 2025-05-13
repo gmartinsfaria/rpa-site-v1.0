@@ -573,10 +573,46 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
 
-  
-
-
 //================================================== ESCRITÓRIOS FIM =================================================
+
+
+// ************************************************* PARCERIAS *********************************************************
+
+document.addEventListener("DOMContentLoaded", function () {
+    const targetElement = document.getElementById("SectionParceriasLeft");
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const bostonPartnershipImg = document.getElementById("bostonPartnershipImg");
+    const providencePartnershipImg = document.getElementById("providencePartnershipImg");
+    const torontoPartnershipImg = document.getElementById("torontoPartnershipImg");
+  
+    function updateClasses(e) {
+      if (!targetElement) return;
+  
+      if (e.matches) {
+        // Largura >= 768px
+        targetElement.classList.add("container-left");
+        targetElement.classList.remove("container");
+        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.jpg";
+        providencePartnershipImg.src = "./assets/imgs/partnerships/providence.jpg";
+        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto.jpg";
+      } else {
+        // Largura < 768px
+        targetElement.classList.add("container");
+        targetElement.classList.remove("container-left");
+        bostonPartnershipImg.src = "./assets/imgs/offices/sao-miguel-office-m.webp";
+        providencePartnershipImg.src = "./assets/imgs/offices/pico-office-m.webp";
+        torontoPartnershipImg.src = "./assets/imgs/offices/graciosa-office-m.webp";
+      }
+    }
+  
+    // Executa à carga
+    updateClasses(mediaQuery);
+  
+    // E ao mudar de tamanho
+    mediaQuery.addEventListener("change", updateClasses);
+});
+
+// ************************************************** PARCERIAS FIM *****************************************************
 
 
 //***************************************************** FORM CONTACTO ***********************************************************

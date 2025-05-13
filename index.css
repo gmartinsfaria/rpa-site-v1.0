@@ -260,7 +260,6 @@ html, body {
     align-items: flex-start;
     padding: 0;
     transition: transform 0.4s ease;
-
     user-select: none;
     width: 90%;
     max-width: 700px;
@@ -804,15 +803,38 @@ html, body {
     }
   }
   
-  .office-picture {
-    filter: grayscale(100%);
-    width: 100%;
-    height: auto;
-  }
+
+.picture-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+
+.office-picture {
+filter: grayscale(100%);
+transition: transform 0.4s ease, filter 0.4s ease;
+width: 100%;
+height: auto;
+}
+
   
-  .office-picture:hover {
-    filter: grayscale(10%);
-  }
+.office-picture:hover {
+transform: scale(1.07);
+transition: transform 0.4s ease;
+filter: grayscale(0%);
+}
+
+
+@media (max-width: 768px) {
+    .office-address-out {
+        display: none;
+    }
+}
+
+
+
+
   
   
   
