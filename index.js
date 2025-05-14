@@ -168,14 +168,25 @@ document.getElementById("equipaContactBtn").addEventListener("click", (event) =>
 const loader = document.getElementById("mainLoader");
 const content = document.getElementById("mainContent");
 
+
+content.style.visibility = "hidden";
+
 setTimeout(() => {
-        loader.classList.add('disp-none');
-        content.classList.remove('disp-none');
-}, 1250);
+    content.classList.remove('disp-none');
+    loader.classList.add('disp-none');
+        setTimeout(() => {
+            content.style.visibility = "visible";
+        }, 200);
+}, 1000);
+
+
 
 
 
 // ******************************************************* LOADER FIM **********************************************
+
+
+// ******************************************************* ANIMAÇÃO ************************************************
 
 
 let animation = lottie.loadAnimation({
@@ -187,23 +198,8 @@ let animation = lottie.loadAnimation({
 });
 
 
-let animationTxt = lottie.loadAnimation({
-    container: document.getElementById('lottie-animation-txt'),
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: './assets/json-files/Homeapage-txt.json'
-});
 
-let interact1 = lottie.loadAnimation({
-    container: document.querySelector('.lottie-animation-interact-1'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: './assets/json-files/cta.json'
-});
-
-
+// ****************************************************** ANIMAÇÃO FIM **********************************************
 
 
 
