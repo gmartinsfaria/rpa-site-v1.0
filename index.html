@@ -88,7 +88,7 @@
                 <p class="general-txt">Desde 2010</p>
             </div>
         
-            <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
+            <div id="newsNavigationArrows" class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
                 <button type="button" id="arrow-left-news" class="arrow-left arrow-btn me-2">
                     <img src="./assets/icons/slide-arrow-left-black.svg" alt="seta esquerda">
                 </button>
@@ -714,90 +714,89 @@
         <!-- ========================================== EQUIPA =========================================== -->
 
         
-        <section class="pt-5" id="SectionEquipa">
-            <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-xl-3 pb-xl-3">
+        <section id="SectionEquipa" class="pt-5">
+            <div class="container-fluid ms-3 ps-3 ms-sm-3 ps-sm-3 ms-md-3 ps-md-3 ms-lg-4 ps-lg-4 ms-xl-5 ps-xl-5 mb-md-3 pb-md-3">
                 <h1 class="general-title team-title title-mobile-format">A nossa equipa</h1> 
             </div>
 
-            <div class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
+            <div id="teamNavigationArrows" class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
                 <button type="button" id="arrow-left" class="arrow-left slide-arrow arrow-btn me-2"><img src="./assets/icons/slide-arrow-left-black.svg" alt="seta contacto"></button>
                 <button type="button" id="arrow-right" class="arrow-right slide-arrow arrow-btn ms-2 me-2"><img class="batatas" src="./assets/icons/slide-arrow-right-black.svg" alt="seta contacto"></button>
             </div>
         <section>
 
-        <div class="container" id="SectionEquipa2">
+        <div id="SectionEquipa2" class="container pt-3 pt-sm-5">
             
-
             <div class="team-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
                 <div class="team-item col-5 team-card-block light-grey"
                 data-name="Ricardo Pacheco"
-                data-function="Advogado e Sócio"
+                data-function="Penal"
                 data-img="ricardo">
                     <img id="team-element-1" src="./assets/imgs/team/ricardo.webp" alt="Ricardo Pacheco">
                 </div>
 
                 <div class="team-item col-5 team-card-block dark-grey"
                 data-name="Carolina Carreiro"
-                data-function="Advogada e Sócia"
+                data-function="Civil | Executivo | Administrativo | Notariado"
                 data-img="carolina">
                     <img id="team-element-2" src="./assets/imgs/team/carolina.webp" alt="Carolina Carreiro">
                 </div>
 
                 <div class="team-item col-5 team-card-block light-grey"
                 data-name="Brito Ventura"
-                data-function="Advogado"
+                data-function="Penal | Contraordenações | Fiscal | Contratos"
                 data-img="brito">
                     <img id="team-element-3" src="./assets/imgs/team/brito.webp" alt="Brito Ventura">
                 </div>
 
                 <div class="team-item col-5 team-card-block dark-grey"
                 data-name="Verónica Casimiro"
-                data-function="Advogada"
+                data-function="Família e menores | Acidentes de viação | Penal | Acidentes de trabalho"
                 data-img="veronica">
                     <img id="team-element-4" src="./assets/imgs/team/veronica.webp" alt="Verónica Casimiro">
                 </div>
 
                 <div class="team-item col-5 team-card-block light-grey"
                 data-name="Júlia Filipe"
-                data-function="Advogada"
+                data-function="Laboral | Administrativo | Executivo | Insolvências"
                 data-img="julia">
                     <img id="team-element-5" src="./assets/imgs/team/julia.webp" alt="Júlia Filipe">
                 </div>
 
                 <div class="team-item col-5 team-card-block dark-grey"
                 data-name="João Morais"
-                data-function="Advogado"
+                data-function="Laboral | Administrativo | Civil"
                 data-img="joaom">
                     <img id="team-element-6" src="./assets/imgs/team/joaom.webp" alt="João Morais">
                 </div>
 
                 <div class="team-item col-5 team-card-block dark-grey"
                 data-name="João Baptista"
-                data-function="Advogado-estagiário"
+                data-function="Penal | Contraordenações"
                 data-img="joao">
                     <img id="team-element-7" src="./assets/imgs/team/joao.webp" alt="João Baptista">
                 </div>
 
                 <div class="team-item col-5 team-card-block dark-grey"
                 data-name="Bianca Pereira"
-                data-function="Advogada-estagiária"
+                data-function="Registo | Notariado"
                 data-img="bianca">
                     <img id="team-element-8" src="./assets/imgs/team/bianca.webp" alt="Bianca Pereira">
                 </div>
 
                 <div class="team-item col-5 team-card-block light-grey"
                 data-name="Joana Rosa"
-                data-function="Advogada"
+                data-function="Civil | Executivo | Inventários"
                 data-img="joana">
                     <img id="team-element-9" src="./assets/imgs/team/joana.webp" alt="Joana Rosa">
                 </div>
 
-                <div class="team-item col-5 team-card-block dark-grey"
+                <!-- <div class="team-item col-5 team-card-block dark-grey"
                 data-name="Goreti Cabral"
                 data-function="Secretária"
                 data-img="goreti">
                     <img id="team-element-10" src="./assets/imgs/team/goreti.webp" alt="Goreti Cabral">
-                </div>
+                </div> -->
 
                 <div class="team-item col-2 col-md-2 me-0 me-md-2">
                 </div>
@@ -983,7 +982,7 @@
             <div class="row featurette position-relative sticky-wrapper">
                     <div class="col-md-6">
                         <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                            <h2 class="general-font">Boston <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
+                            <h2 class="general-font">Boston <!-- <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg> --> </h2>
 
                             <p class="general-txt mb-3">
                                 Parceria com o escritório X.
@@ -1002,7 +1001,7 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                        <img id="bostonPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/boston.jpg" alt="Edifício típico dos Açores">
+                        <img id="bostonPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/boston.webp" alt="Edifício típico dos Açores">
                     </div>
             </div>
             </div>
@@ -1012,7 +1011,7 @@
                 <div class="row featurette position-relative sticky-wrapper">
                     <div class="col-md-6">
                         <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                            <h2 class="general-font">Providence <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
+                            <h2 class="general-font">Providence <!-- <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg> --></h2>
     
                             <p class="general-txt mb-3">
                                 Parceria com o escritório X.
@@ -1031,7 +1030,7 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                        <img id="providencePartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/providence.jpg" alt="Edifício típico dos Açores">
+                        <img id="providencePartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/providence.webp" alt="Edifício típico dos Açores">
                     </div>
                 </div>
             </div>
@@ -1041,7 +1040,7 @@
                 <div class="row featurette position-relative sticky-wrapper">
                     <div class="col-md-6">
                         <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
-                            <h2 class="general-font">Toronto <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m512 256c0-101.494-59.065-189.19-144.696-230.598v461.195c85.631-41.407 144.696-129.103 144.696-230.597z"/><path d="m0 256c0 101.494 59.065 189.19 144.696 230.598v-461.196c-85.631 41.408-144.696 129.104-144.696 230.598z"/><path d="m300.522 289.391 44.521-22.261-22.26-11.13v-22.261l-44.522 22.261 22.261-44.522h-22.261l-22.261-33.391-22.261 33.391h-22.261l22.261 44.522-44.522-22.261v22.261l-22.26 11.13 44.521 22.261-11.13 22.261h44.522v33.391h22.26v-33.391h44.522z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg></h2>
+                            <h2 class="general-font">Toronto <!-- <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m512 256c0-101.494-59.065-189.19-144.696-230.598v461.195c85.631-41.407 144.696-129.103 144.696-230.597z"/><path d="m0 256c0 101.494 59.065 189.19 144.696 230.598v-461.196c-85.631 41.408-144.696 129.104-144.696 230.598z"/><path d="m300.522 289.391 44.521-22.261-22.26-11.13v-22.261l-44.522 22.261 22.261-44.522h-22.261l-22.261-33.391-22.261 33.391h-22.261l22.261 44.522-44.522-22.261v22.261l-22.26 11.13 44.521 22.261-11.13 22.261h44.522v33.391h22.26v-33.391h44.522z"/></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg> --> </h2>
     
                             <p class="general-txt mb-3">
                                 Parceria com o escritório X.
@@ -1060,7 +1059,7 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                        <img id="torontoPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/toronto.jpg" alt="Edifício típico dos Açores">
+                        <img id="torontoPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/toronto.webp" alt="Edifício típico dos Açores">
                     </div>
                 </div>
             </div>

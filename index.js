@@ -9,20 +9,20 @@ let dropOpen = false;
 
 gsap.registerPlugin(ScrollToPlugin); // Regista o plugin!
 
-const navbarHeight = document.querySelector('.navbar').offsetHeight;
+function scrollAnim(sectionId) {
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
-function scrollAnim(e) {
-    console.log(`Clicou em ${e}`);
     gsap.to(window, { 
         duration: 1.5, 
         scrollTo: {
-            y: `#Section${e}`,
+            y: `#Section${sectionId}`,
             offsetY: navbarHeight
-          }, 
+        }, 
         ease: "power2.inOut",
         immediateRender: true
     });
-};
+}
+
   
 
 document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
@@ -193,9 +193,24 @@ let animation = lottie.loadAnimation({
     container: document.getElementById('lottie-animation'), // O contêiner onde a animação será exibida
     renderer: 'svg', // Tipo de renderização (svg, canvas, ou html)
     loop: false, // Defina como true se a animação deve ser repetida
-    autoplay: true, // Defina como true para que a animação comece automaticamente
+    autoplay: false, // Defina como true para que a animação comece automaticamente
     path: './assets/json-files/Homepage-anim.json' // Caminho para o arquivo JSON gerado com o Bodymovin
 });
+
+const lottieContainer = document.getElementById('lottie-animation');
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animation.play(); // Inicia a animação
+      observer.unobserve(entry.target); // Para de observar depois de tocar
+    }
+  });
+}, {
+  threshold: 0.5 // Só ativa quando 50% do elemento está visível
+});
+
+observer.observe(lottieContainer);
 
 
 
@@ -325,7 +340,6 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollContainer.scrollLeft = scrollLeft - walk;
     });
 });
-
 
 
 // ================================================ NEWS FIM ===============================================================
@@ -610,16 +624,16 @@ document.addEventListener("DOMContentLoaded", function () {
         // Largura >= 768px
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
-        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.jpg";
-        providencePartnershipImg.src = "./assets/imgs/partnerships/providence.jpg";
-        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto.jpg";
+        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.webp";
+        providencePartnershipImg.src = "./assets/imgs/partnerships/providence.webp";
+        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto.webp";
       } else {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
-        bostonPartnershipImg.src = "./assets/imgs/offices/sao-miguel-office-m.webp";
-        providencePartnershipImg.src = "./assets/imgs/offices/pico-office-m.webp";
-        torontoPartnershipImg.src = "./assets/imgs/offices/graciosa-office-m.webp";
+        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston-m.webp";
+        providencePartnershipImg.src = "./assets/imgs/partnerships/providence-m.webp";
+        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto-m.webp";
       }
     }
   

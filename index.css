@@ -387,8 +387,14 @@ html, body {
     }
 }
 
+@media (min-width: 576px) {
+    #newsNavigationArrows {
+      display: none;
+    }
+}
 
-/* ==================================================== NEWS ====================================================*/
+
+/* ==================================================== NEWS FIM ====================================================*/
 
 
 
@@ -757,6 +763,12 @@ html, body {
     -webkit-user-select: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
     -moz-user-select: none; /* Para Firefox */
     -ms-user-select: none; /* Para versões antigas do Edge/IE */
+}
+
+@media (min-width: 576px) {
+    #teamNavigationArrows {
+      display: none;
+    }
 }
 
 .invisible-txt {
