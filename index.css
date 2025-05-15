@@ -303,7 +303,11 @@ html, body {
 }
 
 .news-img-wrapper:hover {
-    cursor: pointer;
+    cursor:grab;
+}
+
+.news-img-wrapper:active {
+    cursor:grabbing;
 }
 
 .news-item img {

@@ -611,6 +611,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ************************************************* PARCERIAS *********************************************************
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const targetElement = document.getElementById("SectionParceriasLeft");
     const mediaQuery = window.matchMedia("(min-width: 768px)");
