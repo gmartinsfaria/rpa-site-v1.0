@@ -7,21 +7,22 @@ let esp6Shown = false;
 
 let dropOpen = false;
 
-gsap.registerPlugin(ScrollToPlugin); // Regista o plugin!
+gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
-function scrollAnim(sectionId) {
-    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
+function scrollAnim(e) {
+    console.log(`Clicou em ${e}`);
     gsap.to(window, { 
         duration: 1.5, 
         scrollTo: {
-            y: `#Section${sectionId}`,
+            y: `#Section${e}`,
             offsetY: navbarHeight
-        }, 
+          }, 
         ease: "power2.inOut",
         immediateRender: true
     });
-}
+};
 
   
 
@@ -427,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function getCardWidth() {
         const card = scrollContainer.querySelector(".team-card-block");
         const cardWidth = card ? card.offsetWidth : 300;
-        const gapInPixels = window.innerWidth * 0.01; // 1vw
+        const gapInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem
         return cardWidth + gapInPixels;
     }
 
@@ -708,6 +709,19 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Estamos no ano " + year);
     document.getElementById("currentYear").innerHTML = year;
 });
+
+document.getElementById("linkLivroRecl").addEventListener("mouseenter", () => {
+    const image = document.getElementById("imageLinkLivroRecl");
+
+    image.src = "./assets/imgs/livro_reclamacoes/reclamacoes-hover.webp";
+});
+
+document.getElementById("linkLivroRecl").addEventListener("mouseleave", () => {
+    const image = document.getElementById("imageLinkLivroRecl");
+
+    image.src = "./assets/imgs/livro_reclamacoes/reclamacoes.webp";
+});
+
 
 
 

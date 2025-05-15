@@ -13,6 +13,9 @@ html, body {
     font-family: 'EB Garamond', serif;
 }
 
+.justify{
+    text-align: justify;
+}
 
 /* ****************************************************** LOADER ******************************************************* */
 
@@ -745,7 +748,7 @@ html, body {
     cursor: pointer; /* Cursor de "mão" ao arrastar */
     margin-left: 0 !important;
     padding-left: 0 !important;
-    gap: 1vw;
+    gap: 1rem;
 }
 
 .team-scrolling-wrapper::-webkit-scrollbar {
