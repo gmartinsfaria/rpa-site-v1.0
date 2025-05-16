@@ -7,7 +7,7 @@ let esp6Shown = false;
 
 let dropOpen = false;
 
-/*gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
+gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
 const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
@@ -22,43 +22,9 @@ function scrollAnim(e) {
         ease: "power2.inOut",
         immediateRender: true
     });
-};*/
-
-function easeInOutQuad(t) {
-    return t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
-}
-
-function scrollAnim(sectionId) {
-    const target = document.getElementById(`Section${sectionId}`);
-    const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
-
-    if (!target) return;
-
-    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-    const startPosition = window.pageYOffset;
-    const distance = targetPosition - startPosition;
-    const duration = 800; // tempo da animação em ms
-    let startTime = null;
-
-    function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const progress = Math.min(timeElapsed / duration, 1);
-        const ease = easeInOutQuad(progress);
-
-        window.scrollTo(0, startPosition + (distance * ease));
-
-        if (timeElapsed < duration) {
-            requestAnimationFrame(animation);
-        }
-    }
-
-    requestAnimationFrame(animation);
-}
+};
 
 
-
-  
 
 document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link

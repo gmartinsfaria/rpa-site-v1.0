@@ -11,7 +11,6 @@ html, body {
     overflow-x: hidden;
     width: 100%;         /* Garante que a largura total seja 100% */
     font-family: 'EB Garamond', serif;
-    background-color: #A6151F;
 }
 
 .justify{
@@ -395,7 +394,7 @@ html, body {
     }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     #newsNavigationArrows {
       display: none;
     }
@@ -773,7 +772,7 @@ html, body {
     -ms-user-select: none; /* Para versões antigas do Edge/IE */
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     #teamNavigationArrows {
       display: none;
     }
