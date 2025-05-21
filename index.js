@@ -219,6 +219,9 @@ observer.observe(lottieContainer);
 
 
 
+// ****************************************************** NAVBAR ******************************************************
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.querySelector(".menu-icon");
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -268,7 +271,7 @@ document.getElementById("ham-btn").addEventListener("click", () => {
     console.log("CLICOU NO BOTÃO HAMBURGUER");
 })
 
-
+// *************************************************** NAVBAR FIM ********************************************************
 
 // ================================================ NEWS ===============================================================
 
@@ -277,7 +280,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const arrowLeft = document.getElementById("arrow-left-news");
     const arrowRight = document.getElementById("arrow-right-news");
 
-    // Calcula a largura real de um item + o gap
     function getSingleCardWidthWithGap() {
         const card = scrollContainer.querySelector(".news-item");
         if (!card) return 0;
@@ -285,20 +287,43 @@ document.addEventListener("DOMContentLoaded", function () {
         const cardStyle = window.getComputedStyle(card);
         const containerStyle = window.getComputedStyle(scrollContainer);
 
-        const cardWidth = card.offsetWidth;
         const gap = parseFloat(containerStyle.columnGap || containerStyle.gap || 0);
-
-        return cardWidth + gap;
+        return card.offsetWidth + gap;
     }
 
     const scrollDuration = 0.6;
+
+    function updateArrowVisibility() {
+        const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        const currentScrollLeft = scrollContainer.scrollLeft;
+
+        // Se o conteúdo não tiver scroll horizontal suficiente
+        if (maxScrollLeft <= 0) {
+            arrowLeft.style.display = "none";
+            arrowRight.style.display = "none";
+            return;
+        }
+
+        if (Math.round(currentScrollLeft) <= 0) {
+            arrowLeft.style.display = "none";
+            arrowRight.style.display = "block";
+        } else if (Math.round(currentScrollLeft) >= Math.round(maxScrollLeft)) {
+            arrowLeft.style.display = "block";
+            arrowRight.style.display = "none";
+        } else {
+            arrowLeft.style.display = "block";
+            arrowRight.style.display = "block";
+        }
+    }
 
     arrowRight.addEventListener("click", () => {
         const scrollAmount = getSingleCardWidthWithGap();
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft + scrollAmount,
             duration: scrollDuration,
-            ease: "power2.out"
+            ease: "power2.out",
+            onUpdate: updateArrowVisibility,
+            onComplete: updateArrowVisibility
         });
     });
 
@@ -307,11 +332,13 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft - scrollAmount,
             duration: scrollDuration,
-            ease: "power2.out"
+            ease: "power2.out",
+            onUpdate: updateArrowVisibility,
+            onComplete: updateArrowVisibility
         });
     });
 
-    // Scroll por arrasto
+    // Drag para scroll manual
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -339,8 +366,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const x = e.pageX - scrollContainer.offsetLeft;
         const walk = (x - startX) * 2;
         scrollContainer.scrollLeft = scrollLeft - walk;
+        updateArrowVisibility(); // Atualiza setas enquanto faz drag
     });
+
+    scrollContainer.addEventListener("scroll", updateArrowVisibility);
+    window.addEventListener("resize", updateArrowVisibility);
+
+    setTimeout(updateArrowVisibility, 1000); // Chamada inicial
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -370,6 +404,98 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // ================================================ NEWS FIM ===============================================================
+
+
+// ***************************************************** MANIFESTO **********************************************************
+
+/*
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.querySelector(".values-container");
+  const items = Array.from(section.querySelectorAll(".value-item"));
+  let isActive = false;
+  let currentIndex = 0;
+  let lastScrollY = 0;
+
+  const observer = new IntersectionObserver((entries) => {
+  const entry = entries[0];
+  console.log('intersectionRatio:', entry.intersectionRatio, 'isIntersecting:', entry.isIntersecting);
+  if (entry.isIntersecting && entry.intersectionRatio >= 0.8 && !isActive) {
+    activateScrollLock();
+  }
+}, { threshold: 0.9 });
+
+  observer.observe(section);
+
+  function activateScrollLock() {
+    isActive = true;
+    currentIndex = 0;
+    lastScrollY = window.scrollY;
+    highlightItem(currentIndex);
+
+    // Bloqueia scroll sem afetar posição atual
+    document.body.classList.add("scroll-locked");
+    window.addEventListener("wheel", onScroll, { passive: false });
+    window.addEventListener("touchmove", onTouchScroll, { passive: false });
+    document.addEventListener("touchstart", e => {
+      touchStartY = e.touches[0].clientY;
+    });
+  }
+
+  function deactivateScrollLock() {
+    isActive = false;
+    document.body.classList.remove("scroll-locked");
+    window.removeEventListener("wheel", onScroll);
+    window.removeEventListener("touchmove", onTouchScroll);
+  }
+
+  function highlightItem(index) {
+    items.forEach((item, i) => {
+      item.classList.toggle("value-highlight", i === index);
+    });
+  }
+
+  function onScroll(e) {
+    e.preventDefault();
+    window.scrollTo(0, lastScrollY); // trava posição da página
+
+    const direction = Math.sign(e.deltaY);
+    if (direction > 0 && currentIndex < items.length - 1) {
+      currentIndex++;
+      highlightItem(currentIndex);
+    } else if (direction < 0 && currentIndex > 0) {
+      currentIndex--;
+      highlightItem(currentIndex);
+    }
+
+    if (currentIndex === items.length - 1 && direction > 0) {
+      setTimeout(deactivateScrollLock, 300);
+    }
+    if (currentIndex === 0 && direction < 0) {
+      setTimeout(deactivateScrollLock, 300);
+    }
+  }
+
+  let touchStartY = 0;
+  function onTouchScroll(e) {
+    e.preventDefault();
+    window.scrollTo(0, lastScrollY);
+
+    const touchY = e.touches[0].clientY;
+    const delta = touchStartY - touchY;
+    const direction = Math.sign(delta);
+
+    if (Math.abs(delta) > 20) {
+      onScroll({ preventDefault: () => {}, deltaY: direction });
+      touchStartY = touchY;
+    }
+  }
+});
+*/
+
+
+
+
+// ***************************************************** MANIFESTO FIM *******************************************************
 
 
 //================================================= secção TEAM ============================================================
@@ -484,7 +610,32 @@ document.addEventListener("DOMContentLoaded", function () {
             ease: "power2.out"
         });
     });
+
+
+    // Atualiza visibilidade ao fazer scroll e ao redimensionar janela
+    scrollContainer.addEventListener("scroll", updateTeamArrowVisibility);
+    window.addEventListener("resize", updateTeamArrowVisibility);
+
+    // Chamada inicial com atraso para garantir que tudo está carregado
+    setTimeout(updateTeamArrowVisibility, 1000); // usar o teu loader delay
+
 });
+
+
+function updateTeamArrowVisibility() {
+    const scrollContainer = document.querySelector(".team-scrolling-wrapper");
+    const arrowLeft = document.getElementById("arrow-left");
+    const arrowRight = document.getElementById("arrow-right");
+
+    if (!scrollContainer || !arrowLeft || !arrowRight) return;
+
+    const scrollLeft = scrollContainer.scrollLeft;
+    const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+    // Mostra ou esconde as setas com base no scroll
+    arrowLeft.style.display = scrollLeft > 0 ? "block" : "none";
+    arrowRight.style.display = scrollLeft < maxScrollLeft - 1 ? "block" : "none";
+}
 
 
 
@@ -610,6 +761,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Largura >= 768px
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
+        targetElement.classList.remove("px-5");
         saoMiguelOfficeImg.src = "./assets/imgs/offices/sao-miguel-office.webp";
         picoOfficeImg.src = "./assets/imgs/offices/pico-office.webp";
         graciosaOfficeImg.src = "./assets/imgs/offices/graciosa-office.webp";
@@ -617,6 +769,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
+        targetElement.classList.add("px-5");
         saoMiguelOfficeImg.src = "./assets/imgs/offices/sao-miguel-office-m.webp";
         picoOfficeImg.src = "./assets/imgs/offices/pico-office-m.webp";
         graciosaOfficeImg.src = "./assets/imgs/offices/graciosa-office-m.webp";
@@ -629,7 +782,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // E ao mudar de tamanho
     mediaQuery.addEventListener("change", updateClasses);
 });
-  
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const officeImages = document.querySelectorAll(".office-picture");
+
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: "0px",
+        threshold: [0.45, 0.5, 0.55] // 50% visível já ativa o efeito
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+            } else {
+                entry.target.classList.remove("in-view");
+            }
+        });
+    }, observerOptions);
+
+    officeImages.forEach(img => observer.observe(img));
+});
+
 
 
 //================================================== ESCRITÓRIOS FIM =================================================
@@ -652,6 +828,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Largura >= 768px
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
+        targetElement.classList.remove("px-5");
         bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.webp";
         providencePartnershipImg.src = "./assets/imgs/partnerships/providence.webp";
         torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto.webp";
@@ -659,6 +836,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
+        targetElement.classList.add("px-5");
         bostonPartnershipImg.src = "./assets/imgs/partnerships/boston-m.webp";
         providencePartnershipImg.src = "./assets/imgs/partnerships/providence-m.webp";
         torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto-m.webp";
