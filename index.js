@@ -355,10 +355,33 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollContainer.classList.remove("active");
     });
 
+    /*
     scrollContainer.addEventListener("mouseup", () => {
         isDown = false;
         scrollContainer.classList.remove("active");
     });
+    */
+    
+    scrollContainer.addEventListener("mouseup", () => {
+        isDown = false;
+        scrollContainer.classList.remove("active");
+
+        // Snap automático após arrastar
+        const cardWidth = getSingleCardWidthWithGap();
+        const currentScroll = scrollContainer.scrollLeft;
+
+        const nearestCardIndex = Math.round(currentScroll / cardWidth);
+        const snapTo = nearestCardIndex * cardWidth;
+
+        gsap.to(scrollContainer, {
+            scrollLeft: snapTo,
+            duration: 0.4,
+            ease: "power2.out",
+            onUpdate: updateArrowVisibility,
+            onComplete: updateArrowVisibility
+        });
+    });
+
 
     scrollContainer.addEventListener("mousemove", (e) => {
         if (!isDown) return;
@@ -499,6 +522,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //================================================= secção TEAM ============================================================
+
+function getCardWidth() {
+    const card = document.querySelector(".team-card-block");
+    const cardWidth = card ? card.offsetWidth : 300;
+    const gapInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem
+    return cardWidth + gapInPixels;
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".team-scrolling-wrapper");
     let isDown = false;
@@ -517,10 +549,31 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.classList.remove("active");
     });
 
+    /*
     slider.addEventListener("mouseup", () => {
         isDown = false;
         slider.classList.remove("active");
     });
+    */
+
+    slider.addEventListener("mouseup", () => {
+    isDown = false;
+    slider.classList.remove("active");
+
+    // Snap automático para o card mais próximo
+    const cardWidth = getCardWidth(); // já definida na tua lógica das setas
+    const currentScroll = slider.scrollLeft;
+
+    const nearestCardIndex = Math.round(currentScroll / cardWidth);
+    const snapTo = nearestCardIndex * cardWidth;
+
+    gsap.to(slider, {
+        scrollLeft: snapTo,
+        duration: 0.4,
+        ease: "power2.out"
+    });
+});
+
 
     slider.addEventListener("mousemove", (e) => {
         if (!isDown) return;
