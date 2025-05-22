@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
 const navbarHeight = document.querySelector('.navbar').offsetHeight;
 
+/*
 function scrollAnim(e) {
     console.log(`Clicou em ${e}`);
     gsap.to(window, { 
@@ -23,6 +24,34 @@ function scrollAnim(e) {
         immediateRender: true
     });
 };
+*/
+
+function scrollAnim(e) {
+    console.log(`Clicou em ${e}`);
+    const targetSelector = `#Section${e}`;
+    const targetElement = document.querySelector(targetSelector);
+
+    if (!targetElement) return;
+
+    if (window.innerWidth >= 768) {
+        // Dispositivos desktop ou tablets em modo landscape
+        requestAnimationFrame(() => {
+            gsap.to(window, { 
+                duration: 1.5,
+                scrollTo: {
+                    y: targetSelector,
+                    offsetY: navbarHeight
+                },
+                ease: "power2.inOut",
+                overwrite: "auto"
+            });
+        });
+    } else {
+        // Mobile: usa scroll suave nativo do browser (mais rápido e responsivo)
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+}
+
 
 
 
@@ -116,7 +145,7 @@ document.getElementById("ButtonBlog").addEventListener("click", (event) => {
     event.preventDefault();
 
     // Chamar a animação de rolagem
-    scrollAnim("Blog");
+    scrollAnim("Noticias");
 });
 
 document.getElementById("FooterBtnBlog").addEventListener("click", (event) => {
@@ -124,7 +153,7 @@ document.getElementById("FooterBtnBlog").addEventListener("click", (event) => {
     event.preventDefault();
 
     // Chamar a animação de rolagem
-    scrollAnim("Blog");
+    scrollAnim("Noticias");
 });
 
 
