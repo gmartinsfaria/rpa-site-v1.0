@@ -9,7 +9,7 @@ let dropOpen = false;
 
 gsap.registerPlugin(ScrollToPlugin); // Registra o plugin!
 
-const navbarHeight = document.querySelector('.navbar').offsetHeight;
+const navbarHeight = document.querySelector('.navbar')?.getBoundingClientRect().height || 0;
 
 /*
 function scrollAnim(e) {
@@ -34,17 +34,14 @@ function scrollAnim(e) {
     if (!targetElement) return;
 
     if (window.innerWidth >= 768) {
-        // Dispositivos desktop ou tablets em modo landscape
-        requestAnimationFrame(() => {
-            gsap.to(window, { 
-                duration: 1.5,
-                scrollTo: {
-                    y: targetSelector,
-                    offsetY: navbarHeight
-                },
-                ease: "power2.inOut",
-                overwrite: "auto"
-            });
+        gsap.to(window, { 
+            duration: 1.5,
+            scrollTo: {
+                y: targetSelector,
+                offsetY: navbarHeight
+            },
+            ease: "power2.inOut",
+            overwrite: "auto"
         });
     } else {
         // Mobile: usa scroll suave nativo do browser (mais rápido e responsivo)
