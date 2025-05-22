@@ -32,8 +32,6 @@ function scrollAnim(e) {
     const targetElement = document.querySelector(targetSelector);
 
     if (!targetElement) return;
-
-    
     
     // Mobile: usa scroll suave nativo do browser (mais rápido e responsivo)
     targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
