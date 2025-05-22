@@ -145,6 +145,16 @@ html, body {
     cursor: pointer;
 }
 
+.nav-link-translate{
+    padding: 10px 0px 10px 30px !important;
+}
+
+.nav-link-translate:hover {
+    text-decoration: none !important;
+    color: #000000 !important;
+    cursor: pointer;
+}
+
 
 .round-btn {
     text-transform: capitalize !important;

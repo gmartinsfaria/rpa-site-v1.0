@@ -40,7 +40,6 @@ function scrollAnim(e) {
 
 
 
-
 document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
     // Impedir o comportamento padrão do link
     event.preventDefault();
