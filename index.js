@@ -33,20 +33,11 @@ function scrollAnim(e) {
 
     if (!targetElement) return;
 
-    if (window.innerWidth >= 768) {
-        gsap.to(window, { 
-            duration: 1.5,
-            scrollTo: {
-                y: targetSelector,
-                offsetY: navbarHeight
-            },
-            ease: "power2.inOut",
-            overwrite: "auto"
-        });
-    } else {
-        // Mobile: usa scroll suave nativo do browser (mais rápido e responsivo)
-        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    
+    
+    // Mobile: usa scroll suave nativo do browser (mais rápido e responsivo)
+    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    
 }
 
 
