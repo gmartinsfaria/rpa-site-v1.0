@@ -24,11 +24,19 @@ document.getElementById("langToggle").addEventListener("click", (event) => {
   if (enOn) {
     ptBtn.classList.add("text-body-secondary");
     ptBtn.classList.remove("fw-bold");
+    ptBtn.textContent = "pt";
+
+    enBtn.textContent = "EN";
     enBtn.classList.remove("text-body-secondary");
     enBtn.classList.add("fw-bold");
+    enBtn.classList.add("red");
   } else {
     ptBtn.classList.remove("text-body-secondary");
     ptBtn.classList.add("fw-bold");
+    ptBtn.classList.add("red");
+    ptBtn.textContent = "PT";
+
+    enBtn.textContent = "en";
     enBtn.classList.add("text-body-secondary");
     enBtn.classList.remove("fw-bold");
   }

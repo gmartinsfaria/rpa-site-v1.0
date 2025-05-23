@@ -192,6 +192,10 @@ html, body {
     border-color: #A6151F !important;
 }
 
+.red {
+    color: #A6151F;
+}
+
 #ButtonContacto,
 #ButtonSubscricao {
     outline: none;

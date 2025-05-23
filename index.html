@@ -51,26 +51,26 @@
                 <div id="drop-menu" class="collapse navbar-collapse navbar-btn-pack" id="navbarsExample05">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a id="ButtonEspecialidades" class="nav-link" aria-current="page" href="#">Atividade</a>
+                            <a id="ButtonEspecialidades" class="nav-link" data-i18n="navLinkActivity" aria-current="page" href="#">Atividade</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonEquipa" class="nav-link" aria-current="page" href="#">Equipa</a>
+                            <a id="ButtonEquipa" class="nav-link" data-i18n="navLinkTeam" aria-current="page" href="#">Equipa</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonValores" class="nav-link navbar-btn" aria-current="page" href="#">Manifesto</a>
+                            <a id="ButtonValores" class="nav-link" data-i18n="navLinkManifest" aria-current="page" href="#">Manifesto</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonEscritorios" class="nav-link" aria-current="page" href="#">Escritórios</a>
+                            <a id="ButtonEscritorios" class="nav-link" data-i18n="navLinkOffices" aria-current="page" href="#">Escritórios</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonParcerias" class="nav-link" aria-current="page" href="#">Parcerias</a>
+                            <a id="ButtonParcerias" class="nav-link" data-i18n="navLinkPartnerships" aria-current="page" href="#">Parcerias</a>
                         </li>
                         <li class="nav-item">
                             <a id="ButtonBlog" class="nav-link" aria-current="page" href="#">Insights</a>
                         </li>
-                        <button id="ButtonContacto" type="button" class="nav-item btn round-btn"><span class="text-capitalize">Entrar </span><span class="text-lowercase">em contacto</span></button>
+                        <button id="ButtonContacto" type="button" class="nav-item btn round-btn"><span class="text-capitalize" data-i18n="navLinkContactOne">Entrar</span> <span class="text-lowercase" data-i18n="navLinkContactTwo">em contacto</span></button>
                         <li class="nav-item">
-                            <a id="langToggle" class="nav-link nav-link-translate" aria-current="page" href="#"><span id="ptBtn" class="fw-bold">PT</span> | <span id="enBtn" class="text-body-secondary">en</span></a>
+                            <a id="langToggle" class="nav-link nav-link-translate" aria-current="page" href="#"><span id="ptBtn" class="fw-bold red">PT</span> | <span id="enBtn" class="text-body-secondary">en</span></a>
                         </li>
                     </ul>
                 </div>
@@ -88,7 +88,7 @@
         <section id="SectionNoticias">
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
                 <h1 class="general-title" data-i18n="title">Na linha da frente em todos os grandes casos dos Açores.</h1>
-                <p class="general-txt">Desde 2010</p>
+                <p class="general-txt" data-i18n="since">Desde 2010</p>
             </div>
         
             <div id="newsNavigationArrows" class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
@@ -110,9 +110,9 @@
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                                <h4 class="general-font">RPA lidera defesa na Operação Asclépio</h4>
+                                <h4 class="general-font" data-i18n="news1Title">RPA lidera defesa na Operação Asclépio</h4>
                             </a>
-                            <p class="general-font mt-3">
+                            <p class="general-font mt-3" data-i18n="news1Description">
                                 RPA assume a defesa dos arguidos na Operação Asclépio, onde, 
                                 alegadamente, estão em causa mais de 50 crimes, incluindo 
                                 corrupção e abuso de poder no Sistema Regional de Saúde.
@@ -123,64 +123,63 @@
                     <!-- noticia 2-->
                     <div class="news-item">
                         <div class="news-img-wrapper">
-                            <img src="./assets/imgs/news/ivg-noticia.jpg" alt="Thumbnail notícia">
-                        </div>
-                        <div class="mt-4 ps-2 pe-4">
-                            <a href="https://www.linkedin.com/pulse/interrup%25C3%25A7%25C3%25A3o-da-gravidez-e-o-certificado-de-incapacidade-t7rof" target="_blank" class="news-detail-link">
-                                <h4 class="general-font">Interrupção da Gravidez e o Certificado de Incapacidade Temporária para o Trabalho</h4>
-                            </a>
-                            <p class="general-font mt-3">
-                                Artigo da autoria de Bianca Pereira, colaboradora da RPA, 
-                                acerca da IVG e publicado no Jornal Açores 9 no âmbito da 
-                                rubrica Clínica Jurídica.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- noticia 3-->
-                    <div class="news-item">
-                        <div class="news-img-wrapper">
                                 <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                                <h4 class="general-font">RPA lidera defesa na Operação Mayday</h4>
+                                <h4 class="general-font" data-i18n="news2Title">RPA lidera defesa na Operação Mayday</h4>
                             </a>
-                            <p class="general-font mt-3">
+                            <p class="general-font mt-3" data-i18n="news2Description">
                                 RPA assume a defesa dos arguidos na Operação Mayday, 
                                 que levou à detenção de nove pessoas por, alegadamente, 
-                                terem lesarem o Estado Português em vários milhões de euros.
+                                terem lesado o Estado Português em vários milhões de euros.
                             </p>
                         </div>
                     </div>
 
-                    <!-- noticia 4-->
-                    <div class="news-item">
+                    <!-- noticia -->
+                    <div class="news-item me-2">
                         <div class="news-img-wrapper">
-                                <img src="./assets/imgs/news/ferias-noticia.jpg" alt="Thumbnail notícia">
+                            <img src="./assets/imgs/news/regimes-casamento-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
-                            <a href="https://www.linkedin.com/pulse/marca%C3%A7%C3%A3o-do-per%C3%ADodo-de-f%C3%A9rias-um-equil%C3%ADbrio-entre-direito-isyzf" target="_blank" class="news-detail-link">
-                                <h4 class="general-font">A Marcação do Período de Férias: Um Equilíbrio entre Direito e Organização</h4>
+                            <a href="https://www.linkedin.com/pulse/regimes-de-casamento-em-portugal-uma-an%C3%A1lise-segundo-legisla%C3%A7%C3%A3o-13zcf/" target="_blank" class="news-detail-link">
+                                <h4 class="general-font" data-i18n="news3Title">Regimes de Casamento em Portugal: uma análise segundo a legislação portuguesa</h4>
                             </a>
-                            <p class="general-font mt-3">
-                                Artigo da autoria de João Baptista, colaboradora da RPA, 
-                                acerca da marcação do período de férias e publicado no 
-                                Jornal Açores 9 no âmbito da rubrica Clínica Jurídica.
+                            <p class="general-font mt-3" data-i18n="news3Description">
+                                Artigo da autoria de Verónica Casimiro, colaboradora da RPA, 
+                                acerca dos regimes de casamento em Portugal e publicado no 
+                                Jornal Açores 9.
                             </p>
                         </div>
                     </div>
 
-                    <!-- noticia 5-->
+                    <!-- noticia -->
+                    <div class="news-item me-2">
+                        <div class="news-img-wrapper">
+                            <img src="./assets/imgs/news/assedio-laboral-noticia.jpg" alt="Thumbnail notícia">
+                        </div>
+                        <div class="mt-4 ps-2 pe-4">
+                            <a href="https://www.linkedin.com/pulse/%C3%A9-s%C3%B3-uma-brincadeira-do-meu-patr%C3%A3o-rp-associadoss-vx3af" target="_blank" class="news-detail-link">
+                                <h4 class="general-font" data-i18n="news4Title">É só uma “brincadeira” do meu patrão!</h4>
+                            </a>
+                            <p class="general-font mt-3" data-i18n="news4Description">
+                                Artigo da autoria de Bianca Pereira, colaboradora da RPA, 
+                                acerca do assédio laboral e publicado no Jornal Açoriano Oriental.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- noticia -->
                     <div class="news-item me-2">
                         <div class="news-img-wrapper">
                             <img src="./assets/imgs/news/pensao-alim-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/o-meu-filho-tem-m%C3%A1s-notas-na-universidade-tenho-de-pagar-1ijnf" target="_blank" class="news-detail-link">
-                                <h4 class="general-font">O meu filho tem más notas na universidade, tenho de pagar pensão de alimentos?</h4>
+                                <h4 class="general-font" data-i18n="news5Title">O meu filho tem más notas na universidade, tenho de pagar pensão de alimentos?</h4>
                             </a>
-                            <p class="general-font mt-3">
+                            <p class="general-font mt-3" data-i18n="news5Description">
                                 Artigo da autoria de Júlia Filipe, colaboradora da RPA, 
                                 acerca do enquadramento legal relativo à prestação da 
                                 pensão de alimentos por parte dos progenitores e publicado 
@@ -189,8 +188,48 @@
                         </div>
                     </div>
 
+                    <!-- noticia -->
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                                <img src="./assets/imgs/news/ferias-noticia.jpg" alt="Thumbnail notícia">
+                        </div>
+                        <div class="mt-4 ps-2 pe-4">
+                            <a href="https://www.linkedin.com/pulse/marca%C3%A7%C3%A3o-do-per%C3%ADodo-de-f%C3%A9rias-um-equil%C3%ADbrio-entre-direito-isyzf" target="_blank" class="news-detail-link">
+                                <h4 class="general-font" data-i18n="news6Title">A Marcação do Período de Férias: Um Equilíbrio entre Direito e Organização</h4>
+                            </a>
+                            <p class="general-font mt-3" data-i18n="news6Description">
+                                Artigo da autoria de João Baptista, colaboradora da RPA, 
+                                acerca da marcação do período de férias e publicado no 
+                                Jornal Açores 9 no âmbito da rubrica Clínica Jurídica.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- noticia -->
+                    <div class="news-item">
+                        <div class="news-img-wrapper">
+                            <img src="./assets/imgs/news/ivg-noticia.jpg" alt="Thumbnail notícia">
+                        </div>
+                        <div class="mt-4 ps-2 pe-4">
+                            <a href="https://www.linkedin.com/pulse/interrup%25C3%25A7%25C3%25A3o-da-gravidez-e-o-certificado-de-incapacidade-t7rof" target="_blank" class="news-detail-link">
+                                <h4 class="general-font" data-i18n="news7Title">Interrupção da Gravidez e o Certificado de Incapacidade Temporária para o Trabalho</h4>
+                            </a>
+                            <p class="general-font mt-3" data-i18n="news7Description">
+                                Artigo da autoria de Bianca Pereira, colaboradora da RPA, 
+                                acerca da IVG e publicado no Jornal Açores 9 no âmbito da 
+                                rubrica Clínica Jurídica.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                <a href="https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles" target="_blank"><button id="moreNewsBtn" class="more-news-btn">Saiba mais na nossa Newsletter <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
+                <a href="https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles" target="_blank">
+                    <button id="moreNewsBtn" class="more-news-btn">
+                        <span data-i18n="knowMore">Saiba mais na nossa Newsletter</span>
+                        <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16">
+                    </button>
+                </a>
+
             </div>
         </section>
         
@@ -221,7 +260,7 @@
     
         <section class="pt-5" id="SectionEspecialidades">
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h1 class="general-title">Atividade</h1>
+                <h1 class="general-title" data-i18n="navLinkActivity">Atividade</h1>
             </div>
             
             <div class="container">
@@ -230,20 +269,20 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            <h2 class="text-body-emphasis">Contencioso Administrativo</h2>
+                            <h2 class="text-body-emphasis" data-i18n="administrativeField">Contencioso Administrativo</h2>
                         </button>
                         </h2>
                         <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    O <span class="bold-in-description">Contencioso Administrativo</span> refere-se ao conjunto de 
+                                    <span data-i18n="administrativeFieldStart">O </span><span class="bold-in-description" data-i18n="administrativeField">Contencioso Administrativo</span> <span data-i18n="administrativeFieldEnd">refere-se ao conjunto de 
                                     processos judiciais que envolvem a Administração Pública e seus atos. Este ramo do direito visa 
                                     garantir que os atos administrativos, como decisões, normas ou contratos, sejam executados de acordo 
                                     com a lei, protegendo os direitos dos cidadãos contra possíveis abusos de poder por parte do Estado. 
                                     Através do contencioso administrativo, os indivíduos podem questionar a legalidade de atos 
-                                    administrativos e buscar reparação por danos causados por ações do poder público.
+                                    administrativos e buscar reparação por danos causados por ações do poder público.</span>
                                 </p>
-                                <p class="general-txt mt-3">
+                                <p class="general-txt mt-3" data-i18n="administrativeFieldSentence2">
                                     Este tipo de contencioso envolve a análise de decisões administrativas que afetam diretamente os 
                                     interesses dos cidadãos, como questões fiscais, licenças, ou autorizações. Quando uma pessoa ou 
                                     empresa considera que seus direitos foram prejudicados por um ato administrativo, pode recorrer ao 
@@ -258,20 +297,20 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                         <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            <h2 class="text-body-emphasis">Contencioso Fiscal e Tributário</h2>
+                            <h2 class="text-body-emphasis" data-i18n="taxField">Contencioso Fiscal e Tributário</h2>
                         </button>
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    O <span class="bold-in-description">Contencioso Fiscal e Tributário</span> trata das disputas 
+                                    <span data-i18n="taxFieldStart">O </span><span class="bold-in-description" data-i18n="taxField">Contencioso Fiscal e Tributário</span> <span data-i18n="taxFieldEnd">trata das disputas 
                                     legais entre contribuintes e o Estado relacionadas à aplicação das leis tributárias. Este ramo do 
                                     direito envolve a resolução de conflitos sobre a obrigação de pagamento de tributos, a interpretação 
                                     de normas fiscais, e a contestação de autuações fiscais e sanções impostas pelos órgãos tributários. 
                                     O foco é garantir que a tributação seja justa e que as obrigações fiscais sejam cumpridas conforme 
-                                    a legislação vigente.
+                                    a legislação vigente.</span>
                                 </p>
-                                <p class="general-txt mt-3">
+                                <p class="general-txt mt-3" data-i18n="taxFieldSentence2">
                                     Este campo inclui a defesa dos direitos do contribuinte em situações de cobrança indevida, contestação 
                                     de impostos e outras medidas fiscais, além de regulamentar a atuação do Estado na fiscalização e 
                                     arrecadação de tributos. O objetivo é assegurar um equilíbrio entre o cumprimento das obrigações 
