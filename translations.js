@@ -9,6 +9,8 @@ const translations = {
     navLinkContactOne: "Entrar",
     navLinkContactTwo: "em contacto",
 
+    contactLink: "Entrar em contacto connosco",
+
 
     //NEWS
     title: "Na linha da frente em todos os grandes casos dos Açores.",
@@ -195,6 +197,9 @@ const translations = {
     navLinkPartnerships: "Partnerships",
     navLinkContactOne: "Get",
     navLinkContactTwo: "in touch",
+
+    contactLink: "Get in touch",
+
 
     //NEWS
     title: "On the front line in all major cases in the Azores.",
