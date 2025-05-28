@@ -11,7 +11,20 @@ function translatePage(lang) {
       el.textContent = translation;
     }
   });
+
+  document.querySelectorAll("[data-i18n-function]").forEach(el => {
+    const key = el.getAttribute("data-i18n-function");
+    el.setAttribute("data-function", translations[lang][key]);
+  });
+
+  // Atualizar descrição default da equipa se necessário
+  const desc = document.getElementById("descriptionFunction");
+  if (desc && desc.textContent.trim() === translations[lang === "en" ? "pt" : "en"]["teamDefaultDescription"]) {
+    desc.textContent = translations[lang]["teamDefaultDescription"];
+  }
 }
+
+
 
 document.getElementById("langToggle").addEventListener("click", (event) => {
   event.preventDefault(); // evitar reload

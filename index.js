@@ -630,7 +630,7 @@ document.querySelectorAll(".team-item").forEach(item => {
 
             // Atualiza o texto da descrição
             document.getElementById("descriptionName").classList.add("invisible-txt");
-            document.getElementById("descriptionName").textContent = "Nome Colaborador";
+            document.getElementById("descriptionName").textContent = ".";
 
             // Atualiza o título da descrição
             document.getElementById("descriptionFunction").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";       
