@@ -171,6 +171,8 @@ const translations = {
 
 
     //TEAM
+    teamSectionTitle: "A nossa equipa",
+
     ricardoFunction: "Penal",
     carolinaFunction: "Administrativo | Civil | Executivo |  Notariado",
     britoFunction: "Contraordenações | Contratos | Fiscal  | Penal",
@@ -181,6 +183,90 @@ const translations = {
     biancaFunction: "Notariado | Registo",
     joanaFunction: "Civil | Executivo | Inventários",
 
+    teamPresentation: "Equipa jurídica diversificada, com profissionais dedicados a defender os seus direitos.",
+
+
+    //MANIFEST
+    manifestDescription: "Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça e na confiança dos nossos clientes.",
+    manifestValue1: "Confiança",
+    manifestValue2: "Disponibilidade",
+    manifestValue3: "Excelência",
+    manifestValue4: "Profissionalismo",
+    manifestValue5: "Seriedade",
+
+
+    //OFFICES
+    officesSectionTitle: "Os nossos escritórios",
+
+    address: "Morada:",
+    hearquarters: "(Sede)",
+    officeLocation: "Ver localização",
+
+    //OFFICES --> SÃO MIGUEL
+    office1: "São Miguel",
+    office1Description: "O nosso escritório principal situa-se no centro de Ponta Delgada, numa zona de fácil acesso e próxima de serviços essenciais. O ambiente é discreto e profissional, garantindo conforto e privacidade.",
+    office1Address1: "Rua Caetano de Andrade, n.º 7 e 11",
+    office1Address2: "9500-037 Ponta Delgada",
+    office1Address3: "Ilha de São Miguel - Açores",
+
+    //OFFICES --> PICO
+    office2: "Pico",
+    office2Description: "Com presença na ilha do Pico, estamos disponíveis para o apoiar, com a mesma solidez que define a ilha, através de parcerias locais de confiança.",
+    office2Address1: "Rua Visconde Leite Perry, n.º 3",
+    office2Address2: "9950-341 Madalena do Pico",
+    office2Address3: "Ilha do Pico - Açores",
+
+    //OFFICES --> GRACIOSA
+    office2: "Graciosa",
+    office2Description: "Agora também na ilha Graciosa, estamos tão presentes quanto o vento na Barra e a calma da Praça — sempre perto quando precisar.",
+    office2Address1: "Rua Jacinto Cândido, n.º 4 e 6",
+    office2Address2: "9880-357 Santa Cruz da Graciosa",
+    office2Address3: "Ilha Graciosa - Açores",
+
+
+    //PARTNERSHIPS
+    partnershipsSectionTitle: "As nossas parcerias",
+    partnerWebsite: "Ver website",
+
+    partner1: "Barton Gilman, LLP",
+    partner1Description1: "A Barton Gilman é o nosso parceiro de referência nos Estados Unidos, presente em Massachusetts, Rhode Island, Nova Iorque, Pensilvânia, Connecticut e Nova Jersey.",
+    partner1Description2: "Com mais de 40 advogados admitidos em sete estados e décadas de experiência acumulada, a colaboração com a Barton Gilman reforça o nosso compromisso em oferecer soluções jurídicas integradas e de elevada qualidade, a nível nacional e internacional.",
+
+
+    //CONTACT
+    contactSectionTitle: "Interessado ou ainda ficou com dúvidas?",
+    contactFormExplanation: "Deixe-nos uma mensagem e iremos responder-lhe o mais brevemente possível ou então visite a nossa sede.",
+
+    //CONTACT FORM
+    formSendMessageBtn: "Enviar Mensagem",
+
+    formLawFieldGeneral: "Ramo do direito associado ao assunto que quer tratar?",
+    formLawField1: "Contencioso Administrativo",
+    formLawField2: "Contencioso Fiscal e Tributário",
+    formLawField3: "Direito Comercial e Societário",
+    formLawField4: "Direito da Família",
+    formLawField5: "Direito das Sucessões/Inventário",
+    formLawField6: "Direito do Consumidor",
+    formLawField7: "Direito e Contencioso Civil",
+    formLawField8: "Direito e Contencioso do Trabalho",
+    formLawField9: "Direito e Contencioso Penal",
+    formLawField10: "Direito Executivo",
+    formLawField11: "Direito Imobiliário",
+    formLawField12: "Direito Rodoviário e Contencioso",
+    formLawField13: "Notariado e Registos",
+    formLawFieldOther: "Outro",
+
+    formPlaceholderName: "*Nome",
+    formPlaceholderEmail: "*Email",
+    formPlaceholderPhone: "*Telefone",
+    formPlaceholderMessage: "*Escreva aqui a sua mensagem",
+
+    formAlertSuccess: "Mensagem enviada com sucesso.",
+    formAlertFail1: "Não foi possível enviar a sua mensagem.",
+    formAlertFail2: "Tente novamente ou contacte-nos diretamente por email.",
+
+    formErrorEmail: "Por favor, introduza um email válido.",
+    formErrorPhone: "Por favor, introduza um número de telefone válido.",
   },
 
 
@@ -360,6 +446,8 @@ const translations = {
 
 
     //TEAM
+    teamSectionTitle: "Our team",
+
     ricardoFunction: "Criminal law",
     carolinaFunction: "Administrative | Civil | Executive | Notary",
     britoFunction: "Administrative offenses | Contracts | Tax | Criminal law",
@@ -370,5 +458,89 @@ const translations = {
     biancaFunction: "Notary | Registry",
     joanaFunction: "Civil | Executive | Inventories",
   
+    teamPresentation: "Diverse legal team, with professionals dedicated to defending your rights.",
+
+
+    //MANIFEST
+    manifestDescription: "At RP & Associados we specialize in offering ethical, efficient and humanized legal solutions. With a personalized approach, we analyze each case with rigor and dedication, guaranteeing the best legal support. Our mission is to transform legal challenges into effective solutions, always with a focus on justice and our clients' trust.",
+    manifestValue1: "Trust",
+    manifestValue2: "Availability",
+    manifestValue3: "Excellence",
+    manifestValue4: "Professionalism",
+    manifestValue5: "Seriousness",
+
+
+    //OFFICES
+    officesSectionTitle: "Our offices",
+
+    address: "Address:",
+    hearquarters: "(Head Office)",
+    officeLocation: "See location",
+
+    //OFFICES --> SÃO MIGUEL
+    office1: "São Miguel",
+    office1Description: "Our main office is located in the center of Ponta Delgada, in an easily accessible area and close to essential services. The environment is discreet and professional, guaranteeing comfort and privacy.",
+    office1Address1: "Rua Caetano de Andrade, n.º 7 and 11",
+    office1Address2: "9500-037 Ponta Delgada",
+    office1Address3: "São Miguel Island - Azores",
+
+    //OFFICES --> PICO
+    office2: "Pico",
+    office2Description: "With a presence on the island of Pico, we are available to support you, with the same solidity that defines the island, through reliable local partnerships.",
+    office2Address1: "Rua Visconde Leite Perry, n.º 3",
+    office2Address2: "9950-341 Madalena do Pico",
+    office2Address3: "Pico Island - Azores",
+
+    //OFFICES --> GRACIOSA
+    office3: "Graciosa",
+    office3Description: "Now also on the island of Graciosa, we are as present as the wind in Barra and the calm of Praça - always close when you need us.",
+    office3Address1: "Rua Jacinto Cândido, n.º 4 and 6",
+    office3Address2: "9880-357 Santa Cruz da Graciosa",
+    office3Address3: "Pico Island - Azores",
+
+
+    //PARTNERSHIPS
+    partnershipsSectionTitle: "Our partnerships",
+    partnerWebsite: "See website",
+
+    partner1: "Barton Gilman, LLP",
+    partner1Description1: "Barton Gilman is our partner of choice in the United States, present in Massachusetts, Rhode Island, New York, Pennsylvania, Connecticut and New Jersey.",
+    partner1Description2: "With more than 40 lawyers admitted in seven states and decades of accumulated experience, the collaboration with Barton Gilman reinforces our commitment to offering integrated, high-quality legal solutions, both nationally and internationally.",
+
+
+    //CONTACT
+    contactSectionTitle: "Interested or still have questions?",
+    contactFormExplanation: "Leave us a message and we'll get back to you as soon as possible, or visit our headquarters.",
+    
+    //CONTACT FORM
+    formSendMessageBtn: "Send Message",
+
+    formLawFieldGeneral: "Branch of law associated with the subject you want to deal with?",
+    formLawField1: "Administrative Litigation",
+    formLawField2: "Tax Litigation",
+    formLawField3: "Commercial and Corporate Law",
+    formLawField4: "Family Law",
+    formLawField5: "Inheritance Law/Inventory",
+    formLawField6: "Consumer Law",
+    formLawField7: "Civil Law",
+    formLawField8: "Labor Law and Litigation",
+    formLawField9: "Criminal Law and Litigation",
+    formLawField10: "Executive Law",
+    formLawField11: "Real Estate Law",
+    formLawField12: "Road Traffic Law and Litigation",
+    formLawField13: "Notaries and Registries",
+    formLawFieldOther: "Other",
+
+    formPlaceholderName: "*Name",
+    formPlaceholderEmail: "*Email",
+    formPlaceholderPhone: "*Phone",
+    formPlaceholderMessage: "*Write your message here",
+
+    formAlertSuccess: "Message sent successfully.",
+    formAlertFail1: "It was not possible to send your message.",
+    formAlertFail2: "Try again or contact us directly by email.",
+
+    formErrorEmail: "Please enter a valid email address.",
+    formErrorPhone: "Please enter a valid phone number.",
   }
 };

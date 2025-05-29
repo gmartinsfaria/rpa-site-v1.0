@@ -22,6 +22,42 @@ function translatePage(lang) {
   if (desc && desc.textContent.trim() === translations[lang === "en" ? "pt" : "en"]["teamDefaultDescription"]) {
     desc.textContent = translations[lang]["teamDefaultDescription"];
   }
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    const translation = translations[lang][key];
+    if (translation) {
+      el.setAttribute("placeholder", translation);
+    }
+  });
+
+  // Placeholder translation
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    el.placeholder = translations[lang][key];
+  });
+
+  // Custom validity messages
+  const emailInput = document.getElementById("email");
+  const phoneInput = document.getElementById("phone");
+
+  if (emailInput) {
+    emailInput.oninvalid = function () {
+      this.setCustomValidity(translations[lang]["formErrorEmail"]);
+    };
+    emailInput.oninput = function () {
+      this.setCustomValidity("");
+    };
+  }
+
+  if (phoneInput) {
+    phoneInput.oninvalid = function () {
+      this.setCustomValidity(translations[lang]["formErrorPhone"]);
+    };
+    phoneInput.oninput = function () {
+      this.setCustomValidity("");
+    };
+  }
 }
 
 

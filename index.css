@@ -149,6 +149,14 @@ html, body {
     padding: 10px 0px 10px 30px !important;
 }
 
+@media (max-width: 1199px) {
+    .nav-link-translate{
+        padding: 10px 30px !important;
+    }
+}
+
+
+
 .nav-link-translate:hover {
     text-decoration: none !important;
     color: #000000 !important;
