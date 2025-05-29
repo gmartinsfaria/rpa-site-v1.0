@@ -1,5 +1,5 @@
 const translations = {
-  pt: {
+  pt: {    
     //NAVBAR
     navLinkActivity: "Atividade",
     navLinkTeam: "Equipa",
@@ -267,6 +267,16 @@ const translations = {
 
     formErrorEmail: "Por favor, introduza um email válido.",
     formErrorPhone: "Por favor, introduza um número de telefone válido.",
+
+
+    //FOOTER
+    footerEmail: "Email:",
+    footerPhone: "Telefone:",
+
+    footerUsefulLinks: "Links Úteis",
+    footerSubscribe: "Subscreva à nossa Newsletter",
+    footerSubscriptionDescription: "Atualizamos regularmente a nossa Newsletter no LinkedIn para que fique sempre a par das nossas novidades.",
+    footerSubscribeBtn: "Subscrever",
   },
 
 
@@ -274,7 +284,6 @@ const translations = {
 
 
   en: {
-    
     //NAVBAR
     navLinkActivity: "Activity",
     navLinkTeam: "Team",
@@ -542,5 +551,15 @@ const translations = {
 
     formErrorEmail: "Please enter a valid email address.",
     formErrorPhone: "Please enter a valid phone number.",
+
+
+    //FOOTER
+    footerEmail: "Email:",
+    footerPhone: "Phone:",
+
+    footerUsefulLinks: "Useful links",
+    footerSubscribe: "Subscribe to our Newsletter",
+    footerSubscriptionDescription: "We regularly update our LinkedIn Newsletter so that you are always up to date with our news.",
+    footerSubscribeBtn: "Subscribe",
   }
 };
