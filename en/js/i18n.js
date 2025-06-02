@@ -1,5 +1,5 @@
-/*
-const path = window.location.pathname;
+
+/*const path = window.location.pathname;
 const enOn = path.includes("/en"); // define se está em inglês
 
 const ptBtn = document.getElementById("ptBtn");

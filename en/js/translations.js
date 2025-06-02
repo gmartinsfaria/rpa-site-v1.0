@@ -329,8 +329,8 @@ const translations = {
     news7Description: "Article by RPA contributor Bianca Pereira on Voluntary termination of pregnancy.",
 
     //NEWS --> NOTÍCIA 8
-    news8Title: "Types of divorce in Portugal: learn about your rights and options",
-    news8Description: "Article by RPA contributor Verónica Casimiro on the legal framework for divorce in Portugal.",
+    news8Title: "Tipos de divórcio em Portugal: conheça os seus direitos e opções",
+    news8Description: "Artigo da autoria de Verónica Casimiro, colaboradora da RPA, acerca do enquadramento legal relativamente aos divórcios em Portugal.",
   
     knowMore: "See all",
 
@@ -390,7 +390,7 @@ const translations = {
     civilField: "Civil Law",
     civilFieldStart: " ",
     civilFieldEnd: "is the basis of the legal system and regulates relations between private individuals, ensuring rights and duties in everyday society. This branch of law covers several areas, including contractual obligations, civil liability, rights in rem, family relations and inheritance.",
-    civilFieldSentence2: "Essential for guaranteeing justice in interactions between individuals, Civil Law establishes the principles governing contracts, possession and ownership of property, as well as rights and duties in family relationships. Its application aims to promote legal certainty, protect citizens' interests and ensure the fair resolution of private conflicts.",
+    civilFieldSentence2: "Essencial para garantir a justiça nas interações entre indivíduos, o Direito Civil estabelece os princípios que regem os contratos, a posse e propriedade de bens, bem como os direitos e deveres nas relações familiares. A sua aplicação visa promover a segurança jurídica, proteger os interesses dos cidadãos e assegurar a resolução justa de conflitos privados.",
     civilFieldListItem1: "Civil lawsuits",
     civilFieldListItem2: "Family and minors",
     civilFieldListItem3: "Obligations and contracts",
@@ -505,7 +505,7 @@ const translations = {
     office3Description: "Now also on the island of Graciosa, we are as present as the wind in Barra and the calm of Praça - always close when you need us.",
     office3Address1: "Rua Jacinto Cândido, n.º 4 and 6",
     office3Address2: "9880-357 Santa Cruz da Graciosa",
-    office3Address3: "Graciosa Island - Azores",
+    office3Address3: "Pico Island - Azores",
 
 
     //PARTNERSHIPS
