@@ -3,8 +3,11 @@
   <head>
     <meta http-equiv="refresh" content="0; url=../" />
     <script>
-      // fallback JS redirect (caso meta não funcione)
-      window.location.replace("../");
+        // Força o idioma a inglês ao carregar esta versão
+        window.addEventListener("DOMContentLoaded", () => {
+            translatePage("en");
+            updateLanguageButtons("en");
+        });
     </script>
   </head>
   <body>
