@@ -1,5 +1,3 @@
-let enOn = false;
-
 const ptBtn = document.getElementById("ptBtn");
 const enBtn = document.getElementById("enBtn");
 
@@ -7,9 +5,7 @@ function translatePage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     const translation = translations[lang][key];
-    if (translation) {
-      el.textContent = translation;
-    }
+    if (translation) el.textContent = translation;
   });
 
   document.querySelectorAll("[data-i18n-function]").forEach(el => {
@@ -17,7 +13,6 @@ function translatePage(lang) {
     el.setAttribute("data-function", translations[lang][key]);
   });
 
-  // Atualizar descrição default da equipa se necessário
   const desc = document.getElementById("descriptionFunction");
   if (desc && desc.textContent.trim() === translations[lang === "en" ? "pt" : "en"]["teamDefaultDescription"]) {
     desc.textContent = translations[lang]["teamDefaultDescription"];
@@ -25,19 +20,9 @@ function translatePage(lang) {
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.getAttribute("data-i18n-placeholder");
-    const translation = translations[lang][key];
-    if (translation) {
-      el.setAttribute("placeholder", translation);
-    }
+    el.setAttribute("placeholder", translations[lang][key]);
   });
 
-  // Placeholder translation
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    const key = el.getAttribute("data-i18n-placeholder");
-    el.placeholder = translations[lang][key];
-  });
-
-  // Custom validity messages
   const emailInput = document.getElementById("email");
   const phoneInput = document.getElementById("phone");
 
@@ -58,35 +43,40 @@ function translatePage(lang) {
       this.setCustomValidity("");
     };
   }
+
+  updateLanguageButtons(lang);
 }
 
+function updateLanguageButtons(lang) {
+  const isEnglish = lang === "en";
 
+  ptBtn.classList.toggle("text-body-secondary", isEnglish);
+  ptBtn.classList.toggle("fw-bold", !isEnglish);
+  ptBtn.classList.toggle("red", !isEnglish);
+  ptBtn.textContent = isEnglish ? "pt" : "PT";
 
-document.getElementById("langToggle").addEventListener("click", (event) => {
-  event.preventDefault(); // evitar reload
+  enBtn.classList.toggle("text-body-secondary", !isEnglish);
+  enBtn.classList.toggle("fw-bold", isEnglish);
+  enBtn.classList.toggle("red", isEnglish);
+  enBtn.textContent = isEnglish ? "EN" : "en";
+}
 
-  enOn = !enOn;
-  const lang = enOn ? "en" : "pt";
+// 👇 Detectar linguagem na URL ao carregar
+window.addEventListener("DOMContentLoaded", () => {
+  const path = window.location.pathname;
+  const lang = path.includes("/en") ? "en" : "pt";
   translatePage(lang);
+});
 
-  // Estilização (manter o que já tinhas)
-  if (enOn) {
-    ptBtn.classList.add("text-body-secondary");
-    ptBtn.classList.remove("fw-bold");
-    ptBtn.textContent = "pt";
+// 👇 Alternar idioma e atualizar a URL sem recarregar
+document.getElementById("langToggle").addEventListener("click", (event) => {
+  event.preventDefault();
 
-    enBtn.textContent = "EN";
-    enBtn.classList.remove("text-body-secondary");
-    enBtn.classList.add("fw-bold");
-    enBtn.classList.add("red");
-  } else {
-    ptBtn.classList.remove("text-body-secondary");
-    ptBtn.classList.add("fw-bold");
-    ptBtn.classList.add("red");
-    ptBtn.textContent = "PT";
+  const currentLang = window.location.pathname.includes("/en") ? "en" : "pt";
+  const newLang = currentLang === "en" ? "pt" : "en";
 
-    enBtn.textContent = "en";
-    enBtn.classList.add("text-body-secondary");
-    enBtn.classList.remove("fw-bold");
-  }
+  const newPath = newLang === "en" ? "/en" : "/";
+  window.history.pushState({}, '', newPath);
+
+  translatePage(newLang);
 });
