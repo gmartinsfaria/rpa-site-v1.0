@@ -775,6 +775,12 @@ body.scroll-locked {
     pointer-events: none; /* Bloqueia interações do mouse */
 }
 
+.team-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 
 .team-card-block{
     height: 24vw !important;
@@ -782,7 +788,8 @@ body.scroll-locked {
     background-position: center;
     background-size: cover;
     transition: all 0.2s ease-in-out !important;
-    
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .team-scrolling-wrapper {

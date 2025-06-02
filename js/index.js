@@ -209,7 +209,7 @@ let animation = lottie.loadAnimation({
     renderer: 'svg', // Tipo de renderização (svg, canvas, ou html)
     loop: false, // Defina como true se a animação deve ser repetida
     autoplay: false, // Defina como true para que a animação comece automaticamente
-    path: './assets/json-files/Homepage-anim.json' // Caminho para o arquivo JSON gerado com o Bodymovin
+    path: '../assets/json-files/Homepage-anim.json' // Caminho para o arquivo JSON gerado com o Bodymovin
 });
 
 const lottieContainer = document.getElementById('lottie-animation');
@@ -620,12 +620,12 @@ document.querySelectorAll(".team-item").forEach(item => {
         // Encontra a imagem dentro da div e altera o src
         const imgElement = teamItem.querySelector("img"); // Busca a <img> dentro do .team-item
         if (imgElement) {
-            imgElement.src = `./assets/imgs/team/${newImage}-color.webp`; // Atualiza a imagem com a nova src
+            imgElement.src = `../assets/imgs/team/${newImage}-color.webp`; // Atualiza a imagem com a nova src
         }
 
         item.addEventListener("mouseout", () => {
             
-            imgElement.src = `./assets/imgs/team/${newImage}.webp`;
+            imgElement.src = `../assets/imgs/team/${newImage}.webp`;
 
 
             // Atualiza o texto da descrição
@@ -710,11 +710,11 @@ const arrowRights = document.querySelectorAll('.arrow-right img');
 
 arrowRights.forEach(arrow => {
   arrow.addEventListener('mouseenter', () => {
-    arrow.src = './assets/icons/slide-arrow-right-red.svg';
+    arrow.src = '../assets/icons/slide-arrow-right-red.svg';
   });
 
   arrow.addEventListener('mouseleave', () => {
-    arrow.src = './assets/icons/slide-arrow-right-black.svg';
+    arrow.src = '../assets/icons/slide-arrow-right-black.svg';
   });
 });
 
@@ -722,13 +722,37 @@ const arrowLefts = document.querySelectorAll('.arrow-left img');
 
 arrowLefts.forEach(arrow => {
   arrow.addEventListener('mouseenter', () => {
-    arrow.src = './assets/icons/slide-arrow-left-red.svg';
+    arrow.src = '../assets/icons/slide-arrow-left-red.svg';
   });
 
   arrow.addEventListener('mouseleave', () => {
-    arrow.src = './assets/icons/slide-arrow-left-black.svg';
+    arrow.src = '../assets/icons/slide-arrow-left-black.svg';
   });
 });
+
+
+document.querySelectorAll('.team-item a').forEach(link => {
+    let isDragging = false;
+    let startX;
+
+    link.addEventListener('mousedown', (e) => {
+        isDragging = false;
+        startX = e.pageX;
+    });
+
+    link.addEventListener('mousemove', (e) => {
+        if (Math.abs(e.pageX - startX) > 5) { // threshold: 5px
+            isDragging = true;
+        }
+    });
+
+    link.addEventListener('click', (e) => {
+        if (isDragging) {
+            e.preventDefault(); // bloqueia a navegação
+        }
+    });
+});
+
 
 
 //================================================= TEAM FIM ============================================================
@@ -829,17 +853,17 @@ document.addEventListener("DOMContentLoaded", function () {
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
         targetElement.classList.remove("px-5");
-        saoMiguelOfficeImg.src = "./assets/imgs/offices/sao-miguel-office.webp";
-        picoOfficeImg.src = "./assets/imgs/offices/pico-office.webp";
-        graciosaOfficeImg.src = "./assets/imgs/offices/graciosa-office.webp";
+        saoMiguelOfficeImg.src = "../assets/imgs/offices/sao-miguel-office.webp";
+        picoOfficeImg.src = "../assets/imgs/offices/pico-office.webp";
+        graciosaOfficeImg.src = "../assets/imgs/offices/graciosa-office.webp";
       } else {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
         targetElement.classList.add("px-5");
-        saoMiguelOfficeImg.src = "./assets/imgs/offices/sao-miguel-office-m.webp";
-        picoOfficeImg.src = "./assets/imgs/offices/pico-office-m.webp";
-        graciosaOfficeImg.src = "./assets/imgs/offices/graciosa-office-m.webp";
+        saoMiguelOfficeImg.src = "../assets/imgs/offices/sao-miguel-office-m.webp";
+        picoOfficeImg.src = "../assets/imgs/offices/pico-office-m.webp";
+        graciosaOfficeImg.src = "../assets/imgs/offices/graciosa-office-m.webp";
       }
     }
   
@@ -896,17 +920,17 @@ document.addEventListener("DOMContentLoaded", function () {
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
         targetElement.classList.remove("px-5");
-        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.webp";
-        providencePartnershipImg.src = "./assets/imgs/partnerships/providence.webp";
-        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto.webp";
+        bostonPartnershipImg.src = "../assets/imgs/partnerships/boston.webp";
+        providencePartnershipImg.src = "../assets/imgs/partnerships/providence.webp";
+        torontoPartnershipImg.src = "../assets/imgs/partnerships/toronto.webp";
       } else {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
         targetElement.classList.add("px-5");
-        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston-m.webp";
-        providencePartnershipImg.src = "./assets/imgs/partnerships/providence-m.webp";
-        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto-m.webp";
+        bostonPartnershipImg.src = "../assets/imgs/partnerships/boston-m.webp";
+        providencePartnershipImg.src = "../assets/imgs/partnerships/providence-m.webp";
+        torontoPartnershipImg.src = "../assets/imgs/partnerships/toronto-m.webp";
       }
     }
   
@@ -985,13 +1009,13 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("linkLivroRecl").addEventListener("mouseenter", () => {
     const image = document.getElementById("imageLinkLivroRecl");
 
-    image.src = "./assets/imgs/livro_reclamacoes/reclamacoes-hover.webp";
+    image.src = "../assets/imgs/livro_reclamacoes/reclamacoes-hover.webp";
 });
 
 document.getElementById("linkLivroRecl").addEventListener("mouseleave", () => {
     const image = document.getElementById("imageLinkLivroRecl");
 
-    image.src = "./assets/imgs/livro_reclamacoes/reclamacoes.webp";
+    image.src = "../assets/imgs/livro_reclamacoes/reclamacoes.webp";
 });
 
 
