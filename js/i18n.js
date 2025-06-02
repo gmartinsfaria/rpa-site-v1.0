@@ -1,3 +1,6 @@
+const path = window.location.pathname;
+const enOn = path.includes("/en"); // define se está em inglês
+
 const ptBtn = document.getElementById("ptBtn");
 const enBtn = document.getElementById("enBtn");
 
@@ -75,9 +78,11 @@ document.getElementById("langToggle").addEventListener("click", (event) => {
   const currentLang = window.location.pathname.includes("/en") ? "en" : "pt";
   const newLang = currentLang === "en" ? "pt" : "en";
 
-  const basePath = window.location.pathname.split('/')[1]; // "rpa-site-v1.0"
-  const newPath = newLang === "en" ? `/${basePath}/en` : `/${basePath}/`;
-  window.history.pushState({}, '', newPath);
+  const basePath = window.location.pathname.split('/')[1];
+  const fullBase = `/${basePath}`;
+  const newPath = newLang === "en" ? `${fullBase}/en/` : `${fullBase}/`;
 
+  window.history.pushState({}, '', newPath);
   translatePage(newLang);
 });
+
