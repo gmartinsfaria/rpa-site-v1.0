@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Law firm specialized in Civil, Commercial, Labor, Criminal, Administrative Law and other areas. We protect your rights with rigor. Consult us!">
+    <meta name="description" content="Escritório de advogados especializado em Direito Civil, Comercial, do Trabalho, Penal, Administrativo e outras áreas. Protegemos os seus direitos com rigor. Consulte-nos!">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="icon" type="image/svg+xml" href="../assets/imgs/fav_icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./assets/imgs/fav_icon.png" />
     <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <link rel="alternate" hreflang="pt" href="https://gmartinsfaria.github.io/rpa-site-v1.0/" />
     <link rel="alternate" hreflang="en" href="https://gmartinsfaria.github.io/rpa-site-v1.0/en/" />
 
-    <link href="../index.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
     <title>RP & Associados</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -41,7 +41,7 @@
         <nav class="navbar navbar-expand-xl fixed-top mb-5">
             <div class="container-fluid nav-white-background">
                 <a class="navbar-brand" href="#">
-                    <img src="../assets/imgs/logo_website.png" class="img-fluid logo-image mt-3" alt="Ricardo Pacheco Lawyers Logo">
+                    <img src="./assets/imgs/logo_website.png" class="img-fluid logo-image mt-3" alt="Ricardo Pacheco Advogados Logótipo">
                 </a>
                 <button id="ham-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05"
                     aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,38 +55,34 @@
                 <div id="drop-menu" class="collapse navbar-collapse navbar-btn-pack" id="navbarsExample05">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a id="ButtonEspecialidades" class="nav-link" data-i18n="navLinkActivity" aria-current="page" href="#">Practice Areas</a>
+                            <a id="ButtonEspecialidades" class="nav-link" data-i18n="navLinkActivity" aria-current="page" href="#">Atividade</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonEquipa" class="nav-link" data-i18n="navLinkTeam" aria-current="page" href="#">Team</a>
+                            <a id="ButtonEquipa" class="nav-link" data-i18n="navLinkTeam" aria-current="page" href="#">Equipa</a>
                         </li>
                         <li class="nav-item">
                             <a id="ButtonValores" class="nav-link" data-i18n="navLinkManifest" aria-current="page" href="#">Manifesto</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonEscritorios" class="nav-link" data-i18n="navLinkOffices" aria-current="page" href="#">Offices</a>
+                            <a id="ButtonEscritorios" class="nav-link" data-i18n="navLinkOffices" aria-current="page" href="#">Escritórios</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonParcerias" class="nav-link" data-i18n="navLinkPartnerships" aria-current="page" href="#">Partnerships</a>
+                            <a id="ButtonParcerias" class="nav-link" data-i18n="navLinkPartnerships" aria-current="page" href="#">Parcerias</a>
                         </li>
                         <li class="nav-item">
                             <a id="ButtonBlog" class="nav-link" aria-current="page" href="#">Insights</a>
                         </li>
-                        <button id="ButtonContacto" type="button" class="nav-item btn round-btn">
-                            <span class="text-capitalize" data-i18n="navLinkContactOne">Get in</span> <span class="text-lowercase" data-i18n="navLinkContactTwo">touch</span>
-                        </button>
+                        <button id="ButtonContacto" type="button" class="nav-item btn round-btn"><span class="text-capitalize" data-i18n="navLinkContactOne">Entrar</span> <span class="text-lowercase" data-i18n="navLinkContactTwo">em contacto</span></button>
                         <li class="nav-item">
-                            <a id="langToggle" class="nav-link nav-link-translate" aria-current="page" href="#">
-                                <span id="ptBtn" class="fw-bold red">PT</span> | <span id="enBtn" class="text-body-secondary">EN</span>
-                            </a>
+                            <a id="langToggle" class="nav-link nav-link-translate" aria-current="page" href="#"><span id="ptBtn" class="fw-bold red">PT</span> | <span id="enBtn" class="text-body-secondary">en</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- ==================================== NAVBAR END ======================================= -->
 
+        <!-- ==================================== NAVBAR FIM ======================================= -->
 
 
 
@@ -95,155 +91,166 @@
 
         <section id="SectionNoticias">
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h1 class="general-title" data-i18n="title">At the forefront of all major cases in the Azores.</h1>
-                <p class="general-txt" data-i18n="since">Since 2010</p>
+                <h1 class="general-title" data-i18n="title">Na linha da frente em todos os grandes casos dos Açores.</h1>
+                <p class="general-txt" data-i18n="since">Desde 2010</p>
             </div>
-
+        
             <div id="newsNavigationArrows" class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
                 <button type="button" id="arrow-left-news" class="arrow-left arrow-btn me-2">
-                    <img src="../assets/icons/slide-arrow-left-black.svg" alt="left arrow">
+                    <img src="./assets/icons/slide-arrow-left-black.svg" alt="seta esquerda">
                 </button>
                 <button type="button" id="arrow-right-news" class="arrow-right arrow-btn ms-2 me-2">
-                    <img src="../assets/icons/slide-arrow-right-black.svg" alt="right arrow">
+                    <img src="./assets/icons/slide-arrow-right-black.svg" alt="seta direita">
                 </button>
             </div>
-
+        
             <div id="SectionNewsLeft" class="news-container container-left">
                 <div class="news-scrolling-wrapper row flex-row flex-nowrap mt-4">
-
-                    <!-- news item 1 -->
+                    
+                    <!-- noticia 1-->
                     <div class="news-item">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/noticia-1.png" alt="News Thumbnail">
+                            <img src="./assets/imgs/news/noticia-1.png" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://acores.rtp.pt/local/operacao-asclepio-16-arguidos-acusados-de-55-crimes/" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news1Title">RPA leads defense in Operation Asclépio</h4>
+                                <h4 class="general-font" data-i18n="news1Title">RPA lidera defesa na Operação Asclépio</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news1Description">
-                                RPA takes on the defense in Operation Asclépio, involving over 50 alleged crimes, including corruption and abuse of power within the Regional Health System.
+                                RPA assume a defesa dos arguidos na Operação Asclépio, onde, 
+                                alegadamente, estão em causa mais de 50 crimes, incluindo 
+                                corrupção e abuso de poder no Sistema Regional de Saúde.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 2 -->
+                    <!-- noticia 2-->
                     <div class="news-item">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/noticia-2.jpg" alt="News Thumbnail">
+                                <img src="./assets/imgs/news/noticia-2.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://acores.rtp.pt/local/operacao-mayday-mp-acusa-24-arguidos-por-fraude-no-subsidio-de-mobilidade/" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news2Title">RPA leads defense in Operation Mayday</h4>
+                                <h4 class="general-font" data-i18n="news2Title">RPA lidera defesa na Operação Mayday</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news2Description">
-                                RPA is handling the defense in Operation Mayday, where nine people were arrested for allegedly defrauding the Portuguese state of several million euros.
+                                RPA assume a defesa dos arguidos na Operação Mayday, 
+                                que levou à detenção de nove pessoas por, alegadamente, 
+                                terem lesado o Estado Português em vários milhões de euros.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 3 -->
+                    <!-- noticia -->
                     <div class="news-item">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/divorcio-noticia.jpg" alt="News Thumbnail">
+                            <img src="./assets/imgs/news/divorcio-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/tipos-de-div%C3%B3rcio-em-portugal-conhe%C3%A7a-os-seus-direitos-nja8f" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news8Title">Types of Divorce in Portugal: Know Your Rights and Options</h4>
+                                <h4 class="general-font" data-i18n="news8Title">Tipos de divórcio em Portugal: conheça os seus direitos e opções</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news8Description">
-                                Article by Verónica Casimiro, RPA associate, outlining the legal framework for divorces in Portugal.
+                                Artigo da autoria de Verónica Casimiro, colaboradora da RPA, 
+                                acerca do enquadramento legal relativamente aos divórcios em Portugal.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 4 -->
+                    <!-- noticia -->
                     <div class="news-item me-2">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/regimes-casamento-noticia.jpg" alt="News Thumbnail">
+                            <img src="./assets/imgs/news/regimes-casamento-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/regimes-de-casamento-em-portugal-uma-an%C3%A1lise-segundo-legisla%C3%A7%C3%A3o-13zcf/" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news3Title">Marriage Regimes in Portugal: A Legal Perspective</h4>
+                                <h4 class="general-font" data-i18n="news3Title">Regimes de Casamento em Portugal: uma análise segundo a legislação portuguesa</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news3Description">
-                                Article by Verónica Casimiro, RPA associate, on the different marriage regimes under Portuguese law.
+                                Artigo da autoria de Verónica Casimiro, colaboradora da RPA, 
+                                acerca dos regimes de casamento em Portugal.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 5 -->
+                    <!-- noticia -->
                     <div class="news-item me-2">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/assedio-laboral-noticia.jpg" alt="News Thumbnail">
+                            <img src="./assets/imgs/news/assedio-laboral-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/%C3%A9-s%C3%B3-uma-brincadeira-do-meu-patr%C3%A3o-rp-associadoss-vx3af" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news4Title">It's just a “joke” from my boss!</h4>
+                                <h4 class="general-font" data-i18n="news4Title">É só uma “brincadeira” do meu patrão!</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news4Description">
-                                Article by Bianca Pereira, RPA associate, on workplace harassment.
+                                Artigo da autoria de Bianca Pereira, colaboradora da RPA, 
+                                acerca do assédio laboral.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 6 -->
+                    <!-- noticia -->
                     <div class="news-item me-2">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/pensao-alim-noticia.jpg" alt="News Thumbnail">
+                            <img src="./assets/imgs/news/pensao-alim-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/o-meu-filho-tem-m%C3%A1s-notas-na-universidade-tenho-de-pagar-1ijnf" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news5Title">My child is failing at university — do I still have to pay child support?</h4>
+                                <h4 class="general-font" data-i18n="news5Title">O meu filho tem más notas na universidade, tenho de pagar pensão de alimentos?</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news5Description">
-                                Article by Júlia Filipe, RPA associate, on legal obligations around child support for university students.
+                                Artigo da autoria de Júlia Filipe, colaboradora da RPA, 
+                                acerca do enquadramento legal relativo à prestação da 
+                                pensão de alimentos por parte dos progenitores.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 7 -->
+                    <!-- noticia -->
                     <div class="news-item">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/ferias-noticia.jpg" alt="News Thumbnail">
+                                <img src="./assets/imgs/news/ferias-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/marca%C3%A7%C3%A3o-do-per%C3%ADodo-de-f%C3%A9rias-um-equil%C3%ADbrio-entre-direito-isyzf" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news6Title">Scheduling Holidays: Balancing Rights and Organization</h4>
+                                <h4 class="general-font" data-i18n="news6Title">A Marcação do Período de Férias: Um Equilíbrio entre Direito e Organização</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news6Description">
-                                Article by João Baptista, RPA associate, on legal aspects of holiday scheduling.
+                                Artigo da autoria de João Baptista, colaboradora da RPA, 
+                                acerca da marcação do período de férias.
                             </p>
                         </div>
                     </div>
 
-                    <!-- news item 8 -->
+                    <!-- noticia -->
                     <div class="news-item">
                         <div class="news-img-wrapper">
-                            <img src="../assets/imgs/news/ivg-noticia.jpg" alt="News Thumbnail">
+                            <img src="./assets/imgs/news/ivg-noticia.jpg" alt="Thumbnail notícia">
                         </div>
                         <div class="mt-4 ps-2 pe-4">
                             <a href="https://www.linkedin.com/pulse/interrup%25C3%25A7%25C3%25A3o-da-gravidez-e-o-certificado-de-incapacidade-t7rof" target="_blank" class="news-detail-link">
-                                <h4 class="general-font" data-i18n="news7Title">Abortion and the Certificate of Temporary Work Disability</h4>
+                                <h4 class="general-font" data-i18n="news7Title">Interrupção da Gravidez e o Certificado de Incapacidade Temporária para o Trabalho</h4>
                             </a>
                             <p class="general-font mt-3" data-i18n="news7Description">
-                                Article by Bianca Pereira, RPA associate, on abortion rights and work incapacity certification.
+                                Artigo da autoria de Bianca Pereira, colaboradora da RPA, 
+                                acerca da IVG.
                             </p>
                         </div>
                     </div>
 
                 </div>
-
                 <a href="https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles" target="_blank">
                     <button id="moreNewsBtn" class="more-news-btn">
-                        <span data-i18n="knowMore">See all</span>
-                        <img src="../assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
+                        <span data-i18n="knowMore">Ver todos</span>
+                        <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16">
                     </button>
                 </a>
+
             </div>
         </section>
+        
 
-        <!-- ==================================== NEWS END ======================================= -->
-
+        <!-- ==================================== NEWS FIM ======================================= -->
 
 
 
@@ -269,7 +276,7 @@
     
         <section class="pt-5" id="SectionEspecialidades">
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h1 class="general-title" data-i18n="navLinkActivity">Activity</h1>
+                <h1 class="general-title" data-i18n="navLinkActivity">Atividade</h1>
             </div>
             
             <div class="container">
@@ -277,17 +284,27 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                <h2 class="text-body-emphasis" data-i18n="administrativeField">Administrative Litigation</h2>
-                            </button>
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            <h2 class="text-body-emphasis" data-i18n="administrativeField">Contencioso Administrativo</h2>
+                        </button>
                         </h2>
                         <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="administrativeFieldStart">The </span><span class="bold-in-description" data-i18n="administrativeField">Administrative Litigation</span> <span data-i18n="administrativeFieldEnd">refers to the set of judicial processes involving Public Administration and its acts. This branch of law aims to ensure that administrative acts, such as decisions, regulations, or contracts, are executed according to the law, protecting citizens’ rights against possible abuses of power by the State. Through administrative litigation, individuals can challenge the legality of administrative acts and seek compensation for damages caused by public authority actions.</span>
+                                    <span data-i18n="administrativeFieldStart">O </span><span class="bold-in-description" data-i18n="administrativeField">Contencioso Administrativo</span> <span data-i18n="administrativeFieldEnd">refere-se ao conjunto de 
+                                    processos judiciais que envolvem a Administração Pública e seus atos. Este ramo do direito visa 
+                                    garantir que os atos administrativos, como decisões, normas ou contratos, sejam executados de acordo 
+                                    com a lei, protegendo os direitos dos cidadãos contra possíveis abusos de poder por parte do Estado. 
+                                    Através do contencioso administrativo, os indivíduos podem questionar a legalidade de atos 
+                                    administrativos e buscar reparação por danos causados por ações do poder público.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="administrativeFieldSentence2">
-                                    This type of litigation involves the review of administrative decisions directly affecting citizens’ interests, such as tax issues, licenses, or permits. When a person or company believes their rights have been harmed by an administrative act, they may appeal to the administrative court to seek review or annulment of that decision. Administrative litigation is therefore a crucial tool to ensure transparency, legality, and justice in State actions.
+                                    Este tipo de contencioso envolve a análise de decisões administrativas que afetam diretamente os 
+                                    interesses dos cidadãos, como questões fiscais, licenças, ou autorizações. Quando uma pessoa ou 
+                                    empresa considera que seus direitos foram prejudicados por um ato administrativo, pode recorrer ao 
+                                    tribunal administrativo para buscar a revisão ou anulação dessa decisão. O contencioso administrativo 
+                                    é, portanto, uma ferramenta crucial para assegurar a transparência, a legalidade e a justiça nas 
+                                    ações do Estado.
                                 </p>
                             </div>
                         </div>
@@ -295,208 +312,266 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                <h2 class="text-body-emphasis" data-i18n="taxField">Tax and Fiscal Litigation</h2>
-                            </button>
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <h2 class="text-body-emphasis" data-i18n="taxField">Contencioso Fiscal e Tributário</h2>
+                        </button>
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="taxFieldStart">The </span><span class="bold-in-description" data-i18n="taxField">Tax and Fiscal Litigation</span> <span data-i18n="taxFieldEnd">deals with legal disputes between taxpayers and the State related to the application of tax laws. This branch of law involves resolving conflicts about tax payment obligations, interpreting tax regulations, and challenging tax assessments and penalties imposed by tax authorities. The focus is to ensure taxation is fair and that tax obligations are met according to current legislation.</span>
+                                    <span data-i18n="taxFieldStart">O </span><span class="bold-in-description" data-i18n="taxField">Contencioso Fiscal e Tributário</span> <span data-i18n="taxFieldEnd">trata das disputas 
+                                    legais entre contribuintes e o Estado relacionadas à aplicação das leis tributárias. Este ramo do 
+                                    direito envolve a resolução de conflitos sobre a obrigação de pagamento de tributos, a interpretação 
+                                    de normas fiscais, e a contestação de autuações fiscais e sanções impostas pelos órgãos tributários. 
+                                    O foco é garantir que a tributação seja justa e que as obrigações fiscais sejam cumpridas conforme 
+                                    a legislação vigente.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="taxFieldSentence2">
-                                    This field includes defending taxpayers’ rights in cases of undue collection, tax disputes, and other fiscal measures, as well as regulating the State’s role in tax inspection and collection. The goal is to ensure a balance between fulfilling tax obligations and protecting taxpayers’ rights within the tax system.
+                                    Este campo inclui a defesa dos direitos do contribuinte em situações de cobrança indevida, contestação 
+                                    de impostos e outras medidas fiscais, além de regulamentar a atuação do Estado na fiscalização e 
+                                    arrecadação de tributos. O objetivo é assegurar um equilíbrio entre o cumprimento das obrigações 
+                                    fiscais e a proteção dos direitos dos contribuintes perante o sistema tributário.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <h2 class="text-body-emphasis" data-i18n="comercialField">Commercial and Corporate Law</h2>
-                            </button>
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h2 class="text-body-emphasis" data-i18n="comercialField">Direito Comercial e Societários</h2>
+                        </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="comercialFieldStart">The </span><span class="bold-in-description" data-i18n="comercialField">Commercial and Corporate Law</span> <span data-i18n="comercialFieldEnd">regulates economic and business activities, ensuring a stable legal framework for the creation, management, and dissolution of companies. This branch of law covers the rules governing relations between merchants, companies, and other economic agents, promoting market security and transparency.</span>
+                                    <span data-i18n="comercialFieldStart">O </span><span class="bold-in-description" data-i18n="comercialField">Direito Comercial e Societário</span> <span data-i18n="comercialFieldEnd">regula as atividades 
+                                    económicas e empresariais, assegurando um quadro jurídico estável para a criação, gestão e 
+                                    dissolução de empresas. Este ramo do direito abrange as normas que regem as relações entre 
+                                    comerciantes, sociedades e demais agentes económicos, promovendo a segurança e transparência no mercado.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="comercialFieldSentence2">
-                                    Fundamental to the operation of businesses, Commercial and Corporate Law defines rules for company formation, commercial contracts, liability of partners and directors, as well as mechanisms for resolving business disputes. Its application aims to ensure balance in commercial relations and foster a solid and competitive business environment.
+                                    Fundamental para o funcionamento das empresas, o Direito Comercial e Societário define as regras 
+                                    para a constituição de sociedades, contratos comerciais, responsabilidade dos sócios e administradores, 
+                                    bem como os mecanismos de resolução de conflitos empresariais. A sua aplicação visa garantir o 
+                                    equilíbrio nas relações comerciais e fomentar um ambiente de negócios sólido e competitivo.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we operate in the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="comercialFieldListItem1">Commercial contracts</li>
+                                    <li data-i18n="comercialFieldListItem1">Contratos comerciais</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                <h2 class="text-body-emphasis" data-i18n="familyField">Family Law</h2>
-                            </button>
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                            <h2 class="text-body-emphasis" data-i18n="familyField">Direito da Família</h2>
+                        </button>
                         </h2>
                         <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="familyFieldStart">The </span><span class="bold-in-description" data-i18n="familyField">Family Law</span> <span data-i18n="familyFieldEnd">is the branch of law that regulates legal relationships between family members, addressing essential issues such as marriage, common-law partnerships, parentage, child custody, adoption, and inheritance. This field of law aims to protect the individual and collective rights of family members, promoting harmonious coexistence and the well-being of those involved. Legislation in this area also deals with the protection of children, the elderly, and other vulnerable family members.</span>
+                                    <span data-i18n="familyFieldStart">O </span><span class="bold-in-description" data-i18n="familyField">Direito da Família</span> <span data-i18n="familyFieldEnd">é o ramo do direito que regula as 
+                                    relações jurídicas entre membros de uma família, abordando questões essenciais como o casamento, a 
+                                    união de facto, a filiação, a guarda dos filhos, a adoção e a sucessão. Este campo do direito visa 
+                                    proteger os direitos individuais e coletivos dos membros da família, promovendo a convivência 
+                                    harmoniosa e o bem-estar das pessoas envolvidas. A legislação neste âmbito também lida com a 
+                                    proteção da criança, do idoso e de outros membros vulneráveis da família.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="familyFieldSentence2">
-                                    Furthermore, Family Law deals with matters such as marital property regimes, division of assets, alimony, and the definition of parental responsibilities. The goal is to resolve family disputes in a balanced and fair manner, ensuring that each individual's rights are respected and that the best interests of the children are always prioritized in judicial decisions.
+                                    Além disso, o Direito da Família trata de questões como o regime de bens no casamento, a partilha 
+                                    de património, pensões alimentícias e a definição de responsabilidades parentais. O objetivo é 
+                                    resolver litígios familiares de forma equilibrada e justa, assegurando que os direitos de cada 
+                                    indivíduo sejam respeitados e que o melhor interesse das crianças seja sempre uma prioridade nas 
+                                    decisões judiciais.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we handle the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="familyFieldListItem6">Paternity and Child Support Actions</li>
-                                    <li data-i18n="familyFieldListItem3">Separation of Property and Separation of Persons and Property Actions</li>
-                                    <li data-i18n="familyFieldListItem4">Adoption</li>
-                                    <li data-i18n="familyFieldListItem2">Annulment of Catholic Marriage</li>
-                                    <li data-i18n="familyFieldListItem8">Disinheritance</li>
-                                    <li data-i18n="familyFieldListItem1">Divorce by Mutual Consent and Divorce without Consent of the Other Spouse</li>
-                                    <li data-i18n="familyFieldListItem5">Family Mediation</li>
-                                    <li data-i18n="familyFieldListItem9">Protection of Children and Youth at Risk</li>
-                                    <li data-i18n="familyFieldListItem7">Parental Responsibilities</li>
+                                    <li data-i18n="familyFieldListItem6">Ações de Paternidade e de prestações de alimentos</li>
+                                    <li data-i18n="familyFieldListItem3">Ações de Separação de Bens e de Pessoas e Bens</li>
+                                    <li data-i18n="familyFieldListItem4">Adopção</li>
+                                    <li data-i18n="familyFieldListItem2">Anulação do casamento católico</li>
+                                    <li data-i18n="familyFieldListItem8">Deserdação</li>
+                                    <li data-i18n="familyFieldListItem1">Divórcio por mútuo consentimento e sem consentimento de outro cônjuge</li>
+                                    <li data-i18n="familyFieldListItem5">Mediação Familiar</li>
+                                    <li data-i18n="familyFieldListItem9">Proteção de Crianças e Jovens em Risco</li>
+                                    <li data-i18n="familyFieldListItem7">Responsabilidades Parentais</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                                <h2 class="text-body-emphasis" data-i18n="inventoryField">Inheritance Law / Inventory</h2>
-                            </button>
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                            <h2 class="text-body-emphasis" data-i18n="inventoryField">Direito das Sucessões/Inventário</h2>
+                        </button>
                         </h2>
                         <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="inventoryFieldStart">The </span><span class="bold-in-description" data-i18n="inventoryField">Inheritance Law / Inventory</span> <span data-i18n="inventoryFieldEnd">deals with the transfer of assets, rights, and obligations of a deceased person to their heirs. This branch of law covers the rules regarding testamentary and intestate succession, that is, the distribution of assets according to the will or, in its absence, according to legal provisions. Inheritance Law also addresses the heirs' responsibility for the deceased’s debts and the management of the estate.</span>
+                                    <span data-i18n="inventoryFieldStart">O </span><span class="bold-in-description" data-i18n="inventoryField">Direito das Sucessões/Inventário</span> <span data-i18n="inventoryFieldEnd">trata da transferência 
+                                    dos bens, direitos e deveres de uma pessoa falecida para os seus herdeiros. Este ramo do direito 
+                                    abrange as regras relativas à sucessão testamentária e legítima, ou seja, a distribuição dos bens 
+                                    de acordo com o que foi estabelecido no testamento ou, na ausência deste, conforme as disposições 
+                                    legais. O Direito das Sucessões também se ocupa da responsabilidade dos herdeiros em relação às 
+                                    dívidas do falecido e da gestão do espólio.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="inventoryFieldSentence2">
-                                    Inventory is a legal procedure aimed at identifying and valuing the assets left by the deceased, as well as determining the rights and obligations of the heirs. This process is essential to formalize the division of assets and can be conducted judicially or extrajudicially, depending on the case complexity and the heirs’ agreement. Through inventory, it is ensured that succession is carried out fairly and according to current legislation, avoiding conflicts among those involved.
+                                    O Inventário é um procedimento legal que visa identificar e avaliar os bens deixados pelo falecido, 
+                                    bem como apurar os direitos e obrigações dos herdeiros. Este processo é essencial para formalizar a 
+                                    partilha dos bens, podendo ser realizado judicialmente ou extrajudicialmente, dependendo da 
+                                    complexidade do caso e da concordância entre os herdeiros. Através do inventário, busca-se assegurar 
+                                    que a sucessão seja feita de forma justa e conforme a legislação vigente, evitando conflitos entre os 
+                                    envolvidos.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we handle the following matters:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="inventoryFieldListItem1">Judicial and Extrajudicial Division of Assets</li>
-                                    <li data-i18n="inventoryFieldListItem2">Wills, exchanges, and donations</li>
+                                    <li data-i18n="inventoryFieldListItem1">Partilha Judicial de Bens e Extrajudicial</li>
+                                    <li data-i18n="inventoryFieldListItem2">Testamentos, permutas e doações</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                <h2 class="text-body-emphasis" data-i18n="consumerField">Consumer Law</h2>
-                            </button>
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <h2 class="text-body-emphasis" data-i18n="consumerField">Direito do Consumidor</h2>
+                        </button>
                         </h2>
                         <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="consumerFieldStart">The </span><span class="bold-in-description" data-i18n="consumerField">Consumer Law</span> <span data-i18n="consumerFieldEnd">is a branch of law that protects consumers’ interests in their relationships with providers of goods and services. This field covers various issues such as protection against unfair commercial practices, misleading advertising, and abusive contractual clauses. The main objective is to ensure consumers have access to clear information, that their rights are respected, and that they can seek compensation for damages caused by illegal or harmful practices.</span>
+                                    <span data-i18n="consumerFieldStart">O </span><span class="bold-in-description" data-i18n="consumerField">Direito do Consumidor</span> <span data-i18n="consumerFieldEnd">é um ramo do direito que protege 
+                                    os interesses dos consumidores em suas relações com fornecedores de bens e serviços. Este campo abrange 
+                                    diversas questões, como a defesa contra práticas comerciais desleais, publicidade enganosa, e cláusulas 
+                                    contratuais abusivas. O objetivo principal é garantir que o consumidor tenha acesso à informação clara, 
+                                    que seus direitos sejam respeitados e que ele possa buscar reparação por danos sofridos devido a 
+                                    práticas ilegais ou prejudiciais.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="consumerFieldSentence2">
-                                    In the legal context, consumer law aims to balance the relationship between consumers and businesses, recognizing the vulnerability of consumers and ensuring their protection against practices that may harm their physical, moral, or financial integrity. This includes the right to product returns, damage repairs, and compensation for losses suffered, always based on legislation regulating consumer relations.
+                                    No contexto jurídico, o direito do consumidor busca equilibrar a relação entre consumidores e 
+                                    empresas, reconhecendo a vulnerabilidade do consumidor e assegurando-lhe uma posição de proteção 
+                                    em face de práticas que possam prejudicar a sua integridade física, moral ou patrimonial. Isso 
+                                    inclui o direito à devolução de produtos, à reparação de danos, e à compensação por perdas sofridas, 
+                                    sempre com base na legislação que regula as relações de consumo.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we handle the following matters:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="consumerFieldListItem1">Warranties</li>
+                                    <li data-i18n="consumerFieldListItem1">Garantias</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button id="accordion-btn-1" class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <h2 class="text-body-emphasis" data-i18n="civilField">Civil Law and Litigation</h2>
-                            </button>
+                        <button id="accordion-btn-1" class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h2 class="text-body-emphasis" data-i18n="civilField">Direito e Contencioso Civil</h2>
+                        </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="general-txt">
-                                    <span data-i18n="civilFieldStart">The </span><span class="bold-in-description" data-i18n="civilField">Civil Law</span> <span data-i18n="civilFieldEnd">is the foundation of the legal system and regulates relationships between private individuals, ensuring rights and duties in everyday society. This branch of law covers various areas including contractual obligations, civil liability, property rights, family relations, and inheritance.</span>
-                                </p>
-                                <p class="general-txt mt-3" data-i18n="civilFieldSentence2">
-                                    Essential to guaranteeing justice in interactions between individuals, Civil Law establishes the principles governing contracts, possession and ownership of property, as well as rights and duties in family relationships. Its application aims to promote legal certainty, protect citizens' interests, and ensure fair resolution of private conflicts.
-                                </p>
-                                <p class="general-txt mt-3" data-i18n="fieldListTitle">
-                                    Within this area, we work on the following issues:
-                                </p>
-                                <ul class="general-txt pt-2">
-                                    <li data-i18n="civilFieldListItem1">Civil Actions</li>
-                                    <li data-i18n="civilFieldListItem2">Family and Minors</li>
-                                    <li data-i18n="civilFieldListItem3">Obligations and Contracts</li>
-                                    <li data-i18n="civilFieldListItem4">Condominium Property</li>
-                                    <li data-i18n="civilFieldListItem5">Inheritance and Wills</li>
-                                    <li data-i18n="civilFieldListItem6">Judicial Courts</li>
-                                </ul>
-                            </div>
+                        <div class="accordion-body">
+                            <p class="general-txt">
+                                <span data-i18n="civilFieldStart">O </span><span class="bold-in-description" data-i18n="civilField">Direito Civil</span> <span data-i18n="civilFieldEnd">é a base do ordenamento jurídico 
+                                e regula as relações entre particulares, assegurando direitos e deveres no quotidiano da 
+                                sociedade. Este ramo do direito abrange diversas áreas, incluindo obrigações contratuais, 
+                                responsabilidade civil, direitos reais, relações familiares e sucessões.</span> 
+                            </p>
+                            <p class="general-txt mt-3" data-i18n="civilFieldSentence2">
+                                Essencial para garantir a justiça nas interações entre indivíduos, o Direito Civil estabelece 
+                                os princípios que regem os contratos, a posse e propriedade de bens, bem como os direitos e 
+                                deveres nas relações familiares. A sua aplicação visa promover a segurança jurídica, proteger 
+                                os interesses dos cidadãos e assegurar a resolução justa de conflitos privados.
+                            </p>
+                            <p class="general-txt mt-3" data-i18n="fieldListTitle">
+                                Dentro desta área atuamos nas seguintes questões:
+                            </p>
+                            <ul class="general-txt pt-2">
+                                <li data-i18n="civilFieldListItem1">Ações Cíveis</li>
+                                <li data-i18n="civilFieldListItem2">Família e menores</li>
+                                <li data-i18n="civilFieldListItem3">Obrigações e contratos</li>
+                                <li data-i18n="civilFieldListItem4">Propriedade horizontal</li>
+                                <li data-i18n="civilFieldListItem5">Sucessório e Testamentos</li>
+                                <li data-i18n="civilFieldListItem6">Tribunais judiciais</li>
+                                
+                            </ul>
+                        </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <h2 class="text-body-emphasis" data-i18n="laborField">Labor Law and Litigation</h2>
-                            </button>
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h2 class="text-body-emphasis" data-i18n="laborField">Direito e Contencioso do Trabalho</h2>
+                        </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="laborFieldStart">Labor Law and Litigation</span> <span class="bold-in-description" data-i18n="laborField">regulates labor relations between employers and employees, ensuring a balance between the rights and duties of both parties. This area of law covers the formation, execution, and termination of employment contracts, protection of workers' rights, as well as regulation of working conditions, workplace safety, and health.</span>
+                                    <span data-i18n="laborFieldStart">O </span><span class="bold-in-description" data-i18n="laborField">Direito e Contencioso do Trabalho</span> <span data-i18n="laborFieldEnd">regula as relações laborais entre empregadores e trabalhadores, assegurando o equilíbrio 
+                                    entre os direitos e deveres de ambas as partes. Esta área do direito abrange a celebração, execução e 
+                                    cessação dos contratos de trabalho, a proteção dos direitos dos trabalhadores, bem como a regulamentação 
+                                    das condições laborais, segurança e saúde no trabalho.</span>
                                 </p>
                                 <p class="general-txt mt-3">
-                                    <span data-i18n="laborFieldSentence2Start">Within </span><span class="bold-in-description" data-i18n="laborField2">labor litigation</span><span data-i18n="laborFieldSentence2End">, it deals with the resolution of conflicts arising from employment relationships, whether through negotiation, administrative or judicial means. Issues such as dismissals, workplace harassment, occupational accidents, breaches of contractual terms, and wage claims are frequently subject to litigation requiring specialized legal intervention to protect the interests of those involved.</span>
+                                    <span data-i18n="laborFieldSentence2Start">No âmbito do </span><span class="bold-in-description" data-i18n="laborField2">contencioso laboral</span><span data-i18n="laborFieldSentence2End">, trata-se da resolução de 
+                                    conflitos resultantes das relações de trabalho, seja por via negocial, administrativa ou judicial. 
+                                    Questões como despedimentos, assédio laboral, acidentes de trabalho, incumprimento de normas contratuais 
+                                    e reivindicações salariais são frequentemente objeto de litígios que exigem uma intervenção jurídica 
+                                    especializada para garantir a defesa dos interesses dos envolvidos.</span>
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we handle the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="laborFieldListItem1">Contracts</li>
-                                    <li data-i18n="laborFieldListItem2">Employment relationship</li>
+                                    <li data-i18n="laborFieldListItem1">Contratos</li>
+                                    <li data-i18n="laborFieldListItem2">Relação laboral</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                <h2 class="text-body-emphasis" data-i18n="criminalField">Criminal Law and Litigation</h2>
-                            </button>
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            <h2 class="text-body-emphasis" data-i18n="criminalField">Direito e Contencioso Penal</h2>
+                        </button>
                         </h2>
                         <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="criminalFieldStart">Criminal Law and Litigation</span> <span class="bold-in-description" data-i18n="criminalField">is the branch of law that regulates criminal offenses and the sanctions applicable to individuals who commit crimes. This field of law defines what constitutes a crime, the procedures for investigation, prosecution, and trial, and the penalties that can be imposed on offenders. Criminal litigation specifically refers to judicial disputes related to crimes, where the State, through the Public Prosecutor's Office, prosecutes individuals who break the law.</span>
+                                    <span data-i18n="criminalFieldStart">O </span><span class="bold-in-description" data-i18n="criminalField">Direito e Contencioso Penal</span> <span data-i18n="criminalFieldEnd">é o ramo do direito que 
+                                    regula as infrações penais e as sanções aplicáveis aos indivíduos que cometem crimes. Este campo 
+                                    da lei define o que constitui um crime, os procedimentos para a investigação, acusação e julgamento, 
+                                    e as penas que podem ser impostas aos infratores. O Contencioso Penal refere-se especificamente às 
+                                    disputas judiciais relacionadas a crimes, onde o Estado, através do Ministério Público, processa os 
+                                    indivíduos que infringem a lei.</span> 
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="criminalFieldSentence2">
-                                    The objective of Criminal Law is to ensure social order, preventing behaviors that may harm the community, punishing those responsible, and rehabilitating offenders whenever possible. In a criminal process, the defendant has constitutional rights to a fair and impartial trial, and the defense attorney plays a crucial role in protecting these rights, being able to challenge evidence, question allegations, and plead for acquittal or sentence reduction.
+                                    O objetivo do Direito Penal é assegurar a ordem social, prevenindo comportamentos que possam prejudicar 
+                                    a coletividade, punindo os responsáveis e reabilitando os infratores sempre que possível. Em um 
+                                    processo penal, o réu tem direitos constitucionais a um julgamento justo e imparcial, e o advogado de 
+                                    defesa desempenha um papel essencial na proteção desses direitos, podendo contestar as provas, 
+                                    questionar as alegações e pleitear pela absolvição ou redução das penas.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we work on the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="criminalFieldListItem1">Administrative Offenses</li>
-                                    <li data-i18n="criminalFieldListItem2">Criminal</li>
+                                    <li data-i18n="criminalFieldListItem1">Contra-ordenações</li>
+                                    <li data-i18n="criminalFieldListItem2">Penal</li>
                                 </ul>
                             </div>
                         </div>
@@ -504,26 +579,32 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <h2 class="text-body-emphasis" data-i18n="executiveField">Enforcement Law</h2>
-                            </button>
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h2 class="text-body-emphasis" data-i18n="executiveField">Direito Executivo</h2>
+                        </button>
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="executiveFieldStart">Enforcement Law</span> <span class="bold-in-description" data-i18n="executiveField">is the area of law that regulates processes aimed at the coercive collection of obligations, such as debts, contract enforcement, and execution of judicial decisions. Through available legal means, it aims to ensure that creditors obtain satisfaction of their claims when debtors do not voluntarily fulfill their obligations.</span>
+                                    <span data-i18n="executiveFieldStart">O </span><span class="bold-in-description" data-i18n="executiveField">Direito Executivo</span> <span data-i18n="executiveFieldEnd">é a área do direito que regula 
+                                    os processos destinados à cobrança coerciva de obrigações, como dívidas, cumprimento de contratos 
+                                    e execução de decisões judiciais. Através dos meios legais disponíveis, visa garantir que credores 
+                                    obtenham a satisfação dos seus créditos quando os devedores não cumprem voluntariamente as suas 
+                                    obrigações.</span>
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="executiveFieldSentence2">
-                                    This branch of law includes mechanisms such as seizures, attachments, mortgage executions, and other coercive measures, ensuring that creditors can recover amounts owed fairly and effectively, always respecting the fundamental rights of the parties involved.
+                                    Este ramo do direito abrange mecanismos como penhoras, arrestos, execuções hipotecárias e outras 
+                                    medidas coercivas, assegurando que os credores possam recuperar os valores devidos de forma justa 
+                                    e eficaz, sempre respeitando os direitos fundamentais das partes envolvidas.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we work on the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="executiveFieldListItem1">Debt Collection Letters</li>
-                                    <li data-i18n="executiveFieldListItem2">Initiation of Enforcement Proceedings</li>
-                                    <li data-i18n="executiveFieldListItem3">Injunctive Proceedings</li>
-                                    <li data-i18n="executiveFieldListItem4">Others</li>
+                                    <li data-i18n="executiveFieldListItem1">Cartas de cobrança de dívidas</li>
+                                    <li data-i18n="executiveFieldListItem2">Instauração de processos executivos</li>
+                                    <li data-i18n="executiveFieldListItem3">Processos Injuntivos</li>
+                                    <li data-i18n="executiveFieldListItem4">Outros</li>
                                 </ul>
                             </div>
                         </div>
@@ -531,17 +612,26 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                <h2 class="text-body-emphasis" data-i18n="realEstateField">Real Estate Law</h2>
-                            </button>
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                            <h2 class="text-body-emphasis" data-i18n="realEstateField">Direito Imobiliário</h2>
+                        </button>
                         </h2>
                         <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="realEstateFieldStart">Real Estate Law</span> <span class="bold-in-description" data-i18n="realEstateField">is the branch of law that regulates legal relationships related to real estate, including purchase, sale, leasing, construction, use, and management of properties. This field covers both property rights and real rights over real estate, as well as issues related to possession and use. It also deals with the drafting and execution of real estate contracts such as sales, leases, exchanges, among others.</span>
+                                    <span data-i18n="realEstateFieldStart">O </span><span class="bold-in-description" data-i18n="realEstateField">Direito Imobiliário</span> <span data-i18n="realEstateFieldEnd">é o ramo do direito que regula as 
+                                    relações jurídicas relativas aos bens imóveis, incluindo a compra, venda, arrendamento, construção, 
+                                    utilização e administração de imóveis. Este campo abrange tanto o direito de propriedade como os 
+                                    direitos reais sobre imóveis, bem como questões relacionadas com a posse e o uso dos mesmos. Também 
+                                    lida com a elaboração e a execução de contratos imobiliários, como os de compra e venda, contratos 
+                                    de arrendamento, permuta, entre outros.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="realEstateFieldSentence2">
-                                    Additionally, Real Estate Law addresses matters such as property regularization, obtaining licenses and permits, and resolving disputes arising from land issues. This branch also involves contract analysis and conflict resolution between buyers, sellers, landlords, and tenants, always aiming to guarantee legal security and compliance with applicable laws in the real estate sector.
+                                    Além disso, o Direito Imobiliário trata de matérias como a regularização de propriedades, a obtenção 
+                                    de licenças e alvarás, e a resolução de disputas decorrentes de questões fundiárias. Este ramo 
+                                    também envolve a análise de contratos e a resolução de conflitos entre compradores, vendedores, 
+                                    arrendadores e arrendatários, sempre com o objetivo de garantir a segurança jurídica e o cumprimento 
+                                    das normas legais aplicáveis ao setor imobiliário.
                                 </p>
                             </div>
                         </div>
@@ -549,25 +639,32 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <h2 class="text-body-emphasis" data-i18n="roadField">Road and Traffic Law and Litigation</h2>
-                            </button>
+                        <button class="accordion-button dark-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="text-body-emphasis" data-i18n="roadField">Direito Rodoviário e Contencioso</h2>
+                        </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="roadFieldStart">Road and Traffic Law and Litigation</span> <span class="bold-in-description" data-i18n="roadField">regulates road circulation and safety rules, as well as the resolution of disputes arising from traffic offenses and road accidents. This branch aims to ensure the proper application of traffic rules, protect the rights of drivers, pedestrians, and other road users, and guarantee civil and criminal liability in case of infractions.</span>
+                                    <span data-i18n="roadFieldStart">O </span><span class="bold-in-description" data-i18n="roadField">Direito Rodoviário e Contencioso</span> <span data-i18n="roadFieldEnd">regula as normas 
+                                    de circulação e segurança rodoviária, bem como a resolução de litígios decorrentes de infrações 
+                                    e acidentes de viação. Este ramo do direito visa garantir a correta aplicação das regras de 
+                                    trânsito, proteger os direitos dos condutores, peões e demais utentes da estrada, e assegurar 
+                                    a responsabilidade civil e penal em casos de infração.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="roadFieldSentence2">
-                                    Furthermore, it includes the defense of drivers in administrative and judicial proceedings, contestation of traffic fines, liability claims for damages resulting from road accidents, and matters related to car insurance. Its objective is to promote safety on public roads and ensure fair resolution of conflicts within the traffic scope.
+                                    Além disso, abrange a defesa de condutores em processos administrativos e judiciais, impugnação 
+                                    de contraordenações, ações de responsabilidade por danos decorrentes de acidentes rodoviários e 
+                                    questões relacionadas com seguros automóveis. O seu objetivo é promover a segurança nas vias 
+                                    públicas e assegurar a justa resolução de conflitos no âmbito rodoviário.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we work on the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="roadFieldListItem1">Driver’s license</li>
-                                    <li data-i18n="roadFieldListItem2">Vehicle registration</li>
-                                    <li data-i18n="roadFieldListItem3">Traffic and contestation of fines</li>
+                                    <li data-i18n="roadFieldListItem1">Habilitação de condução</li>
+                                    <li data-i18n="roadFieldListItem2">Registo automóvel</li>
+                                    <li data-i18n="roadFieldListItem3">Trânsito Impugnação contra-ordenações</li>
                                 </ul>
                             </div>
                         </div>
@@ -575,32 +672,40 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <h2 class="text-body-emphasis" data-i18n="notariesField">Notary and Registries</h2>
-                            </button>
+                        <button class="accordion-button light-grey collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h2 class="text-body-emphasis" data-i18n="notariesField">Notariado e Registos</h2>
+                        </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="general-txt">
-                                    <span data-i18n="notariesFieldStart">Notary and Registries</span> <span class="bold-in-description" data-i18n="notariesField">is an area of law that ensures the authenticity, validity, and publicity of legal acts, guaranteeing their legality and legal security. The notarial activity plays an essential role in formalizing contracts, deeds, wills, and other acts requiring public faith.</span>
+                                    <span data-i18n="notariesFieldStart">O </span><span class="bold-in-description" data-i18n="notariesField">Notariado e Registos</span> <span data-i18n="notariesFieldEnd">é uma área do direito que assegura a 
+                                    autenticidade, validade e publicidade dos atos jurídicos, garantindo a sua legalidade e 
+                                    segurança jurídica. A atividade notarial desempenha um papel essencial na formalização de 
+                                    contratos, escrituras, testamentos e outros atos que exigem fé pública.</span>
                                 </p>
                                 <p class="general-txt mt-3" data-i18n="notariesFieldSentence2">
-                                    The registry system, in turn, ensures the registration and publicity of relevant legal facts, such as civil registration (births, marriages, deaths), property registration (transfers and encumbrances on real estate), and commercial registration (company formation and amendments). This area of law is fundamental to guarantee transparency, security, and legal effectiveness in patrimonial and business relations.
+                                    Por sua vez, o sistema de registos assegura a inscrição e publicidade de factos jurídicos relevantes, 
+                                    como o registo civil (nascimentos, casamentos e óbitos), registo predial (transmissões e encargos sobre 
+                                    imóveis) e registo comercial (constituição e alterações de sociedades). Esta área do direito é 
+                                    fundamental para garantir a transparência, segurança e eficácia jurídica das relações patrimoniais e 
+                                    empresariais.
                                 </p>
                                 <p class="general-txt mt-4" data-i18n="fieldListTitle">
-                                    Within this area, we work on the following issues:
+                                    Dentro desta área atuamos nas seguintes questões:
                                 </p>
                                 <ul class="general-txt pt-2">
-                                    <li data-i18n="notariesFieldListItem1">Document Authentication</li>
-                                    <li data-i18n="notariesFieldListItem2">Residence Authorization</li>
-                                    <li data-i18n="notariesFieldListItem3">Nationality</li>
-                                    <li data-i18n="notariesFieldListItem4">Signature Recognition</li>
-                                    <li data-i18n="notariesFieldListItem5">Registries</li>
-                                    <li data-i18n="notariesFieldListItem6">Company formation/dissolution</li>
+                                    <li data-i18n="notariesFieldListItem1">Autenticação de documentos</li>
+                                    <li data-i18n="notariesFieldListItem2">Autorização de residência</li>
+                                    <li data-i18n="notariesFieldListItem3">Nacionalidade</li>
+                                    <li data-i18n="notariesFieldListItem4">Reconhecimento assinaturas</li>
+                                    <li data-i18n="notariesFieldListItem5">Registos</li>
+                                    <li data-i18n="notariesFieldListItem6">Sociedades constituição/dissolução</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -609,310 +714,293 @@
 
 
 
-        <!-- ========================================== TEAM =========================================== -->
+        <!-- ========================================== EQUIPA =========================================== -->
 
-        <section class="pt-5" id="SectionEquipa">
+    
+    <section class="pt-5" id="SectionEquipa">
 
-            <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h1 class="general-title" data-i18n="teamSectionTitle">Our Team</h1>
-            </div>
-
-            <div id="teamNavigationArrows" class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
-                <button type="button" id="arrow-left" class="slide-arrow arrow-btn me-2">
-                    <img src="./assets/icons/slide-arrow-left-black.svg" alt="contact arrow left">
-                </button>
-                <button type="button" id="arrow-right" class="slide-arrow arrow-btn ms-2 me-2">
-                    <img src="./assets/icons/slide-arrow-right-black.svg" alt="contact arrow right">
-                </button>
-            </div>
-        </section>
-
-        <div class="container" id="SectionEquipa2">
-
-            <div class="team-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-
-                <div class="team-item col-5 team-card-block light-grey"
-                    data-name="Ricardo Pacheco"
-                    data-function="Criminal Law"
-                    data-i18n-function="ricardoFunction"
-                    data-img="ricardo">
-                    <img id="team-element-1" src="./assets/imgs/team/ricardo.webp" alt="Ricardo Pacheco">
-                </div>
-
-                <div class="team-item col-5 team-card-block dark-grey"
-                    data-name="Carolina Carreiro"
-                    data-function="Administrative | Civil | Enforcement | Notary"
-                    data-i18n-function="carolinaFunction"
-                    data-img="carolina">
-                    <img id="team-element-2" src="./assets/imgs/team/carolina.webp" alt="Carolina Carreiro">
-                </div>
-
-                <div class="team-item col-5 team-card-block light-grey"
-                    data-name="Brito Ventura"
-                    data-function="Administrative Offenses | Contracts | Tax | Criminal Law"
-                    data-i18n-function="britoFunction"
-                    data-img="brito">
-                    <img id="team-element-3" src="./assets/imgs/team/brito.webp" alt="Brito Ventura">
-                </div>
-
-                <div class="team-item col-5 team-card-block dark-grey"
-                    data-name="Verónica Casimiro"
-                    data-function="Work Accidents | Traffic Accidents | Family & Minors | Criminal Law"
-                    data-i18n-function="veronicaFunction"
-                    data-img="veronica">
-                    <img id="team-element-4" src="./assets/imgs/team/veronica.webp" alt="Verónica Casimiro">
-                </div>
-
-                <div class="team-item col-5 team-card-block light-grey"
-                    data-name="Júlia Filipe"
-                    data-function="Administrative | Enforcement | Insolvencies | Labor Law"
-                    data-i18n-function="juliaFunction"
-                    data-img="julia">
-                    <img id="team-element-5" src="./assets/imgs/team/julia.webp" alt="Júlia Filipe">
-                </div>
-
-                <div class="team-item col-5 team-card-block dark-grey"
-                    data-name="João Morais"
-                    data-function="Administrative | Civil | Labor Law"
-                    data-i18n-function="joaoMFunction"
-                    data-img="joaom">
-                    <img id="team-element-6" src="./assets/imgs/team/joaom.webp" alt="João Morais">
-                </div>
-
-                <div class="team-item col-5 team-card-block dark-grey"
-                    data-name="João Baptista"
-                    data-function="Administrative Offenses | Criminal Law"
-                    data-i18n-function="joaoFunction"
-                    data-img="joao">
-                    <img id="team-element-7" src="./assets/imgs/team/joao.webp" alt="João Baptista">
-                </div>
-
-                <div class="team-item col-5 team-card-block dark-grey"
-                    data-name="Bianca Pereira"
-                    data-function="Notary | Registry"
-                    data-i18n-function="biancaFunction"
-                    data-img="bianca">
-                    <img id="team-element-8" src="./assets/imgs/team/bianca.webp" alt="Bianca Pereira">
-                </div>
-
-                <div class="team-item col-5 team-card-block light-grey"
-                    data-name="Joana Rosa"
-                    data-function="Civil | Enforcement | Inventories"
-                    data-i18n-function="joanaFunction"
-                    data-img="joana">
-                    <img id="team-element-9" src="./assets/imgs/team/joana.webp" alt="Joana Rosa">
-                </div>
-
-                <!-- <div class="team-item col-5 team-card-block dark-grey"
-                    data-name="Goreti Cabral"
-                    data-function="Secretary"
-                    data-img="goreti">
-                    <img id="team-element-10" src="./assets/imgs/team/goreti.webp" alt="Goreti Cabral">
-                </div> -->
-
-                <div class="team-item col-2 col-md-2 me-0 me-md-2"></div>
-            </div>
-
-            <div class="py-1 px-3">
-                <h2 id="descriptionName" class="text-body-emphasis invisible-txt">.</h2>
-                <p id="descriptionFunction" class="col-lg-8 lead general-txt px-0" data-i18n="teamPresentation">
-                    A diversified legal team with professionals dedicated to defending your rights.
-                </p>
-                <button id="equipaContactBtn" class="contact-btn">
-                    <span data-i18n="contactLink">Contact us</span> 
-                    <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                </button>
-            </div>
-
+        <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
+                <h1 class="general-title" data-i18n="teamSectionTitle">A nossa equipa</h1>
         </div>
 
-        <!-- ========================================== TEAM END =========================================== -->
+        <div id="teamNavigationArrows" class="btn-group carousel-arrows justify-content-end me-3" role="group" aria-label="Basic example">
+            <button type="button" id="arrow-left" class="slide-arrow arrow-btn me-2"><img src="./assets/icons/slide-arrow-left-black.svg" alt="seta contacto"></button>
+            <button type="button" id="arrow-right" class="slide-arrow arrow-btn ms-2 me-2"><img src="./assets/icons/slide-arrow-right-black.svg" alt="seta contacto"></button>
+        </div>
+    <section>
 
+    <div class="container" id="SectionEquipa2">
+        
+
+        <div class="team-scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+            
+            <div class="team-item col-5 team-card-block light-grey"
+            data-name="Ricardo Pacheco"
+            data-function="Penal"
+            data-i18n-function="ricardoFunction"
+            data-img="ricardo">
+                <img id="team-element-1" src="./assets/imgs/team/ricardo.webp" alt="Ricardo Pacheco">
+            </div>
+
+            <div class="team-item col-5 team-card-block dark-grey"
+            data-name="Carolina Carreiro"
+            data-function="Administrativo | Civil | Executivo |  Notariado"
+            data-i18n-function="carolinaFunction"
+            data-img="carolina">
+                <img id="team-element-2" src="./assets/imgs/team/carolina.webp" alt="Carolina Carreiro">
+            </div>
+
+            <div class="team-item col-5 team-card-block light-grey"
+            data-name="Brito Ventura"
+            data-function="Contraordenações | Contratos | Fiscal  | Penal"
+            data-i18n-function="britoFunction"
+            data-img="brito">
+                <img id="team-element-3" src="./assets/imgs/team/brito.webp" alt="Brito Ventura">
+            </div>
+
+            <div class="team-item col-5 team-card-block dark-grey"
+            data-name="Verónica Casimiro"
+            data-function="Acidentes de trabalho | Acidentes de viação | Família e menores | Penal"
+            data-i18n-function="veronicaFunction"
+            data-img="veronica">
+                <img id="team-element-4" src="./assets/imgs/team/veronica.webp" alt="Verónica Casimiro">
+            </div>
+
+            <div class="team-item col-5 team-card-block light-grey"
+            data-name="Júlia Filipe"
+            data-function="Administrativo | Executivo | Insolvências | Laboral"
+            data-i18n-function="juliaFunction"
+            data-img="julia">
+                <img id="team-element-5" src="./assets/imgs/team/julia.webp" alt="Júlia Filipe">
+            </div>
+
+            <div class="team-item col-5 team-card-block dark-grey"
+            data-name="João Morais"
+            data-function="Administrativo | Civil | Laboral"
+            data-i18n-function="joaoMFunction"
+            data-img="joaom">
+                <img id="team-element-6" src="./assets/imgs/team/joaom.webp" alt="João Morais">
+            </div>
+
+            <div class="team-item col-5 team-card-block dark-grey"
+            data-name="João Baptista"
+            data-function="Contraordenações | Penal"
+            data-i18n-function="joaoFunction"
+            data-img="joao">
+                <img id="team-element-7" src="./assets/imgs/team/joao.webp" alt="João Baptista">
+            </div>
+
+            <div class="team-item col-5 team-card-block dark-grey"
+            data-name="Bianca Pereira"
+            data-function="Notariado | Registo"
+            data-i18n-function="biancaFunction"
+            data-img="bianca">
+                <img id="team-element-8" src="./assets/imgs/team/bianca.webp" alt="Bianca Pereira">
+            </div>
+
+            <div class="team-item col-5 team-card-block light-grey"
+            data-name="Joana Rosa"
+            data-function="Civil | Executivo | Inventários"
+            data-i18n-function="joanaFunction"
+            data-img="joana">
+                <img id="team-element-9" src="./assets/imgs/team/joana.webp" alt="Joana Rosa">
+            </div>
+
+            <!-- <div class="team-item col-5 team-card-block dark-grey"
+            data-name="Goreti Cabral"
+            data-function="Secretária"
+            data-img="goreti">
+                <img id="team-element-10" src="./assets/imgs/team/goreti.webp" alt="Goreti Cabral">
+            </div> -->
+
+            <div class="team-item col-2 col-md-2 me-0 me-md-2">
+            </div>
+        </div>
+    
+        <div class="py-1 px-3">
+            <h2 id="descriptionName" class="text-body-emphasis invisible-txt">.</h2>
+            <p id="descriptionFunction" class="col-lg-8 lead general-txt px-0" data-i18n="teamPresentation">Equipa jurídica diversificada, com profissionais dedicados a defender os seus direitos.</p>
+            <button id="equipaContactBtn" class="contact-btn"><span data-i18n="contactLink">Entrar em contacto connosco</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+        </div>
+        
+        
+    </div>
+
+    <!-- ========================================== EQUIPA FIM =========================================== -->
 
 
 
         <!-- ========================================== MANIFESTO =========================================== -->
 
-    <section id="SectionValores" class="pt-5 container-fluid px-0" style="background-color: #ffffff;">
+        
 
-        <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-            <h1 class="general-title" data-i18n="navLinkManifest">Manifest</h1>
-        </div>
-
-        <div class="container-left values-container">
-            <div class="values-intro container">
-                <p class="general-txt regular" data-i18n="manifestDescription">
-                    At RP & Associates, we specialize in providing ethical, efficient, and humanized legal solutions. 
-                    With a personalized approach, we carefully and diligently analyze each case, ensuring the best legal support. 
-                    Our mission is to transform legal challenges into effective solutions, always focusing on justice and the trust of our clients.
-                </p>
-                <button id="valuesContactBtn" class="contact-btn">
-                    <span data-i18n="contactLink">Contact us</span> 
-                    <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                </button>
+        <section id="SectionValores" class="pt-5 container-fluid px-0" style="background-color: #ffffff;">   
+            
+            <div  class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
+                <h1 class="general-title" data-i18n="navLinkManifest">Manifesto</h1>
             </div>
-            <div class="value-item trust" data-i18n="manifestValue1">Trust</div>
-            <div class="value-item availability" data-i18n="manifestValue2">Availability</div>
-            <div class="value-item excellence" data-i18n="manifestValue3">Excellence</div>
-            <div class="value-item professionalism" data-i18n="manifestValue4">Professionalism</div>
-            <div class="value-item seriousness" data-i18n="manifestValue5">Seriousness</div>
-        </div>
-
-        <div class="container-fluid values-container-m">
-            <div class="values-intro container">
-                <p class="general-txt">
-                    At RP & Associates, we specialize in providing ethical, efficient, and humanized legal solutions. 
-                    With a personalized approach, we carefully and diligently analyze each case, ensuring the best legal support. 
-                    Our mission is to transform legal challenges into effective solutions, always focusing on justice and the trust of our clients.
-                </p>
-                <button id="valuesContactBtnMobile" class="contact-btn-m">
-                    Contact us <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                </button>
+            
+            <div class="container-left values-container">
+                <div class="values-intro container">
+                    <p class="general-txt regular" data-i18n="manifestDescription">
+                        Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
+                        eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
+                        com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
+                        transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
+                        e na confiança dos nossos clientes.
+                    </p>
+                    <button id="valuesContactBtn" class="contact-btn"><span data-i18n="contactLink">Entrar em contacto connosco</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+                </div>
+                <div class="value-item trust" data-i18n="manifestValue1">Confiança</div>
+                <div class="value-item availability" data-i18n="manifestValue2">Disponibilidade</div>
+                <div class="value-item excellence" data-i18n="manifestValue3">Excelência</div>
+                <div class="value-item professionalism" data-i18n="manifestValue4">Profissionalismo</div>
+                <div class="value-item seriousness" data-i18n="manifestValue5">Seriedade</div>
             </div>
-            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-                <div class="value-item col-5 card-block seriousness">Seriousness</div>
-                <div class="value-item col-5 card-block trust">Trust</div>
-                <div class="value-item col-5 card-block professionalism">Professionalism</div>
-                <div class="value-item col-5 card-block excellence">Excellence</div>
-                <div class="value-item col-5 card-block availability">Availability</div>
+            
+
+            <div class="container-fluid values-container-m">
+                <div class="values-intro container">
+                    <p class="general-txt">
+                        Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
+                        eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
+                        com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
+                        transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
+                        e na confiança dos nossos clientes.
+                    </p>
+                    <button id="valuesContactBtnMobile" class="contact-btn-m">Entrar em contacto connosco <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
+                </div>
+                <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                        <div class="value-item col-5 card-block seriousness">Seriedade</div>
+                        <div class="value-item col-5 card-block trust">Confiança</div>
+                        <div class="value-item col-5 card-block professionalism">Profissionalismo</div>
+                        <div class="value-item col-5 card-block excellence">Excelência</div>
+                        <div class="value-item col-5 card-block availability">Disponibilidade</div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========================================== MANIFESTO END =========================================== -->
-
+        <!-- ========================================== MANIFESTO FIM =========================================== -->
 
 
 
-        <!-- ========================================== OFFICES =========================================== -->
+        <!-- ========================================== ESCRITORIOS =========================================== -->
 
         <section id="SectionEscritorios" class="pt-5">
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h1 class="general-title" data-i18n="officesSectionTitle">Our Offices</h1>
+                <h1 class="general-title" data-i18n="officesSectionTitle">Os nossos escritórios</h1>
             </div>
 
-            <div id="SectionEscritoriosLeft" class="container-left">
-                <!-- Office 1 -->
+            <div id="SectionEscritoriosLeft" class="container-left">      
+                <!-- Escritório 1 -->
                 <div class="mt-4 mt-lg-5">
-                    <div class="row featurette position-relative sticky-wrapper">
+                <div class="row featurette position-relative sticky-wrapper">
                         <div class="col-md-6">
                             <div class="sticky-content pt-1 mt-2 pt-md-2 mt-md-3">
-                                <h2 class="general-font"><span data-i18n="office1">São Miguel</span> <span class="text-body-secondary" data-i18n="headquarters">(Headquarters)</span></h2>
+                                <h2 class="general-font"><span data-i18n="office1">São Miguel</span> <span class="text-body-secondary" data-i18n="hearquarters">(Sede)</span></h2>
 
                                 <p class="general-txt mb-3" data-i18n="office1Description">
-                                    Our main office is located in the center of Ponta Delgada,
-                                    in an easily accessible area close to essential services.
-                                    The environment is discreet and professional, ensuring comfort
-                                    and privacy.
+                                    O nosso escritório principal situa-se no centro de Ponta Delgada,
+                                    numa zona de fácil acesso e próxima de serviços essenciais.
+                                    O ambiente é discreto e profissional, garantindo conforto
+                                    e privacidade.
                                 </p>
 
                                 <div class="office-address-out">
-                                    <p class="general-txt"><b><span data-i18n="address">Address:</span></b></p>
-                                    <p class="general-txt" data-i18n="office1Address1">Rua Caetano de Andrade, No. 7 and 11</p>
+                                    <p class="general-txt"><b><span data-i18n="address">Morada:</span></b></p>
+                                    <p class="general-txt" data-i18n="office1Address1">Rua Caetano de Andrade, n.º 7 e 11</p>
                                     <p class="general-txt" data-i18n="office1Address2">9500-037 Ponta Delgada</p>
-                                    <p class="general-txt mb-3" data-i18n="office1Address3">São Miguel Island - Azores</p>
+                                    <p class="general-txt mb-3" data-i18n="office1Address3">Ilha de São Miguel - Açores</p>
                                 </div>
+                                
 
-                                <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank">
-                                    <button class="more-news-btn ps-2">
-                                        <span data-i18n="officeLocation">See location</span> 
-                                        <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                                    </button>
-                                </a>
+                                <a href="https://maps.app.goo.gl/MFP7T79FWqZwKrrW6" target="_blank"><button class="more-news-btn ps-2"><span data-i18n="officeLocation">Ver localização</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
                             </div>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="picture-wrapper col-md-5 scrolling-column pt-1 mt-2 pt-md-2 mt-md-3">
-                            <img id="saoMiguelOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/sao-miguel-office.webp" alt="Typical Azores building">
+                            <img id="saoMiguelOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/sao-miguel-office.webp" alt="Edifício típico dos Açores">
                         </div>
-                    </div>
+                </div>
                 </div>
 
-                <!-- Office 2 -->
+                <!-- Escritório 2 -->
                 <div class="mt-4 mt-lg-5">
                     <div class="row featurette position-relative sticky-wrapper">
                         <div class="col-md-6">
                             <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
                                 <h2 class="general-font" data-i18n="office2">Pico</h2>
-
+        
                                 <p class="general-txt mb-3" data-i18n="office2Description">
-                                    With presence on Pico Island, we are available
-                                    to support you with the same solidity that defines the island,
-                                    through trusted local partnerships.
+                                    Com presença na ilha do Pico,  estamos disponíveis
+                                    para o apoiar, com a mesma solidez que define a ilha,
+                                    através de parcerias locais de confiança.
                                 </p>
-
+        
                                 <div class="office-address-out">
-                                    <p class="general-txt"><b><span data-i18n="address">Address:</span></b></p>
-                                    <p class="general-txt" data-i18n="office2Address1">Rua Visconde Leite Perry, No. 3</p>
+                                    <p class="general-txt"><b><span data-i18n="address">Morada:</span></b></p>
+                                    <p class="general-txt" data-i18n="office2Address1">Rua Visconde Leite Perry, n.º 3</p>
                                     <p class="general-txt" data-i18n="office2Address2">9950-341 Madalena do Pico</p>
-                                    <p class="general-txt mb-3" data-i18n="office2Address3">Pico Island - Azores</p>
+                                    <p class="general-txt mb-3" data-i18n="office2Address3">Ilha do Pico - Açores</p>
                                 </div>
-
-                                <a href="https://maps.app.goo.gl/XsYQ2EEhFa1je1iz7" target="_blank">
-                                    <button class="more-news-btn ps-2">
-                                        <span data-i18n="officeLocation">See location</span> 
-                                        <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                                    </button>
-                                </a>
+                                
+                                <a href="https://maps.app.goo.gl/XsYQ2EEhFa1je1iz7" target="_blank"><button class="more-news-btn ps-2"><span data-i18n="officeLocation">Ver localização</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
                             </div>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                            <img id="picoOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/pico-office.webp" alt="Typical Azores building">
+                            <img id="picoOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/pico-office.webp" alt="Edifício típico dos Açores">
                         </div>
                     </div>
                 </div>
 
-                <!-- Office 3 -->
+                <!-- Escritório 3 -->
                 <div class="mt-4 mt-lg-5">
                     <div class="row featurette position-relative sticky-wrapper">
                         <div class="col-md-6">
                             <div class="sticky-content pt-2 mt-4 pt-md-3 mt-md-5">
                                 <h2 class="general-font" data-i18n="office3">Graciosa</h2>
-
+        
                                 <p class="general-txt mb-3" data-i18n="office3Description">
-                                    Now also on Graciosa Island, we are as present as
-                                    the wind at Barra and the calm of the square — always near when you need us.
+                                    Agora também na ilha Graciosa, estamos tão presentes quanto
+                                    o vento na Barra e a calma da Praça — sempre perto quando precisar.
                                 </p>
-
+        
                                 <div class="office-address-out">
-                                    <p class="general-txt"><b><span data-i18n="address">Address:</span></b></p>
-                                    <p class="general-txt" data-i18n="office3Address1">Rua Jacinto Cândido, No. 4 and 6</p>
+                                    <p class="general-txt"><b><span data-i18n="address">Morada:</span></b></p>
+                                    <p class="general-txt" data-i18n="office3Address1">Rua Jacinto Cândido, n.º 4 e 6</p>
                                     <p class="general-txt" data-i18n="office3Address2">9880-357 Santa Cruz da Graciosa</p>
-                                    <p class="general-txt mb-3" data-i18n="office3Address3">Graciosa Island - Azores</p>
+                                    <p class="general-txt mb-3" data-i18n="office3Address3">Ilha Graciosa - Açores</p>
                                 </div>
-
-                                <a href="https://maps.app.goo.gl/Xd4itiF7LjZYYRXu8" target="_blank">
-                                    <button class="more-news-btn ps-2">
-                                        <span data-i18n="officeLocation">See location</span> 
-                                        <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                                    </button>
-                                </a>
+                                
+        
+                                <a href="https://maps.app.goo.gl/Xd4itiF7LjZYYRXu8" target="_blank"><button class="more-news-btn ps-2"><span data-i18n="officeLocation">Ver localização</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
                             </div>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                            <img id="graciosaOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/graciosa-office.webp" alt="Typical Azores building">
+                            <img id="graciosaOfficeImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/offices/graciosa-office.webp" alt="Edifício típico dos Açores">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========================================== OFFICES END =========================================== -->
-
+        <!-- ========================================== ESCRITORIOS FIM =========================================== -->
 
         
 
         <!-- ========================================== PARCERIAS =========================================== -->
 
+        
+
         <section id="SectionParcerias" class="pt-5">  
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h1 class="general-title" data-i18n="partnershipsSectionTitle">Our Partnerships</h1>
+                <h1 class="general-title" data-i18n="partnershipsSectionTitle">As nossas parcerias</h1>
             </div>
             
             <div id="SectionParceriasLeft" class="container-left">
-                <!-- Partner 1 -->
+                <!-- Escritório 1 -->
                 <div class="mt-0 mt-lg-5">
                     <div class="row featurette position-relative sticky-wrapper">
                         <div class="col-md-6">
@@ -921,49 +1009,48 @@
                                 <!--<h2 class="general-font">Boston --> <!-- <svg class="w-12 h-12" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="width: 24px; height: 24px;"><circle cx="256" cy="256" fill="#f0f0f0" r="256"/><g fill="#d80027"><path d="m244.87 256h267.13c0-23.106-3.08-45.49-8.819-66.783h-258.311z"/><path d="m244.87 122.435h229.556c-15.671-25.572-35.708-48.175-59.07-66.783h-170.486z"/><path d="m256 512c60.249 0 115.626-20.824 159.356-55.652h-318.712c43.73 34.828 99.107 55.652 159.356 55.652z"/><path d="m37.574 389.565h436.852c12.581-20.529 22.338-42.969 28.755-66.783h-494.362c6.417 23.814 16.174 46.254 28.755 66.783z"/></g><path d="m118.584 39.978h23.329l-21.7 15.765 8.289 25.509-21.699-15.765-21.699 15.765 7.16-22.037c-19.106 15.915-35.852 34.561-49.652 55.337h7.475l-13.813 10.035c-2.152 3.59-4.216 7.237-6.194 10.938l6.596 20.301-12.306-8.941c-3.059 6.481-5.857 13.108-8.372 19.873l7.267 22.368h26.822l-21.7 15.765 8.289 25.509-21.699-15.765-12.998 9.444c-1.301 10.458-1.979 21.11-1.979 31.921h256c0-141.384 0-158.052 0-256-50.572 0-97.715 14.67-137.416 39.978zm9.918 190.422-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm100.115 100.083-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822l-21.7 15.765zm-8.289-100.083 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822zm0-74.574 8.289 25.509-21.699-15.765-21.699 15.765 8.289-25.509-21.7-15.765h26.822l8.288-25.509 8.288 25.509h26.822z" fill="#0052b4"/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg> --> </h2>
                                 <div>
                                     <p class="general-txt justify" data-i18n="partner1Description1">
-                                        Barton Gilman is our key partner in the United States,
-                                        with offices in Massachusetts, Rhode Island, New York, Pennsylvania, 
-                                        Connecticut, and New Jersey.
+                                        A Barton Gilman é o nosso parceiro de referência nos Estados Unidos,
+                                        presente em Massachusetts, Rhode Island, Nova Iorque, Pensilvânia, 
+                                        Connecticut e Nova Jersey.
                                     </p>
                                     <p class="general-txt justify mt-2" data-i18n="partner1Description2">
-                                        With more than 40 attorneys admitted in seven states and decades of accumulated experience, 
-                                        collaboration with Barton Gilman strengthens our commitment to providing integrated and high-quality 
-                                        legal solutions, both nationally and internationally.
+                                        Com mais de 40 advogados admitidos em sete estados e décadas de experiência 
+                                        acumulada, a colaboração com a Barton Gilman reforça o nosso compromisso em 
+                                        oferecer soluções jurídicas integradas e de elevada qualidade, a nível nacional 
+                                        e internacional.
                                     </p>
                                 </div>
-                                <a href="https://bglaw.com/" target="_blank">
-                                    <button class="more-news-btn ps-2 pt-3">
-                                        <span data-i18n="partnerWebsite">Visit website</span> 
-                                        <img src="./assets/icons/arrow-up-right.svg" alt="contact arrow" width="16" height="16">
-                                    </button>
-                                </a>
+                                <a href="https://bglaw.com/" target="_blank"><button class="more-news-btn ps-2 pt-3"><span data-i18n="partnerWebsite">Ver website</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button></a>
                             </div>
                         </div>
                         <div class="col-md-1"></div>
                         <div class="col-md-5 scrolling-column pt-1 mt-2 pt-md-3 mt-md-5">
-                            <img id="bostonPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/boston.webp" alt="Typical Azores building">
+                            <img id="bostonPartnershipImg" class="img-fluid office-picture pt-lg-5 mt-lg-4" src="./assets/imgs/partnerships/boston.webp" alt="Edifício típico dos Açores">
                         </div>
                     </div>
                 </div>
+
+                
+                
+            
             </div>
         </section>
 
         <!-- ========================================== PARCERIAS FIM =========================================== -->
 
 
-
-        <!-- ========================================== CONTACT =========================================== -->
+        <!-- ========================================== CONTACTO =========================================== -->
 
         <section id="SectionContacto" class="py-5">
             
             <div class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
-                <h5 class="office-item-title display-6" data-i18n="contactSectionTitle">Interested or still have questions?</h5>
+                <h5 class="office-item-title display-6" data-i18n="contactSectionTitle">Interessado ou ainda ficou com dúvidas?</h5>
             </div>
 
             <div class="container pt-2 pt-lg-5">
                 <div class="row featurette">
-                    <div class="col-md-12"> <!-- change to col-md-8 if you want an image next to it -->
-                        <p id="descriptionFunction" class="general-txt px-0" data-i18n="contactFormExplanation">Leave us a message and we will get back to you as soon as possible, or visit our headquarters.</p>
+                    <div class="col-md-12"> <!--mudar para col-md-8 caso seja para ter uma imagem ao lado-->
+                        <p id="descriptionFunction" class="general-txt px-0" data-i18n="contactFormExplanation">Deixe-nos uma mensagem e iremos responder-lhe o mais brevemente possível ou então visite a nossa sede.</p>
                         
                         <form action="https://formspree.io/f/mdkewzrk" method="POST">
                             <div class="row mt-lg-4 mt-3">
@@ -971,7 +1058,7 @@
                                 <div class="form-row">
                                 <div class="col-12 mb-3">
                                     <label for="name" style="display: none;"></label>
-                                    <input type="text" id="name" name="Name" class="form-control form-input" placeholder="*Name" data-i18n-placeholder="formPlaceholderName" required>
+                                    <input type="text" id="name" name="Nome" class="form-control form-input" placeholder="*Nome" data-i18n-placeholder="formPlaceholderName" required>
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="email" style="display: none;"></label>
@@ -983,61 +1070,62 @@
                                 </div>
                                 <div class="col-12 mb-3">
                                     <label for="phone" style="display: none;"></label>
-                                    <input type="tel" id="phone" name="Phone"
+                                    <input type="tel" id="phone" name="Telefone"
                                         class="form-control form-input"
-                                        placeholder="*Phone"
+                                        placeholder="*Telefone"
                                         data-i18n-placeholder="formPlaceholderPhone"
                                         pattern="[\d\s\-\+\(\)]{9,}"
                                         required>
                                 </div>                              
                                 <div class="col-12 mb-3">
-                                    <select name="Field" class="custom-select form-control form-input" required>
+                                    <select name="Ramo" class="custom-select form-control form-input" required>
 
-                                    <option value=""><span data-i18n="formLawFieldGeneral">Legal field related to your inquiry?</span></option>
-                                    <option value="Administrative Litigation"><span data-i18n="formLawField1">Administrative Litigation</span></option>
-                                    <option value="Tax and Fiscal Litigation"><span data-i18n="formLawField2">Tax and Fiscal Litigation</span></option>
-                                    <option value="Commercial and Corporate Law"><span data-i18n="formLawField3">Commercial and Corporate Law</span></option>
-                                    <option value="Family Law"><span data-i18n="formLawField4">Family Law</span></option>
-                                    <option value="Inheritance Law/Probate"><span data-i18n="formLawField5">Inheritance Law/Probate</span></option>
-                                    <option value="Consumer Law"><span data-i18n="formLawField6">Consumer Law</span></option>
-                                    <option value="Civil Law and Litigation"><span data-i18n="formLawField7">Civil Law and Litigation</span></option>
-                                    <option value="Labor Law and Litigation"><span data-i18n="formLawField8">Labor Law and Litigation</span></option>
-                                    <option value="Criminal Law and Litigation"><span data-i18n="formLawField9">Criminal Law and Litigation</span></option>
-                                    <option value="Enforcement Law"><span data-i18n="formLawField10">Enforcement Law</span></option>
-                                    <option value="Real Estate Law"><span data-i18n="formLawField11">Real Estate Law</span></option>
-                                    <option value="Road Traffic Law and Litigation"><span data-i18n="formLawField12">Road Traffic Law and Litigation</span></option>
-                                    <option value="Notary and Registries"><span data-i18n="formLawField13">Notary and Registries</span></option>
-                                    <option value="Other"><span data-i18n="formLawFieldOther">Other</span></option>
+
+                                    <option value="" ><span data-i18n="formLawFieldGeneral">Ramo do direito associado ao assunto que quer tratar?</span></option>
+                                    <option value="Contencioso Administrativo"><span data-i18n="formLawField1">Contencioso Administrativo</span></option>
+                                    <option value="Contencioso Fiscal e Tributário"><span data-i18n="formLawField2">Contencioso Fiscal e Tributário</span></option>
+                                    <option value="Direito Comercial e Societário"><span data-i18n="formLawField3">Direito Comercial e Societário</span></option>
+                                    <option value="Direito da Família"><span data-i18n="formLawField4">Direito da Família</span></option>
+                                    <option value="Direito das Sucessões/Inventário"><span data-i18n="formLawField5">Direito das Sucessões/Inventário</span></option>
+                                    <option value="Direito do Consumidor"><span data-i18n="formLawField6">Direito do Consumidor</span></option>
+                                    <option value="Direito Civil"><span data-i18n="formLawField7">Direito e Contencioso Civil</span></option>
+                                    <option value="Direito do Trabalho"><span data-i18n="formLawField8">Direito e Contencioso do Trabalho</span></option>
+                                    <option value="Direito e Contencioso Penal"><span data-i18n="formLawField9">Direito e Contencioso Penal</span></option>
+                                    <option value="Direito Executivo"><span data-i18n="formLawField10">Direito Executivo</span></option>
+                                    <option value="Direito Imobiliário"><span data-i18n="formLawField11">Direito Imobiliário</span></option>
+                                    <option value="Direito Rodoviário"><span data-i18n="formLawField12">Direito Rodoviário e Contencioso</span></option>
+                                    <option value="Notariado e Registos"><span data-i18n="formLawField13">Notariado e Registos</span></option>
+                                    <option value="Outro"><span data-i18n="formLawFieldOther">Outro</span></option>
                                     </select>
                                 </div>
                                 </div>
                             </div>
                         
-                            <!-- TEXTAREA on the right side on large screens -->
+                            <!-- TEXTAREA ao lado direito em ecrãs grandes -->
                             <div class="col-lg-6 mt-3 mt-lg-0">
                                 <label for="message" style="display: none;"></label>
-                                <textarea class="form-control form-input" id="message" name="Message" placeholder="*Write your message here" data-i18n-placeholder="formPlaceholderMessage" required rows="8"></textarea>
+                                <textarea class="form-control form-input" id="message" name="Mensagem" placeholder="*Escreva aqui a sua mensagem" data-i18n-placeholder="formPlaceholderMessage" required rows="8"></textarea>
                         
                                 <!-- Honeypot -->
                                 <input type="text" name="_gotcha" style="display: none;">
                             </div>
                             </div>
                         
-                            <!-- ALERTS -->
+                            <!-- ALERTAS -->
                             <div id="alertSuccess" class="alert alert-warning alert-dismissible form-sent-success fade show disp-none sending-result mt-3" role="alert">
-                            <strong><span data-i18n="formAlertSuccess">Message sent successfully.</span></strong>
+                            <strong><span data-i18n="formAlertSuccess">Mensagem enviada com sucesso.</span></strong>
                             <button id="alertSuccessBtn" type="button" class="btn-close"></button>
                             </div>
                         
                             <div id="alertFail" class="alert alert-warning alert-dismissible form-sent-fail fade show disp-none sending-result mt-3" role="alert">
-                            <strong><span data-i18n="formAlertFail1">Unable to send your message.</span></strong>
-                            <br><span data-i18n="formAlertFail2">Please try again or contact us directly by email.</span>
+                            <strong><span data-i18n="formAlertFail1">Não foi possível enviar a sua mensagem.</span></strong>
+                            <br><span data-i18n="formAlertFail2">Tente novamente ou contacte-nos diretamente por email.</span>
                             <button id="alertFailBtn" type="button" class="btn-close"></button>
                             </div>
                         
-                            <!-- BUTTON -->
+                            <!-- BOTÃO -->
                             <div class="my-3">
-                            <button type="submit" class="btn round-btn-footer"><span data-i18n="formSendMessageBtn">Send Message</span></button>
+                            <button type="submit" class="btn round-btn-footer"><span data-i18n="formSendMessageBtn">Enviar Mensagem</span></button>
                             </div>
                         </form>
                         
@@ -1045,15 +1133,15 @@
                     </div>
                     <!--
                     <div class="container col-md-4">
-                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto contact-img" src="./assets/imgs/contact-img.png" alt="Typical Azores building">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto contact-img" src="./assets/imgs/contact-img.png" alt="Edifício típico dos Açores">
                     </div>
                     -->
                 </div>
             </div>
         </section>
 
-        <!-- ========================================== CONTACT END =========================================== -->
 
+        <!-- ========================================== CONTACTO FIM =========================================== -->
 
 
 
@@ -1065,53 +1153,53 @@
                 <footer class="pt-5 px-5">
                 <div class="row">
                     <div class="col-6 col-md-4 mb-3">
-                        <p class="footer-title general-txt fat mb-3">RPA Lawyers</p>
+                        <p class="footer-title general-txt fat mb-3">RPA Advogados</p>
 
-                        <p class="general-font mb-0"><b><span data-i18n="address">Address:</span></b></p>
+                        <p class="general-font mb-0"><b><span data-i18n="address">Morada:</span></b></p>
                         <p class="general-font mb-0" data-i18n="office1Address1">Rua Caetano de Andrade, n.º 7 e 11</p>
                         <p class="general-font mb-0" data-i18n="office1Address2">9500-037 Ponta Delgada</p>
-                        <p class="general-font"><span data-i18n="office1Address3">São Miguel</span> <b><span data-i18n="hearquarters">(Headquarters)</span></b></p>
+                        <p class="general-font"><span data-i18n="office1Address3">São Miguel</span> <b><span data-i18n="hearquarters">(Sede)</span></b></p>
 
                         <p class="general-font mb-0"><b><span data-i18n="footerEmail">Email:</span></b></p>
                         <p class="general-font">ricardopacheco-177a@adv.oa.pt</p>
 
-                        <p class="general-font mb-0"><b><span data-i18n="footerPhone">Phone:</span></b></p>
+                        <p class="general-font mb-0"><b><span data-i18n="footerPhone">Telefone:</span></b></p>
                         <p class="general-font">+351 296 281 574</p>
                     
                     </div>
             
                     <div class="col-6 col-md-2 mb-3">
-                        <p class="footer-title general-txt fat" data-i18n="footerUsefulLinks">Useful Links</p>
+                        <p class="footer-title general-txt fat" data-i18n="footerUsefulLinks">Links Úteis</p>
 
-                        <p id="FooterBtnEspecialidades" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkActivity">Practice Areas</span></a></p>
-                        <p id="FooterBtnEquipa" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkTeam">Team</span></a></p>
+                        <p id="FooterBtnEspecialidades" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkActivity">Atividade</span></a></p>
+                        <p id="FooterBtnEquipa" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkTeam">Equipa</span></a></p>
                         <p id="FooterBtnValores" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkManifest">Manifesto</span></a></p>
-                        <p id="FooterBtnEscritorios" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkOffices">Offices</span></a></p>
-                        <p id="FooterBtnParcerias" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkPartnerships">Partnerships</span></a></p>
+                        <p id="FooterBtnEscritorios" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkOffices">Escritórios</span></a></p>
+                        <p id="FooterBtnParcerias" class="general-font mt-3 text-body-secondary"><a class="footer-link"><span data-i18n="navLinkPartnerships">Parcerias</span></a></p>
                         <p id="FooterBtnBlog" class="general-font mt-3 text-body-secondary"><a class="footer-link">Insights</a></p>
                     </div>
             
                     <div class="col-md-5 offset-md-1 mb-3">
                     
-                        <p class="footer-title general-txt fat" data-i18n="footerSubscribe">Subscribe to our Newsletter</p>
+                        <p class="footer-title general-txt fat" data-i18n="footerSubscribe">Subscreva à nossa Newsletter</p>
 
-                        <p class="general-font mt-3" data-i18n="footerSubscriptionDescription">We regularly update our Newsletter on LinkedIn so you’re always up to date with our news.</p>
+                        <p class="general-font mt-3" data-i18n="footerSubscriptionDescription">Atualizamos regularmente a nossa Newsletter no LinkedIn para que fique sempre a par das nossas novidades.</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <!-- https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles CHANGE TO RPA LINKEDIN NEWSLETTER -->
-                            <a href="https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles" target="_blank"><button id="ButtonSubscricao" type="button" class="btn round-btn-footer"><span data-i18n="footerSubscribeBtn">Subscribe</span></button></a>
+                        <!--https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles ALTERAR PARA A NEWSLETTER DO LINKEDIN DA RPA -->
+                            <a href="https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles" target="_blank"><button id="ButtonSubscricao" type="button" class="btn round-btn-footer"><span data-i18n="footerSubscribeBtn">Subscrever</span></button></a>
                         </div>
 
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2 mt-3 pt-3 mt-md-5 pt-md-5">
-                        <!-- https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles CHANGE TO RPA LINKEDIN NEWSLETTER -->
+                        <!--https://www.linkedin.com/company/rp-associadoss/posts/?feedView=articles ALTERAR PARA A NEWSLETTER DO LINKEDIN DA RPA -->
                             <a id="linkLivroRecl" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
-                                <img id="imageLinkLivroRecl" src="./assets/imgs/livro_reclamacoes/reclamacoes.webp" alt="Ricardo Pacheco Lawyers Logo">
+                                <img id="imageLinkLivroRecl" src="./assets/imgs/livro_reclamacoes/reclamacoes.webp" alt="Ricardo Pacheco Advogados Logótipo">
                             </a>
                         </div>
                     </div>
                 </div>
             
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p class="general-txt">© <span id="currentYear"></span> Ricardo Pacheco & Associates</p>
+                    <p class="general-txt">© <span id="currentYear"></span> Ricardo Pacheco & Associados</p>
                     <ul class="list-unstyled d-flex">
                     <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/ricardopachecoadvogados/"  target="_blank" aria-label="Instagram"><i class="bi bi-instagram social-network-icon"></i></a></li>
                     <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/rpassociados/?locale=pt_PT" target="_blank" aria-label="Facebook"><i class="bi bi-facebook social-network-icon"></i></a></li>
@@ -1120,10 +1208,11 @@
                 </div>
                 </footer>
             </div>
+
+
         </section>
 
-        <!-- ========================================== FOOTER END =========================================== -->
-
+        <!-- ========================================== FOOTER FIM =========================================== -->
     
     </div>
     <!-- Scripts -->
@@ -1135,9 +1224,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/translations.js"></script>
-    <script src="../js/i18n.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/translations.js"></script>
+    <script src="./js/i18n.js"></script>
 
 </body>
 </html>
