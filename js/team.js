@@ -109,23 +109,34 @@ document.addEventListener("DOMContentLoaded", function () {
     const officeImages = document.querySelectorAll(".office-picture");
 
     const observerOptions = {
-        root: null, // viewport
+        root: null,
         rootMargin: "0px",
-        threshold: [0.45, 0.5, 0.55] // 50% visível já ativa o efeito
+        threshold: [0.45, 0.5, 0.55]
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
+            const parentColumn = entry.target.closest(".scrolling-column");
+
             if (entry.isIntersecting) {
-                entry.target.classList.add("in-view");
+                entry.target.classList.add("in-view", "shadow-active");
+                if (parentColumn) {
+                    parentColumn.classList.add("highlight-red");
+                }
             } else {
-                entry.target.classList.remove("in-view");
+                entry.target.classList.remove("in-view", "shadow-active");
+                if (parentColumn) {
+                    parentColumn.classList.remove("highlight-red");
+                }
             }
         });
     }, observerOptions);
 
     officeImages.forEach(img => observer.observe(img));
 });
+
+
+
 
 
 
