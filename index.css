@@ -944,10 +944,9 @@ filter: grayscale(0%);
 }
 
 .shadow-active {
-    filter: drop-shadow(20px 20px 20px rgba(#000000, 0.5, 0.5, 0.7));
-    transition: filter 0.3s ease;
+    filter: drop-shadow(15px 5px 15px rgba(0, 0, 0, 0.5)) !important;
+    /*filter: drop-shadow(30px 10px 4px #000000) !important;*/
 }
-
 
 
 
