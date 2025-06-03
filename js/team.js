@@ -102,41 +102,7 @@ onScroll(); // Executa na carga inicial
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const targetElement = document.getElementById("SectionEscritoriosLeft");
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
-    const saoMiguelOfficeImg = document.getElementById("saoMiguelOfficeImg");
-    const picoOfficeImg = document.getElementById("picoOfficeImg");
-    const graciosaOfficeImg = document.getElementById("graciosaOfficeImg");
-  
-    function updateClasses(e) {
-      if (!targetElement) return;
-  
-      if (e.matches) {
-        // Largura >= 768px
-        targetElement.classList.add("container-left");
-        targetElement.classList.remove("container");
-        targetElement.classList.remove("px-5");
-        saoMiguelOfficeImg.src = "../assets/imgs/offices/sao-miguel-office.webp";
-        picoOfficeImg.src = "../assets/imgs/offices/pico-office.webp";
-        graciosaOfficeImg.src = "../assets/imgs/offices/graciosa-office.webp";
-      } else {
-        // Largura < 768px
-        targetElement.classList.add("container");
-        targetElement.classList.remove("container-left");
-        targetElement.classList.add("px-5");
-        saoMiguelOfficeImg.src = "../assets/imgs/offices/sao-miguel-office-m.webp";
-        picoOfficeImg.src = "../assets/imgs/offices/pico-office-m.webp";
-        graciosaOfficeImg.src = "../assets/imgs/offices/graciosa-office-m.webp";
-      }
-    }
-  
-    // Executa à carga
-    updateClasses(mediaQuery);
-  
-    // E ao mudar de tamanho
-    mediaQuery.addEventListener("change", updateClasses);
-});
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
