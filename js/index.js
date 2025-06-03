@@ -32,150 +32,66 @@ function scrollAnim(e) {
     const targetElement = document.querySelector(targetSelector);
 
     if (!targetElement) return;
-    
-    // Mobile: usa scroll suave nativo do browser (mais rápido e responsivo)
+
     targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    
+}
+
+// Detecta se estás na index de forma fiável
+function isIndexPage() {
+    return document.body.id === "indexPage";
 }
 
 
+function addScrollHandler(buttonId, sectionId) {
+    const button = document.getElementById(buttonId);
+    if (!button) return;
 
-document.getElementById("ButtonEspecialidades").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
+    button.addEventListener("click", (event) => {
+        if (isIndexPage()) {
+            // Estás na index — impede comportamento padrão e faz scroll
+            event.preventDefault();
+            scrollAnim(sectionId);
+        } else {
+            // Estás noutra página — deixa o link funcionar para navegar
+            // nada a fazer aqui, deixar o comportamento normal do <a href> seguir
+        }
+    });
+}
 
-    // Chamar a animação de rolagem
-    scrollAnim("Especialidades");
-});
+// Lista de botões
+const scrollButtons = [
+    { id: "ButtonEspecialidades", section: "Especialidades" },
+    { id: "FooterBtnEspecialidades", section: "Especialidades" },
+    { id: "ButtonEquipa", section: "Equipa" },
+    { id: "FooterBtnEquipa", section: "Equipa" },
+    { id: "ButtonValores", section: "Valores" },
+    { id: "FooterBtnValores", section: "Valores" },
+    { id: "ButtonEscritorios", section: "Escritorios" },
+    { id: "FooterBtnEscritorios", section: "Escritorios" },
+    { id: "ButtonParcerias", section: "Parcerias" },
+    { id: "FooterBtnParcerias", section: "Parcerias" },
+    { id: "ButtonBlog", section: "Noticias" },
+    { id: "FooterBtnBlog", section: "Noticias" },
+    { id: "valuesContactBtn", section: "Contacto" },
+    { id: "valuesContactBtnMobile", section: "Contacto" },
+    { id: "equipaContactBtn", section: "Contacto" }
+];
 
-document.getElementById("FooterBtnEspecialidades").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
+// Aplica a todos os botões
+scrollButtons.forEach(({ id, section }) => addScrollHandler(id, section));
 
-    // Chamar a animação de rolagem
-    scrollAnim("Especialidades");
-});
+// Especial para o botão round-btn
+const roundBtn = document.querySelector(".round-btn");
+if (roundBtn) {
+    roundBtn.addEventListener("click", (event) => {
+        if (isIndexPage()) {
+            event.preventDefault();
+            console.log("Clicou no contacto dentro do manifesto");
+            scrollAnim("Contacto");
+        }
+    });
+}
 
-
-document.getElementById("ButtonEquipa").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Equipa");
-});
-
-document.getElementById("FooterBtnEquipa").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Equipa");
-});
-
-
-document.getElementById("ButtonValores").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Valores");
-});
-
-document.getElementById("FooterBtnValores").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Valores");
-});
-
-
-document.getElementById("ButtonEscritorios").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Escritorios");
-});
-
-document.getElementById("FooterBtnEscritorios").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Escritorios");
-});
-
-
-document.getElementById("ButtonParcerias").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Parcerias");
-});
-
-document.getElementById("FooterBtnParcerias").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Parcerias");
-});
-
-
-document.getElementById("ButtonBlog").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Noticias");
-});
-
-document.getElementById("FooterBtnBlog").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Noticias");
-});
-
-
-document.querySelector(".round-btn").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    console.log("Clicou no contacto dentro do manifesto");
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Contacto");
-});
-
-
-
-document.getElementById("valuesContactBtn").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Contacto");
-});
-
-document.getElementById("valuesContactBtnMobile").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Contacto");
-});
-
-document.getElementById("equipaContactBtn").addEventListener("click", (event) => {
-    // Impedir o comportamento padrão do link
-    event.preventDefault();
-
-    // Chamar a animação de rolagem
-    scrollAnim("Contacto");
-});
 
 
 // ******************************************************* LOADER **********************************************
@@ -183,16 +99,28 @@ document.getElementById("equipaContactBtn").addEventListener("click", (event) =>
 const loader = document.getElementById("mainLoader");
 const content = document.getElementById("mainContent");
 
-
 content.style.visibility = "hidden";
 
 setTimeout(() => {
     content.classList.remove('disp-none');
     loader.classList.add('disp-none');
-        setTimeout(() => {
-            content.style.visibility = "visible";
-        }, 200);
+    
+    setTimeout(() => {
+        content.style.visibility = "visible";
+
+        // Fazer scroll para o hash depois de o conteúdo estar visível
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                }, 100); // mais um pequeno atraso para garantir render
+            }
+        }
+
+    }, 200);
 }, 1000);
+
 
 
 
