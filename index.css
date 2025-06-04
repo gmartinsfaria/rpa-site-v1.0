@@ -137,6 +137,9 @@ html, body {
     padding: 10px 30px !important;
 }
 
+.footer-link {
+    text-decoration: none;
+}
 
 .nav-link:hover,
 .footer-link:hover {
@@ -926,14 +929,16 @@ filter: grayscale(0%);
 }
 */
 
-.office-picture {
+.office-picture,
+.employee-picture {
     filter: grayscale(100%);
     transition: transform 0.4s ease, filter 0.4s ease;
     width: 100%;
     height: auto;
 }
 
-.office-picture.in-view {
+.office-picture.in-view,
+.employee-picture.in-view {
     transform: scale(1.07);
     filter: grayscale(0%);
 }
