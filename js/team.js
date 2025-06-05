@@ -1,4 +1,5 @@
 // ****************************************************** NAVBAR ******************************************************
+
 function updateNavbarShadow() {
     const navbar = document.querySelector('.navbar');
     const collapse = document.querySelector('.navbar-collapse');
@@ -11,6 +12,7 @@ function updateNavbarShadow() {
 }
 
 window.addEventListener('scroll', updateNavbarShadow);
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.querySelector(".menu-icon");

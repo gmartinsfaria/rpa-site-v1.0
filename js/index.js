@@ -727,9 +727,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//================================================== ESCRITÓRIOS =================================================
-
-
+//================================================== PARCERIAS =================================================
 
 document.addEventListener("DOMContentLoaded", function () {
 function handleStickyBlock(wrapper, content, scrollCol) {
@@ -767,11 +765,9 @@ onScroll(); // Executa na carga inicial
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const targetElement = document.getElementById("SectionEscritoriosLeft");
+    const targetElement = document.getElementById("SectionParceriasLeft");
     const mediaQuery = window.matchMedia("(min-width: 768px)");
-    const saoMiguelOfficeImg = document.getElementById("saoMiguelOfficeImg");
-    const picoOfficeImg = document.getElementById("picoOfficeImg");
-    const graciosaOfficeImg = document.getElementById("graciosaOfficeImg");
+    const bostonPartnershipImg = document.getElementById("bostonPartnershipImg");
   
     function updateClasses(e) {
       if (!targetElement) return;
@@ -781,17 +777,13 @@ document.addEventListener("DOMContentLoaded", function () {
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
         targetElement.classList.remove("px-5");
-        saoMiguelOfficeImg.src = "./assets/imgs/offices/sao-miguel-office.webp";
-        picoOfficeImg.src = "./assets/imgs/offices/pico-office.webp";
-        graciosaOfficeImg.src = "./assets/imgs/offices/graciosa-office.webp";
+        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.webp";
       } else {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
         targetElement.classList.add("px-5");
-        saoMiguelOfficeImg.src = "./assets/imgs/offices/sao-miguel-office-m.webp";
-        picoOfficeImg.src = "./assets/imgs/offices/pico-office-m.webp";
-        graciosaOfficeImg.src = "./assets/imgs/offices/graciosa-office-m.webp";
+        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston-m.webp";
       }
     }
   
@@ -804,7 +796,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const officeImages = document.querySelectorAll(".office-picture");
+    const partnershipImages = document.querySelectorAll(".partnership-picture");
 
     const observerOptions = {
         root: null, // viewport
@@ -822,54 +814,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }, observerOptions);
 
-    officeImages.forEach(img => observer.observe(img));
+    partnershipImages.forEach(img => observer.observe(img));
 });
 
 
 
-//================================================== ESCRITÓRIOS FIM =================================================
+//================================================== PARCERIAS FIM =================================================
 
-
-// ************************************************* PARCERIAS *********************************************************
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const targetElement = document.getElementById("SectionParceriasLeft");
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
-    const bostonPartnershipImg = document.getElementById("bostonPartnershipImg");
-    const providencePartnershipImg = document.getElementById("providencePartnershipImg");
-    const torontoPartnershipImg = document.getElementById("torontoPartnershipImg");
-  
-    function updateClasses(e) {
-      if (!targetElement) return;
-  
-      if (e.matches) {
-        // Largura >= 768px
-        targetElement.classList.add("container-left");
-        targetElement.classList.remove("container");
-        targetElement.classList.remove("px-5");
-        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston.webp";
-        providencePartnershipImg.src = "./assets/imgs/partnerships/providence.webp";
-        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto.webp";
-      } else {
-        // Largura < 768px
-        targetElement.classList.add("container");
-        targetElement.classList.remove("container-left");
-        targetElement.classList.add("px-5");
-        bostonPartnershipImg.src = "./assets/imgs/partnerships/boston-m.webp";
-        providencePartnershipImg.src = "./assets/imgs/partnerships/providence-m.webp";
-        torontoPartnershipImg.src = "./assets/imgs/partnerships/toronto-m.webp";
-      }
-    }
-  
-    // Executa à carga
-    updateClasses(mediaQuery);
-  
-    // E ao mudar de tamanho
-    mediaQuery.addEventListener("change", updateClasses);
-});
-
-// ************************************************** PARCERIAS FIM *****************************************************
 
 
 //***************************************************** FORM CONTACTO ***********************************************************

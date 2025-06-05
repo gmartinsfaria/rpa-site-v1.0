@@ -929,7 +929,7 @@ filter: grayscale(0%);
 }
 */
 
-.office-picture,
+.partnership-picture,
 .employee-picture {
     filter: grayscale(100%);
     transition: transform 0.4s ease, filter 0.4s ease;
@@ -937,7 +937,7 @@ filter: grayscale(0%);
     height: auto;
 }
 
-.office-picture.in-view,
+.partnership-picture.in-view,
 .employee-picture.in-view {
     transform: scale(1.07);
     filter: grayscale(0%);
