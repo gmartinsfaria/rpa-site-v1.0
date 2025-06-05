@@ -867,7 +867,61 @@ body.scroll-locked {
 }
 
 
-/* **************************************************** ESCRITORIOS ****************************************************** */
+
+/* **************************************************** ESCRITÓRIOS ****************************************************** */
+
+
+.office {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 600px;
+    color: white;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+.office::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* escuro em baixo, transparente em cima */
+  z-index: 1;
+}
+
+.office > * {
+  position: relative;
+  z-index: 2;
+}
+
+.office .content-bottom {
+    margin-top: auto !important;
+}
+
+.office-one {
+    background-image: url('./assets/imgs/offices/sao-miguel-office.webp') !important;
+}
+
+.office-two {
+    background-image: url('./assets/imgs/offices/pico-office.webp') !important;
+}
+
+
+.office-three {
+    background-image: url('./assets/imgs/offices/graciosa-office.webp') !important;
+}
+
+
+
+
+
+/* **************************************************** ESCRITÓRIOS FIM ****************************************************** */
+
+
+
+/* **************************************************** PARCERIAS ****************************************************** */
 
 .sticky-content {
     width: 100%;
@@ -943,17 +997,6 @@ filter: grayscale(0%);
     filter: grayscale(0%);
 }
 
-.highlight-red {
-    background-color: #A6151F;
-    transition: background-color 0.5s ease;
-}
-
-.shadow-active {
-    filter: drop-shadow(15px 5px 15px rgba(0, 0, 0, 0.5)) !important;
-    /*filter: drop-shadow(30px 10px 4px #000000) !important;*/
-}
-
-
 
 
 @media (max-width: 768px) {
@@ -964,13 +1007,7 @@ filter: grayscale(0%);
 
 
 
-
-  
-  
-  
-
-
-/* **************************************************** ESCRITORIOS FIM ****************************************************** */
+/* **************************************************** PARCERIAS FIM ****************************************************** */
 
 
 
