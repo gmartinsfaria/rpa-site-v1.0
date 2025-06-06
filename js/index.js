@@ -766,6 +766,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // =============================================== ESCRITÓRIOS ===========================================================
 
+function updateOfficeBackgroundClass() {
+    const officeBackgrounds = document.querySelectorAll('.office-bg');
+    const isMobile = window.innerWidth < 992;
+
+    officeBackgrounds.forEach(bg => {
+        if (isMobile) {
+            bg.classList.add('partnership-picture');
+        } else {
+            bg.classList.remove('partnership-picture');
+        }
+    });
+}
+
+// Executa ao carregar a página
+document.addEventListener('DOMContentLoaded', updateOfficeBackgroundClass);
+
+// Executa ao redimensionar a janela
+window.addEventListener('resize', updateOfficeBackgroundClass);
 
 
 

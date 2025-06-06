@@ -107,16 +107,10 @@ onScroll(); // Executa na carga inicial
 document.addEventListener("DOMContentLoaded", function () {
     const targetElement = document.getElementById("SectionLeft");
     const mediaQuery = window.matchMedia("(min-width: 768px)");
-    const juliaImg = document.getElementById("juliaImg");
-    const carolinaImg = document.getElementById("carolinaImg");
-    const joanaImg = document.getElementById("joanaImg");
-    const joaoImg = document.getElementById("joaoImg");
-    const veronicaImg = document.getElementById("veronicaImg");
-    const britoImg = document.getElementById("britoImg");
-    const ricardoImg = document.getElementById("ricardoImg");
-    const joaomImg = document.getElementById("joaomImg");
-    const biancaImg = document.getElementById("biancaImg");
-    
+    const saoMiguelImg = document.getElementById("saoMiguelImg");
+    const picoImg = document.getElementById("picoImg");
+    const graciosaImg = document.getElementById("graciosaImg");
+
   
     function updateClasses(e) {
       if (!targetElement) return;
@@ -126,30 +120,17 @@ document.addEventListener("DOMContentLoaded", function () {
         targetElement.classList.add("container-left");
         targetElement.classList.remove("container");
         targetElement.classList.remove("px-5");
-        juliaImg.src = "./assets/imgs/team/julia-bg.webp";
-        carolinaImg.src = "./assets/imgs/team/carolina-bg.webp";
-        joanaImg.src = "./assets/imgs/team/joana-bg.webp";
-        veronicaImg.src = "./assets/imgs/team/veronica-bg.webp";
-        britoImg.src = "./assets/imgs/team/brito-bg.webp";
-        ricardoImg.src = "./assets/imgs/team/ricardo-bg.webp";
-        joaomImg.src = "./assets/imgs/team/joaom-bg.webp";
-        biancaImg.src = "./assets/imgs/team/bianca-bg.webp";
-        
+        saoMiguelImg.src = "./assets/imgs/offices/sao-miguel-office.webp";
+        picoImg.src = "./assets/imgs/offices/pico-office.webp";
+        graciosaImg.src = "./assets/imgs/offices/graciosa-office.webp";
       } else {
         // Largura < 768px
         targetElement.classList.add("container");
         targetElement.classList.remove("container-left");
         targetElement.classList.add("px-5");
-        juliaImg.src = "./assets/imgs/team/julia-bg.webp";
-        carolinaImg.src = "./assets/imgs/team/carolina-bg.webp";
-        joanaImg.src = "./assets/imgs/team/joana-bg.webp";
-        joaoImg.src = "./assets/imgs/team/joao-bg.webp";
-        veronicaImg.src = "./assets/imgs/team/veronica-bg.webp";
-        britoImg.src = "./assets/imgs/team/brito-bg.webp";
-        ricardoImg.src = "./assets/imgs/team/ricardo-bg.webp";
-        joaomImg.src = "./assets/imgs/team/joaom-bg.webp";
-        biancaImg.src = "./assets/imgs/team/bianca-bg.webp";
-        
+        saoMiguelImg.src = "./assets/imgs/offices/sao-miguel-office-m.webp";
+        picoImg.src = "./assets/imgs/offices/pico-office-m.webp";
+        graciosaImg.src = "./assets/imgs/offices/graciosa-office-m.webp";
       }
     }
   
