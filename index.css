@@ -391,6 +391,22 @@ html, body {
     align-items: center;
 }
 
+.news-item.active img {
+    transform: scale(1.07);
+    filter: grayscale(0%);
+}
+
+.void {
+    width: 150px;
+}
+
+@media (max-width: 576px){
+    .void {
+        width: 0px !important;
+    }
+}
+
+
 /* ======================== MEDIA QUERIES ======================== */
 
 /* Tablets */
@@ -834,6 +850,12 @@ body.scroll-locked {
     }
 }
 
+@media (min-width: 576px) {
+    .team-margin-top-desk {
+        padding-top: 0px !important;
+    }
+}
+
 .invisible-txt {
     color: #FFFFFF !important;
 }
@@ -862,6 +884,17 @@ body.scroll-locked {
     width: 30px !important;
 }
 
+@media (max-width: 576px) {
+  .team-item.active {
+    background-color: #A6151F !important; /* vermelho */
+  }
+
+  .team-item.active img {
+    filter: grayscale(0%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+}
+
 .footer-title {
     font-family: "Instrument Sans";
 }
@@ -870,52 +903,85 @@ body.scroll-locked {
 
 /* **************************************************** ESCRITÓRIOS ****************************************************** */
 
-
 .office {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 600px;
-    color: white;
-    overflow: hidden;
-    font-weight: normal;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
 }
 
+.office-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.5s ease;
+  z-index: 0;
+  will-change: transform;
+
+  filter: grayscale(100%);
+}
+
+.office:hover .office-bg {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Gradiente escuro na parte inferior */
 .office::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* escuro em baixo, transparente em cima */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
   z-index: 1;
 }
 
-.office > * {
+/* Conteúdo sempre acima da imagem e overlay */
+.office > *:not(.office-bg) {
   position: relative;
   z-index: 2;
 }
 
-.office .content-bottom {
-    margin-top: auto !important;
-}
-
-.office-one {
-    background-image: url('./assets/imgs/offices/sao-miguel-office.webp') !important;
-}
-
-.office-two {
-    background-image: url('./assets/imgs/offices/pico-office.webp') !important;
+/* Smartphones */
+@media (max-width: 576px) {
+    .office {
+        height: 300px;
+    }
 }
 
 
-.office-three {
-    background-image: url('./assets/imgs/offices/graciosa-office.webp') !important;
+/* Tablets */
+@media (min-width: 768px) {
+    .office {
+        height: 400px;
+    }
 }
 
+/* Laptops e desktops médios */
+@media (min-width: 1024px) {
+    .office {
+        height: 500px;
+    }
+}
 
+/* Desktops grandes */
+@media (min-width: 1400px) {
+    .office {
+        height: 600px;
+    }
+}
 
-
+/* Monitores ultra-wide */
+@media (min-width: 1800px) {
+    .office {
+        height: 700px;
+    }
+}
 
 /* **************************************************** ESCRITÓRIOS FIM ****************************************************** */
 

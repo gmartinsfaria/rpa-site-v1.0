@@ -228,8 +228,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const cardStyle = window.getComputedStyle(card);
         const containerStyle = window.getComputedStyle(scrollContainer);
-
         const gap = parseFloat(containerStyle.columnGap || containerStyle.gap || 0);
+
         return card.offsetWidth + gap;
     }
 
@@ -239,7 +239,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
         const currentScrollLeft = scrollContainer.scrollLeft;
 
-        // Se o conteúdo não tiver scroll horizontal suficiente
         if (maxScrollLeft <= 0) {
             arrowLeft.style.display = "none";
             arrowRight.style.display = "none";
@@ -258,29 +257,50 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    arrowRight.addEventListener("click", () => {
+    function updateActiveNewsItem() {
+        const items = scrollContainer.querySelectorAll('.news-item');
+        let firstVisibleItem = null;
+        let minOffset = Infinity;
+
+        items.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            const containerRect = scrollContainer.getBoundingClientRect();
+
+            const offset = rect.left - containerRect.left;
+
+            if (offset >= -10 && offset < minOffset) {
+                minOffset = offset;
+                firstVisibleItem = item;
+            }
+        });
+
+        items.forEach(item => item.classList.remove('active'));
+        if (firstVisibleItem) {
+            firstVisibleItem.classList.add('active');
+        }
+    }
+
+    function scrollToNext(direction) {
         const scrollAmount = getSingleCardWidthWithGap();
         gsap.to(scrollContainer, {
-            scrollLeft: scrollContainer.scrollLeft + scrollAmount,
+            scrollLeft: scrollContainer.scrollLeft + (direction * scrollAmount),
             duration: scrollDuration,
             ease: "power2.out",
-            onUpdate: updateArrowVisibility,
-            onComplete: updateArrowVisibility
+            onUpdate: () => {
+                updateArrowVisibility();
+                updateActiveNewsItem();
+            },
+            onComplete: () => {
+                updateArrowVisibility();
+                updateActiveNewsItem();
+            }
         });
-    });
+    }
 
-    arrowLeft.addEventListener("click", () => {
-        const scrollAmount = getSingleCardWidthWithGap();
-        gsap.to(scrollContainer, {
-            scrollLeft: scrollContainer.scrollLeft - scrollAmount,
-            duration: scrollDuration,
-            ease: "power2.out",
-            onUpdate: updateArrowVisibility,
-            onComplete: updateArrowVisibility
-        });
-    });
+    arrowRight.addEventListener("click", () => scrollToNext(1));
+    arrowLeft.addEventListener("click", () => scrollToNext(-1));
 
-    // Drag para scroll manual
+    // Drag
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -297,21 +317,12 @@ document.addEventListener("DOMContentLoaded", function () {
         scrollContainer.classList.remove("active");
     });
 
-    /*
-    scrollContainer.addEventListener("mouseup", () => {
-        isDown = false;
-        scrollContainer.classList.remove("active");
-    });
-    */
-    
     scrollContainer.addEventListener("mouseup", () => {
         isDown = false;
         scrollContainer.classList.remove("active");
 
-        // Snap automático após arrastar
         const cardWidth = getSingleCardWidthWithGap();
         const currentScroll = scrollContainer.scrollLeft;
-
         const nearestCardIndex = Math.round(currentScroll / cardWidth);
         const snapTo = nearestCardIndex * cardWidth;
 
@@ -319,11 +330,16 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollLeft: snapTo,
             duration: 0.4,
             ease: "power2.out",
-            onUpdate: updateArrowVisibility,
-            onComplete: updateArrowVisibility
+            onUpdate: () => {
+                updateArrowVisibility();
+                updateActiveNewsItem();
+            },
+            onComplete: () => {
+                updateArrowVisibility();
+                updateActiveNewsItem();
+            }
         });
     });
-
 
     scrollContainer.addEventListener("mousemove", (e) => {
         if (!isDown) return;
@@ -331,41 +347,48 @@ document.addEventListener("DOMContentLoaded", function () {
         const x = e.pageX - scrollContainer.offsetLeft;
         const walk = (x - startX) * 2;
         scrollContainer.scrollLeft = scrollLeft - walk;
-        updateArrowVisibility(); // Atualiza setas enquanto faz drag
+        updateArrowVisibility();
+        updateActiveNewsItem();
     });
 
-    scrollContainer.addEventListener("scroll", updateArrowVisibility);
-    window.addEventListener("resize", updateArrowVisibility);
+    scrollContainer.addEventListener("scroll", () => {
+        updateArrowVisibility();
+        updateActiveNewsItem();
+    });
 
-    setTimeout(updateArrowVisibility, 1000); // Chamada inicial
+    window.addEventListener("resize", () => {
+        updateArrowVisibility();
+        updateActiveNewsItem();
+    });
+
+    setTimeout(() => {
+        updateArrowVisibility();
+        updateActiveNewsItem();
+    }, 1000);
 });
 
 
-
+// RESPONSIVO — container-left vs px-5
 document.addEventListener("DOMContentLoaded", function () {
     const targetElement = document.getElementById("SectionNewsLeft");
     const mediaQuery = window.matchMedia("(min-width: 576px)");
-  
+
     function updateClasses(e) {
-      if (!targetElement) return;
-  
-      if (e.matches) {
-        // Largura >= 576px
-        targetElement.classList.add("container-left");
-        targetElement.classList.remove("px-5");
-      } else {
-        // Largura < 576px
-        targetElement.classList.add("px-5");
-        targetElement.classList.remove("container-left");
-      }
+        if (!targetElement) return;
+
+        if (e.matches) {
+            targetElement.classList.add("container-left");
+            targetElement.classList.remove("px-5");
+        } else {
+            targetElement.classList.add("px-5");
+            targetElement.classList.remove("container-left");
+        }
     }
-  
-    // Executa à carga
+
     updateClasses(mediaQuery);
-  
-    // E ao mudar de tamanho
     mediaQuery.addEventListener("change", updateClasses);
 });
+
 
 
 // ================================================ NEWS FIM ===============================================================
@@ -472,6 +495,50 @@ function getCardWidth() {
     return cardWidth + gapInPixels;
 }
 
+function updateActiveTeamItem() {
+    const scrollContainer = document.querySelector(".team-scrolling-wrapper");
+    const items = scrollContainer.querySelectorAll('.team-item');
+    const isMobile = window.innerWidth <= 576;
+
+    let firstVisibleItem = null;
+    let minOffset = Infinity;
+
+    items.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        const containerRect = scrollContainer.getBoundingClientRect();
+        const offset = rect.left - containerRect.left;
+
+        if (offset >= -10 && offset < minOffset) {
+            minOffset = offset;
+            firstVisibleItem = item;
+        }
+    });
+
+    items.forEach(item => {
+        item.classList.remove('active');
+
+        const img = item.querySelector('img');
+        const imgBase = item.getAttribute("data-img");
+        if (img && imgBase && isMobile) {
+            img.src = `./assets/imgs/team/${imgBase}.webp`;
+        }
+    });
+
+    if (firstVisibleItem && isMobile) {
+        firstVisibleItem.classList.add('active');
+        const img = firstVisibleItem.querySelector('img');
+        const imgBase = firstVisibleItem.getAttribute("data-img");
+        const newName = firstVisibleItem.getAttribute("data-name");
+
+        if (img && imgBase) {
+            img.src = `./assets/imgs/team/${imgBase}-color.webp`;
+        }
+
+        const descriptionName = document.getElementById("descriptionName");
+        descriptionName.textContent = newName;
+        descriptionName.classList.remove("invisible-txt");
+    }
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector(".team-scrolling-wrapper");
@@ -491,93 +558,77 @@ document.addEventListener("DOMContentLoaded", function () {
         slider.classList.remove("active");
     });
 
-    /*
     slider.addEventListener("mouseup", () => {
         isDown = false;
         slider.classList.remove("active");
+
+        const cardWidth = getCardWidth();
+        const currentScroll = slider.scrollLeft;
+        const nearestCardIndex = Math.round(currentScroll / cardWidth);
+        const snapTo = nearestCardIndex * cardWidth;
+
+        gsap.to(slider, {
+            scrollLeft: snapTo,
+            duration: 0.4,
+            ease: "power2.out",
+            onComplete: updateActiveTeamItem
+        });
     });
-    */
-
-    slider.addEventListener("mouseup", () => {
-    isDown = false;
-    slider.classList.remove("active");
-
-    // Snap automático para o card mais próximo
-    const cardWidth = getCardWidth(); // já definida na tua lógica das setas
-    const currentScroll = slider.scrollLeft;
-
-    const nearestCardIndex = Math.round(currentScroll / cardWidth);
-    const snapTo = nearestCardIndex * cardWidth;
-
-    gsap.to(slider, {
-        scrollLeft: snapTo,
-        duration: 0.4,
-        ease: "power2.out"
-    });
-});
-
 
     slider.addEventListener("mousemove", (e) => {
         if (!isDown) return;
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 2; // Ajusta a velocidade do arrasto
+        const walk = (x - startX) * 2;
         slider.scrollLeft = scrollLeft - walk;
     });
+
+    slider.addEventListener("scroll", () => {
+        updateTeamArrowVisibility();
+        updateActiveTeamItem();
+    });
+
+    window.addEventListener("resize", () => {
+        updateTeamArrowVisibility();
+        updateActiveTeamItem();
+    });
+
+    // Chamada inicial
+    setTimeout(updateActiveTeamItem, 1000);
 });
 
 
 document.querySelectorAll(".team-item").forEach(item => {
-    item.addEventListener("mouseenter", (e) => {
-        console.log("Clicou num elemento da equipa!!!");
+    if (window.innerWidth > 576) {
+        item.addEventListener("mouseenter", (e) => {
+            const teamItem = e.target.closest(".team-item");
+            const newName = teamItem.getAttribute("data-name");
+            const newFunction = teamItem.getAttribute("data-function");
+            const newImage = teamItem.getAttribute("data-img");
 
-        const teamItem = e.target.closest(".team-item"); // Garante que pegamos a div correta
-        
+            document.getElementById("descriptionName").textContent = newName;
+            document.getElementById("descriptionName").classList.remove("invisible-txt");
+            document.getElementById("descriptionFunction").textContent = newFunction;
 
-        const newName = teamItem.getAttribute("data-name");
-        const newFunction = teamItem.getAttribute("data-function");
-        const newImage = teamItem.getAttribute("data-img");
+            const imgElement = teamItem.querySelector("img");
+            if (imgElement) {
+                imgElement.src = `./assets/imgs/team/${newImage}-color.webp`;
+            }
 
-        // Atualiza o título da descrição
-        document.getElementById("descriptionName").textContent = newName;
-        document.getElementById("descriptionName").classList.remove("invisible-txt");
-        
-        // Atualiza o texto da descrição
-        document.getElementById("descriptionFunction").textContent = newFunction;
-
-        // Encontra a imagem dentro da div e altera o src
-        const imgElement = teamItem.querySelector("img"); // Busca a <img> dentro do .team-item
-        if (imgElement) {
-            imgElement.src = `./assets/imgs/team/${newImage}-color.webp`; // Atualiza a imagem com a nova src
-        }
-
-        item.addEventListener("mouseout", () => {
-            
-            imgElement.src = `./assets/imgs/team/${newImage}.webp`;
-
-
-            // Atualiza o texto da descrição
-            document.getElementById("descriptionName").classList.add("invisible-txt");
-            document.getElementById("descriptionName").textContent = ".";
-
-            // Atualiza o título da descrição
-            document.getElementById("descriptionFunction").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";       
+            item.addEventListener("mouseout", () => {
+                imgElement.src = `./assets/imgs/team/${newImage}.webp`;
+                document.getElementById("descriptionName").classList.add("invisible-txt");
+                document.getElementById("descriptionName").textContent = ".";
+                document.getElementById("descriptionFunction").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";
+            });
         });
-    });
+    }
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const scrollContainer = document.querySelector(".team-scrolling-wrapper");
     const arrowLeft = document.getElementById("arrow-left");
     const arrowRight = document.getElementById("arrow-right");
-
-    function getCardWidth() {
-        const card = scrollContainer.querySelector(".team-card-block");
-        const cardWidth = card ? card.offsetWidth : 300;
-        const gapInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize); // 1rem
-        return cardWidth + gapInPixels;
-    }
 
     function getScrollAmount() {
         const cardWidthWithGap = getCardWidth();
@@ -593,7 +644,8 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft + scrollAmount,
             duration: scrollDuration,
-            ease: "power2.out"
+            ease: "power2.out",
+            onComplete: updateActiveTeamItem
         });
     });
 
@@ -602,18 +654,14 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.to(scrollContainer, {
             scrollLeft: scrollContainer.scrollLeft - scrollAmount,
             duration: scrollDuration,
-            ease: "power2.out"
+            ease: "power2.out",
+            onComplete: updateActiveTeamItem
         });
     });
 
-
-    // Atualiza visibilidade ao fazer scroll e ao redimensionar janela
     scrollContainer.addEventListener("scroll", updateTeamArrowVisibility);
     window.addEventListener("resize", updateTeamArrowVisibility);
-
-    // Chamada inicial com atraso para garantir que tudo está carregado
-    setTimeout(updateTeamArrowVisibility, 1000); // usar o teu loader delay
-
+    setTimeout(updateTeamArrowVisibility, 1000);
 });
 
 
@@ -627,37 +675,29 @@ function updateTeamArrowVisibility() {
     const scrollLeft = scrollContainer.scrollLeft;
     const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
 
-    // Mostra ou esconde as setas com base no scroll
     arrowLeft.style.display = scrollLeft > 0 ? "block" : "none";
     arrowRight.style.display = scrollLeft < maxScrollLeft - 1 ? "block" : "none";
 }
 
 
-
-const arrowRights = document.querySelectorAll('.arrow-right img');
-
-arrowRights.forEach(arrow => {
-  arrow.addEventListener('mouseenter', () => {
-    arrow.src = './assets/icons/slide-arrow-right-red.svg';
-  });
-
-  arrow.addEventListener('mouseleave', () => {
-    arrow.src = './assets/icons/slide-arrow-right-black.svg';
-  });
+// Arrows hover effects
+document.querySelectorAll('.arrow-right img').forEach(arrow => {
+    arrow.addEventListener('mouseenter', () => {
+        arrow.src = './assets/icons/slide-arrow-right-red.svg';
+    });
+    arrow.addEventListener('mouseleave', () => {
+        arrow.src = './assets/icons/slide-arrow-right-black.svg';
+    });
 });
 
-const arrowLefts = document.querySelectorAll('.arrow-left img');
-
-arrowLefts.forEach(arrow => {
-  arrow.addEventListener('mouseenter', () => {
-    arrow.src = './assets/icons/slide-arrow-left-red.svg';
-  });
-
-  arrow.addEventListener('mouseleave', () => {
-    arrow.src = './assets/icons/slide-arrow-left-black.svg';
-  });
+document.querySelectorAll('.arrow-left img').forEach(arrow => {
+    arrow.addEventListener('mouseenter', () => {
+        arrow.src = './assets/icons/slide-arrow-left-red.svg';
+    });
+    arrow.addEventListener('mouseleave', () => {
+        arrow.src = './assets/icons/slide-arrow-left-black.svg';
+    });
 });
-
 
 document.querySelectorAll('.team-item a').forEach(link => {
     let isDragging = false;
@@ -669,21 +709,20 @@ document.querySelectorAll('.team-item a').forEach(link => {
     });
 
     link.addEventListener('mousemove', (e) => {
-        if (Math.abs(e.pageX - startX) > 5) { // threshold: 5px
+        if (Math.abs(e.pageX - startX) > 5) {
             isDragging = true;
         }
     });
 
     link.addEventListener('click', (e) => {
         if (isDragging) {
-            e.preventDefault(); // bloqueia a navegação
+            e.preventDefault();
         }
     });
 });
 
-
-
 //================================================= TEAM FIM ============================================================
+
 
 
 
@@ -725,6 +764,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // =============================================== VALUES FIM ============================================================
 
 
+// =============================================== ESCRITÓRIOS ===========================================================
+
+
+
+
+
+// =============================================== ESCRITÓRIOS FIM ===========================================================
 
 
 //================================================== PARCERIAS =================================================
