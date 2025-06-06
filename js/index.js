@@ -619,7 +619,7 @@ document.querySelectorAll(".team-item").forEach(item => {
                 imgElement.src = `./assets/imgs/team/${newImage}.webp`;
                 document.getElementById("descriptionName").classList.add("invisible-txt");
                 document.getElementById("descriptionName").textContent = ".";
-                document.getElementById("descriptionFunction").textContent = "Especialistas dedicados a defender os seus direitos com excelência.";
+                document.getElementById("descriptionFunction").textContent = "Profissionais dedicados à defesa dos direitos com rigor, ética e compromisso.";
             });
         });
     }

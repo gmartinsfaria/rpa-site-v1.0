@@ -64,7 +64,7 @@
                             <a id="ButtonValores" class="nav-link" data-i18n="navLinkManifest" aria-current="page" href="#">Manifesto</a>
                         </li>
                         <li class="nav-item">
-                            <a id="ButtonEscritorios" class="nav-link" data-i18n="navLinkOffices" aria-current="page" href="#">Escritórios</a>
+                            <a class="nav-link" data-i18n="navLinkOffices" aria-current="page" href="./offices.html">Escritórios</a>
                         </li>
                         <li class="nav-item">
                             <a id="ButtonParcerias" class="nav-link" data-i18n="navLinkPartnerships" aria-current="page" href="#">Parcerias</a>
@@ -842,18 +842,19 @@
 
         <section id="SectionValores" class="pt-5 container-fluid px-0" style="background-color: #ffffff;">   
             
-            <div  class="container-fluid px-5 pt-3 mt-2 mt-lg-5">
+            <div  class="container-fluid px-5 pt-3 mt-2 mt-lg-5 pb-5">
                 <h1 class="general-title" data-i18n="navLinkManifest">Manifesto</h1>
             </div>
             
             <div class="container-left values-container">
                 <div class="values-intro container">
                     <p class="general-txt regular" data-i18n="manifestDescription">
-                        Na RP & Associados somos especialistas em oferecer soluções jurídicas éticas, 
-                        eficientes e humanizadas. Com uma abordagem personalizada, analisamos cada caso 
-                        com rigor e dedicação, garantindo o melhor suporte legal. A nossa missão é 
-                        transformar desafios jurídicos em soluções eficazes, sempre com foco na justiça 
-                        e na confiança dos nossos clientes.
+                        Na RP & Associados, atuamos com uma abordagem ética, eficiente e 
+                        humanizada na prestação de serviços jurídicos. Valorizamos a análise 
+                        rigorosa e dedicada de cada situação, procurando assegurar um 
+                        acompanhamento jurídico de qualidade. A nossa missão é contribuir 
+                        para a resolução dos desafios legais dos nossos clientes, promovendo 
+                        relações de confiança e respeito pelos princípios da justiça.
                     </p>
                     <button id="valuesContactBtn" class="contact-btn"><span data-i18n="contactLink">Entrar em contacto connosco</span> <img src="./assets/icons/arrow-up-right.svg" alt="seta contacto" width="16" height="16"></button>
                 </div>
@@ -903,57 +904,63 @@
 
                     <!--Escritório São Miguel -->
                     <div class="col">
-                        <div class="office position-relative overflow-hidden d-flex flex-column p-5 pb-3">
-                            
-                            <!-- camada da imagem -->
-                            <div class="office-bg position-absolute partnership-picture w-100 h-100" style="background-image: url('./assets/imgs/offices/sao-miguel-office.webp');"></div>
-                            
-                            <!-- conteúdo -->
-                            <div class="mt-auto text-white">
-                            <h2 class="general-font">São Miguel (Sede)</h2>
-                            <p class="general-font">
-                                O nosso escritório principal situa-se no centro de Ponta Delgada,
-                                numa zona de fácil acesso e próxima de serviços essenciais.
-                            </p>
+                        <a href="./offices.html" class="office-link">
+                            <div class="office position-relative overflow-hidden d-flex flex-column p-5 pb-3">
+                                
+                                <!-- camada da imagem -->
+                                <div class="office-bg position-absolute w-100 h-100" style="background-image: url('./assets/imgs/offices/sao-miguel.webp');"></div>
+                                
+                                <!-- conteúdo -->
+                                <div class="mt-auto text-white">
+                                <h2 class="general-font">São Miguel (Sede)</h2>
+                                <p class="general-font">
+                                    O nosso escritório principal situa-se no centro de Ponta Delgada,
+                                    numa zona de fácil acesso e próxima de serviços essenciais.
+                                </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!--Escritório Pico -->
                     <div class="col">
-                        <div class="office position-relative overflow-hidden d-flex flex-column p-5 pb-3">
+                        <a href="./offices.html" class="office-link">
+                            <div class="office position-relative overflow-hidden d-flex flex-column p-5 pb-3">
                             
-                            <!-- camada da imagem -->
-                            <div class="office-bg position-absolute partnership-picture w-100 h-100" style="background-image: url('./assets/imgs/offices/pico-office.webp');"></div>
-                            
-                            <!-- conteúdo -->
-                            <div class="mt-auto text-white">
-                            <h2 class="general-font">Pico</h2>
-                            <p class="general-font">
-                                Com presença na ilha do Pico,  estamos disponíveis
-                                para o apoiar, com a mesma solidez que define a ilha,
-                                através de parcerias locais de confiança.
-                            </p>
+                                <!-- camada da imagem -->
+                                <div class="office-bg position-absolute w-100 h-100" style="background-image: url('./assets/imgs/offices/pico.webp');"></div>
+                                
+                                <!-- conteúdo -->
+                                <div class="mt-auto text-white">
+                                    <h2 class="general-font">Pico</h2>
+                                    <p class="general-font">
+                                        Com presença na ilha do Pico,  estamos disponíveis
+                                        para o apoiar, com a mesma solidez que define a ilha,
+                                        através de parcerias locais de confiança.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <!--Escritório Graciosa -->
                     <div class="col">
-                        <div class="office position-relative overflow-hidden d-flex flex-column p-5 pb-3">
-                            
-                            <!-- camada da imagem -->
-                            <div class="office-bg position-absolute partnership-picture w-100 h-100" style="background-image: url('./assets/imgs/offices/graciosa-office.webp');"></div>
-                            
-                            <!-- conteúdo -->
-                            <div class="mt-auto text-white">
-                            <h2 class="general-font">Graciosa</h2>
-                            <p class="general-font">
-                                Agora também na ilha Graciosa, estamos tão presentes quanto
-                                o vento na Barra e a calma da Praça — sempre perto quando precisar.
-                            </p>
+                        <a href="./offices.html" class="office-link">
+                            <div class="office position-relative overflow-hidden d-flex flex-column p-5 pb-3">
+                                
+                                <!-- camada da imagem -->
+                                <div class="office-bg position-absolute w-100 h-100" style="background-image: url('./assets/imgs/offices/graciosa.webp');"></div>
+                                
+                                <!-- conteúdo -->
+                                <div class="mt-auto text-white">
+                                <h2 class="general-font">Graciosa</h2>
+                                <p class="general-font">
+                                    Agora também na ilha Graciosa, estamos tão presentes quanto
+                                    o vento na Barra e a calma da Praça — sempre perto quando precisar.
+                                </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                 </div>

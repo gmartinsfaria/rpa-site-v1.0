@@ -947,6 +947,14 @@ body.scroll-locked {
   z-index: 2;
 }
 
+.office-link {
+    text-decoration: none;
+}
+
+.office-link:hover {
+    text-decoration: none;
+}
+
 /* Smartphones */
 @media (max-width: 576px) {
     .office {
